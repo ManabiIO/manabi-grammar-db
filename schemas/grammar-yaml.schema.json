@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manabi.io/schemas/grammar-yaml.schema.json",
+  "title": "Manabi Grammar YAML",
+  "type": "object",
+  "required": ["pattern", "examples", "jmdict_id"],
+  "properties": {
+    "jmdict_id": {
+      "oneOf": [{ "type": "integer" }, { "type": "string", "minLength": 1 }]
+    },
+    "pattern": {
+      "type": "object",
+      "required": ["mecab"],
+      "properties": { "mecab": { "type": "string", "minLength": 1 } },
+      "additionalProperties": false
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "#text="
+      }
+    }
+  },
+  "additionalProperties": true
+}

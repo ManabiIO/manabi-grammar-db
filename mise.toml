@@ -1,0 +1,38 @@
+[tools]
+python = "3.12"
+bun = "1"
+node = "20"
+
+[tasks.lint]
+description = "Validate directory structure, YAML schema, and Markdown rules"
+run = [
+  "python -m pip install -r requirements.txt",
+  "python validate_repo.py"
+]
+
+[tasks.build-db]
+description = "Compile YAML+MD to SQLite, run JS client build/test, copy schemas to dist/"
+run = [
+  "python -m pip install -r requirements.txt",
+  "python validate_repo.py",
+  "python build_db.py",
+  "mise run client-build",
+  "mise run client-test"
+]
+
+[tasks.client-build]
+description = "Bundle sql.js client and pack tarball"
+dir = "js-client"
+run = [
+  "bun install",
+  "bun run build",
+  "bun run pack"
+]
+
+[tasks.client-test]
+description = "Execute vitest suite for the JS client"
+dir = "js-client"
+run = [
+  "bun install",
+  "bun run test"
+]

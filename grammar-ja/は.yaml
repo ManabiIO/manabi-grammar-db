@@ -1,0 +1,5 @@
+jmdict_id: 234567
+pattern:
+  mecab: "名詞-一般+助詞-係助詞-ハ"
+examples:
+  - "https://example.com/texts/ha#text=寿司は美味しい"

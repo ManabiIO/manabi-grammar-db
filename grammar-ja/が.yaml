@@ -1,0 +1,6 @@
+jmdict_id: 123456
+pattern:
+  mecab: "名詞-一般+助詞-格助詞-ガ"
+examples:
+  - "https://example.com/texts/ga#text=太郎が学校に行く"
+  - "https://example.com/texts/ga2#text=雨が降っている"

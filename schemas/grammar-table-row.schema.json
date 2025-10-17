@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manabi.io/schemas/grammar-table-row.schema.json",
+  "title": "Manabi Grammar Table Row Data",
+  "type": "object",
+  "required": ["jmdict_id", "pattern", "examples", "info"],
+  "properties": {
+    "jmdict_id": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
+    "pattern": {
+      "type": "object",
+      "required": ["mecab"],
+      "properties": { "mecab": { "type": "string" } },
+      "additionalProperties": false
+    },
+    "examples": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "info": {
+      "type": "object",
+      "description": "Map: reader language code -> section map (⭐ entries set recommended: true)",
+      "additionalProperties": {
+        "type": "object",
+        "patternProperties": {
+          "^.+$": {
+            "oneOf": [
+              {
+                "type": "array",
+                "items": { "$ref": "#/$defs/resource" }
+              },
+              {
+                "type": "object",
+                "patternProperties": {
+                  "^.+$": {
+                    "type": "array",
+                    "items": { "$ref": "#/$defs/resource" }
+                  }
+                },
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "resource": {
+      "type": "object",
+      "required": ["url", "name"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "recommended": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
