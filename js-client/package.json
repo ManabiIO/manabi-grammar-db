@@ -1,0 +1,29 @@
+{
+  "name": "manabi-grammar-db-client",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./wasm": "./dist/sql-wasm.wasm"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rollup -c && node scripts/copy-wasm.cjs",
+    "test": "vitest run",
+    "pack": "cd dist && zip -qr ../manabi-grammar-db-client.zip ."
+  },
+  "dependencies": {
+    "sql.js": "^1.9.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "chai": "^5.1.2",
+    "rollup": "^4.22.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "vitest": "^3.2.4"
+  }
+}

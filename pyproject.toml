@@ -1,0 +1,14 @@
+[project]
+name = "manabi-grammar-db-tools"
+version = "0.1.0"
+description = "Linters & build tools for manabi-grammar-db"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pyyaml>=6.0.2",
+  "jsonschema>=4.23.0",
+  "markdown-it-py>=3.0.0"
+]
+
+[tool.ruff]
+line-length = 100

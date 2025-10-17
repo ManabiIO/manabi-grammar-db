@@ -1,0 +1,111 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  deployments: write
+  actions: read
+  id-token: write
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9bb56186c3b09b5ef4cd2ddca0f4871dcd2b9de9
+        with:
+          persist-credentials: false
+      - uses: jdx/mise-action@707444d7bcb0f9a85e0eaca75c6cb825de997d5d
+      - run: mise run lint
+
+  build-release-deploy:
+    if: github.event_name != 'pull_request'
+    needs: [lint]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9bb56186c3b09b5ef4cd2ddca0f4871dcd2b9de9
+        with:
+          persist-credentials: false
+      - name: Install mise
+        uses: jdx/mise-action@707444d7bcb0f9a85e0eaca75c6cb825de997d5d
+      - name: Build DB + JS client
+        run: mise run build-db
+      - name: Compute checksums
+        id: checksum
+        run: |
+          cd dist
+          shasum -a 256 manabi-grammar.sqlite grammar-table-row.schema.json grammar-yaml.schema.json manabi-grammar-db-client.zip > checksums.txt
+          {
+            echo "Checksums (SHA-256):"
+            echo '```'
+            cat checksums.txt
+            echo '```'
+          } > release-notes.md
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@b7db734d67472f2dca10c1b510a6445f76fbad2d
+        with:
+          tag_name: db-${{ github.sha }}
+          name: Grammar DB ${{ github.sha }}
+          body_path: dist/release-notes.md
+          files: |
+            dist/manabi-grammar.sqlite
+            dist/grammar-table-row.schema.json
+            dist/grammar-yaml.schema.json
+            dist/manabi-grammar-db-client.zip
+      - name: Get release asset URLs
+        id: rel
+        uses: actions/github-script@d7906e4ad0b1822421a7aa52039b67d12c2d079a
+        with:
+          script: |
+            const { data: release } = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: `db-${context.sha}`,
+            });
+            const asset = name => release.assets.find(a => a.name === name);
+            const dbAsset = asset('manabi-grammar.sqlite');
+            const clientAsset = asset('manabi-grammar-db-client.zip');
+            const yamlSchema = asset('grammar-yaml.schema.json');
+            const tableSchema = asset('grammar-table-row.schema.json');
+            if (!dbAsset || !clientAsset || !yamlSchema || !tableSchema) {
+              core.setFailed('Missing expected release assets.');
+            } else {
+              core.setOutput('db_url', dbAsset.browser_download_url);
+              core.setOutput('client_url', clientAsset.browser_download_url);
+              core.setOutput('yaml_schema_url', yamlSchema.browser_download_url);
+              core.setOutput('table_schema_url', tableSchema.browser_download_url);
+            }
+      - name: Create Deployment
+        id: dep
+        uses: chrnorm/deployment-action@73a1a996a96b0f99b0ff61bcc24d0f5a2dc9ff69
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: grammar-db
+          ref: ${{ github.ref }}
+      - name: Set Deployment Status
+        uses: chrnorm/deployment-status@f215202df6c0f5d98ecd9bfb843491f0de85be09
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          deployment_id: ${{ steps.dep.outputs.deployment_id }}
+          state: success
+          environment_url: ${{ steps.rel.outputs.db_url }}
+          log_url: ${{ steps.rel.outputs.client_url }}
+          description: db-${{ github.sha }}
+      - name: repository_dispatch to web repo
+        uses: peter-evans/repository-dispatch@5fc4efd1a4797ddb68ffd0714a238564e4cc0e6f
+        with:
+          token: ${{ secrets.WEB_REPO_TOKEN }}
+          repository: ManabiIO/manabi-grammar-web
+          event-type: grammar-db-deployed
+          client-payload: |
+            {
+              "db_url": "${{ steps.rel.outputs.db_url }}",
+              "client_url": "${{ steps.rel.outputs.client_url }}",
+              "yaml_schema_url": "${{ steps.rel.outputs.yaml_schema_url }}",
+              "table_schema_url": "${{ steps.rel.outputs.table_schema_url }}",
+              "release_tag": "db-${{ github.sha }}"
+            }

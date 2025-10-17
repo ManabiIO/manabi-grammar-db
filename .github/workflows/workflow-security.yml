@@ -1,0 +1,21 @@
+name: workflow-security
+
+on:
+  push:
+    paths:
+      - ".github/workflows/**"
+  schedule:
+    - cron: "0 3 * * 1"
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  workflow-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9bb56186c3b09b5ef4cd2ddca0f4871dcd2b9de9
+        with:
+          persist-credentials: false
+      - uses: github/codeql-action/workflow-security@255f7f3d1417812d7ed63de4b8739ec42c382919
