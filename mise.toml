@@ -7,15 +7,15 @@ node = "20"
 description = "Validate directory structure, YAML schema, and Markdown rules"
 run = [
   "python -m pip install -r requirements.txt",
-  "python validate_repo.py"
+  "python scripts/validate_repo.py"
 ]
 
 [tasks.build-db]
 description = "Compile YAML+MD to SQLite, run JS client build/test, copy schemas to dist/"
 run = [
   "python -m pip install -r requirements.txt",
-  "python validate_repo.py",
-  "python build_db.py",
+  "python scripts/validate_repo.py",
+  "python scripts/build_db.py",
   "mise run client-build",
   "mise run client-test"
 ]

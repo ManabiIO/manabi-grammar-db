@@ -6,6 +6,7 @@ import re
 import sqlite3
 import sys
 from pathlib import Path
+import shutil
 
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
@@ -19,14 +20,31 @@ ROW_VALIDATOR = Draft202012Validator(ROW_SCHEMA, format_checker=FormatChecker())
 OUTDIR = DBROOT / "dist"
 OUTDIR.mkdir(exist_ok=True)
 DBFILE = OUTDIR / "manabi-grammar.sqlite"
+JS_CLIENT_ZIP = DBROOT / "js-client" / "dist" / "js-client" / "manabi-grammar-db-client.zip"
 
 LANG_DIR_RE = re.compile(r"^grammar-([a-z]{2,3})$")
 LANG_FILE_RE = re.compile(r"^(?P<head>.+?)\.(?P<lang>[a-z]{2,3})\.md$")
-ALIAS = {"jp": "ja"}
+
+def _coerce_variant(value: object, yaml_file: Path) -> int:
+    if value is None:
+        return 1
+    if isinstance(value, bool):
+        raise ValueError(f"{yaml_file}: variant cannot be a boolean")
+    if isinstance(value, int):
+        if value < 1:
+            raise ValueError(f"{yaml_file}: variant must be >= 1")
+        return value
+    if isinstance(value, str) and value.isdigit():
+        parsed = int(value, 10)
+        if parsed < 1:
+            raise ValueError(f"{yaml_file}: variant must be >= 1")
+        return parsed
+    raise ValueError(f"{yaml_file}: variant must be a positive integer")
 
 
-def collect_rows() -> list[tuple[str, str, dict]]:
-    rows: list[tuple[str, str, dict]] = []
+def collect_rows() -> list[tuple[str, str, int, dict]]:
+    rows: list[tuple[str, str, int, dict]] = []
+    seen: set[tuple[str, str, int]] = set()
     for directory in sorted(DBROOT.iterdir()):
         if not directory.is_dir() or not directory.name.startswith("grammar-"):
             continue
@@ -35,7 +53,7 @@ def collect_rows() -> list[tuple[str, str, dict]]:
         if not match:
             continue
 
-        target_language = ALIAS.get(match.group(1), match.group(1))
+        target_language = match.group(1)
 
         markdown_map: dict[str, dict[str, object]] = {}
         for md_file in directory.glob("*.md"):
@@ -47,18 +65,30 @@ def collect_rows() -> list[tuple[str, str, dict]]:
             sections = parse_markdown_sections(md_file.read_text(encoding="utf-8"))
             markdown_map.setdefault(headword, {})[reader_lang] = sections
 
-        for yaml_file in directory.glob("*.yaml"):
+        for yaml_file in sorted(directory.glob("*.yaml")):
             headword = yaml_file.stem
             yaml_data = yaml.safe_load(yaml_file.read_text(encoding="utf-8"))
+            try:
+                variant = _coerce_variant(yaml_data.get("variant"), yaml_file)
+            except ValueError as error:
+                raise SystemExit(str(error)) from error
+            yaml_data.setdefault("variant", variant)
             info = markdown_map.get(headword, {})
             record = dict(yaml_data)
             record["info"] = info
             ROW_VALIDATOR.validate(record)
-            rows.append((target_language, headword, record))
+            key = (target_language, headword, variant)
+            if key in seen:
+                raise SystemExit(
+                    f"Duplicate grammar entry detected for {target_language}/{headword} "
+                    f"variant {variant} in '{yaml_file}'."
+                )
+            seen.add(key)
+            rows.append((target_language, headword, variant, record))
     return rows
 
 
-def create_database(rows: list[tuple[str, str, dict]]) -> None:
+def create_database(rows: list[tuple[str, str, int, dict]]) -> None:
     if DBFILE.exists():
         DBFILE.unlink()
 
@@ -71,16 +101,18 @@ def create_database(rows: list[tuple[str, str, dict]]) -> None:
             CREATE TABLE IF NOT EXISTS grammar (
               target_language TEXT NOT NULL,
               headword        TEXT NOT NULL,
+              variant         INTEGER NOT NULL DEFAULT 1,
               data            TEXT NOT NULL,
-              PRIMARY KEY (target_language, headword)
+              CHECK (variant >= 1),
+              PRIMARY KEY (target_language, headword, variant)
             ) STRICT, WITHOUT ROWID;
             """
         )
         connection.executemany(
-            "INSERT INTO grammar(target_language, headword, data) VALUES (?, ?, ?)",
+            "INSERT INTO grammar(target_language, headword, variant, data) VALUES (?, ?, ?, ?)",
             [
-                (target, head, json.dumps(data, ensure_ascii=False))
-                for target, head, data in rows
+                (target, head, variant, json.dumps(data, ensure_ascii=False))
+                for target, head, variant, data in rows
             ],
         )
         connection.commit()
@@ -95,10 +127,20 @@ def copy_schemas() -> None:
         target.write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
 
 
+def copy_js_client_bundle() -> None:
+    if not JS_CLIENT_ZIP.exists():
+        raise SystemExit(
+            "JS client bundle was not found. Ensure 'mise run client-build' has completed successfully."
+        )
+    target = OUTDIR / "manabi-grammar-db-client.zip"
+    shutil.copy2(JS_CLIENT_ZIP, target)
+
+
 def main() -> int:
     rows = collect_rows()
     create_database(rows)
     copy_schemas()
+    copy_js_client_bundle()
     print(f"Wrote {DBFILE} with {len(rows)} rows")
     return 0
 

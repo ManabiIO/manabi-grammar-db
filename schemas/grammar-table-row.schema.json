@@ -3,7 +3,7 @@
   "$id": "https://manabi.io/schemas/grammar-table-row.schema.json",
   "title": "Manabi Grammar Table Row Data",
   "type": "object",
-  "required": ["jmdict_id", "pattern", "examples", "info"],
+  "required": ["jmdict_id", "pattern", "examples", "info", "variant"],
   "properties": {
     "jmdict_id": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
     "pattern": {
@@ -15,6 +15,10 @@
     "examples": {
       "type": "array",
       "items": { "type": "string", "format": "uri" }
+    },
+    "variant": {
+      "type": "integer",
+      "minimum": 1
     },
     "info": {
       "type": "object",

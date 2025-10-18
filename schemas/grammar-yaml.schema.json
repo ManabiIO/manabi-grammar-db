@@ -22,6 +22,12 @@
         "format": "uri",
         "pattern": "#text="
       }
+    },
+    "variant": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1,
+      "description": "Distinct variant identifier for grammar entries sharing the same headword."
     }
   },
   "additionalProperties": true

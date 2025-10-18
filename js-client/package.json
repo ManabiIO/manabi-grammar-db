@@ -13,7 +13,7 @@
   "scripts": {
     "build": "rollup -c && node scripts/copy-wasm.cjs",
     "test": "vitest run",
-    "pack": "cd dist && zip -qr ../manabi-grammar-db-client.zip ."
+    "pack": "mkdir -p dist/js-client && cd dist && zip -qr js-client/manabi-grammar-db-client.zip ."
   },
   "dependencies": {
     "sql.js": "^1.9.0"
