@@ -38,7 +38,7 @@ jobs:
         id: checksum
         run: |
           cd dist
-          shasum -a 256 manabi-grammar.sqlite grammar-table-row.schema.json grammar-yaml.schema.json manabi-grammar-db-client.zip > checksums.txt
+          shasum -a 256 manabi-grammar.sqlite grammar-table-row.schema.json grammar-yaml.schema.json js-client/manabi-grammar-db-client.zip > checksums.txt
           {
             echo "Checksums (SHA-256):"
             echo '```'
@@ -55,7 +55,7 @@ jobs:
             dist/manabi-grammar.sqlite
             dist/grammar-table-row.schema.json
             dist/grammar-yaml.schema.json
-            dist/manabi-grammar-db-client.zip
+            dist/js-client/manabi-grammar-db-client.zip
       - name: Get release asset URLs
         id: rel
         uses: actions/github-script@d7906e4ad0b1822421a7aa52039b67d12c2d079a
@@ -68,7 +68,7 @@ jobs:
             });
             const asset = name => release.assets.find(a => a.name === name);
             const dbAsset = asset('manabi-grammar.sqlite');
-            const clientAsset = asset('manabi-grammar-db-client.zip');
+            const clientAsset = asset('js-client/manabi-grammar-db-client.zip');
             const yamlSchema = asset('grammar-yaml.schema.json');
             const tableSchema = asset('grammar-table-row.schema.json');
             if (!dbAsset || !clientAsset || !yamlSchema || !tableSchema) {

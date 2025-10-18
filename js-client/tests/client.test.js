@@ -28,6 +28,7 @@ describe('ManabiGrammarDbClient', () => {
     expect(rows.length).toBeGreaterThan(0);
     const ga = rows.find((row) => row.headword === 'が');
     expect(ga).toBeDefined();
+    expect(ga.variant).toBe(1);
     expect(ga.data).toHaveProperty('examples');
     expect(ga.data.info.en.Guides[0]).toMatchObject({
       url: 'https://example.com/ga-guide',
@@ -36,7 +37,7 @@ describe('ManabiGrammarDbClient', () => {
   });
 
   it('gets a single headword', () => {
-    const ha = client.get('ja', 'は');
+    const ha = client.get('ja', 'は', 1);
     expect(ha).not.toBeNull();
     expect(ha.headword).toBe('は');
     expect(ha.data.info.en['Q&A'][0].url).toContain('stackexchange-ha');
@@ -49,7 +50,7 @@ describe('ManabiGrammarDbClient', () => {
   });
 
   it('returns null when headword missing', () => {
-    const missing = client.get('ja', '不存在');
+    const missing = client.get('ja', '不存在', 1);
     expect(missing).toBeNull();
   });
 });

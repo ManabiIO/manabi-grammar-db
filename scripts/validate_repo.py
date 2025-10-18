@@ -9,21 +9,15 @@ from pathlib import Path
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 SCHEMAS = ROOT / "schemas"
 YAML_SCHEMA = json.loads((SCHEMAS / "grammar-yaml.schema.json").read_text(encoding="utf-8"))
 
 LANG_DIR_RE = re.compile(r"^grammar-([a-z]{2,3})$")
 LANG_FILE_RE = re.compile(r"^(?P<head>.+?)\.(?P<lang>[a-z]{2,3})\.md$")
-WARN_ALIASES = {"jp": "ja"}
-
 
 def err(msg: str) -> None:
     print(f"::error::{msg}")
-
-
-def warn(msg: str) -> None:
-    print(f"::warning::{msg}")
 
 
 def is_valid_lang(code: str) -> bool:
@@ -31,12 +25,7 @@ def is_valid_lang(code: str) -> bool:
 
 
 def parse_markdown_sections(md_text: str) -> dict[str, object]:
-    """
-    Return dict(section -> structure).
-    Guides/Q&A => list of {url,name,description?,recommended?}
-    Related    => map of heading -> list of entries.
-    Enforces: only dash lists under each H2 with optional leading ⭐ flag.
-    """
+    """Validate and return structured section data extracted from markdown."""
 
     lines = md_text.splitlines()
     allowed_h2 = {"Guides", "Q&A", "Related"}
@@ -144,12 +133,6 @@ def main() -> int:
             continue
 
         target_language = match.group(1)
-        if target_language in WARN_ALIASES:
-            warn(
-                f"Language code '{target_language}' is aliased to "
-                f"'{WARN_ALIASES[target_language]}'. Prefer that code going forward."
-            )
-
         if not is_valid_lang(target_language):
             err(f"Invalid language code '{target_language}' in directory '{directory.name}'.")
             ok = False
@@ -177,7 +160,7 @@ def main() -> int:
                 continue
 
             try:
-                sections = parse_markdown_sections(text)
+                parse_markdown_sections(text)
             except SystemExit:
                 ok = False
                 continue

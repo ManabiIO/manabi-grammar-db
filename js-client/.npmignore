@@ -3,3 +3,4 @@ tests/
 scripts/
 rollup.config.mjs
 bunfig.toml
+dist/js-client/manabi-grammar-db-client.zip
