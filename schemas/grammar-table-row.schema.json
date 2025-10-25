@@ -4,13 +4,13 @@
   "title": "Manabi Grammar Table Row Data",
   "type": "object",
   "required": [
-    "jmdict_id",
+    "jmdictId",
     "examples",
     "info",
     "variant"
   ],
   "properties": {
-    "jmdict_id": {
+    "jmdictId": {
       "oneOf": [
         {
           "type": "integer"
@@ -20,11 +20,45 @@
         }
       ]
     },
+    "alternativeForms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
     "examples": {
       "type": "array",
       "items": {
         "type": "string",
         "format": "uri"
+      }
+    },
+    "exampleSentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sentence"
+        ],
+        "properties": {
+          "sentence": {
+            "type": "string"
+          },
+          "translations": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false
       }
     },
     "variant": {
@@ -36,8 +70,14 @@
       "description": "Map: reader language code -> section map (⭐ entries set recommended: true)",
       "additionalProperties": {
         "type": "object",
+        "properties": {
+          "Meaning": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
         "patternProperties": {
-          "^.+$": {
+          "^(?!Meaning$).+$": {
             "oneOf": [
               {
                 "type": "array",
