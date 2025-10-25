@@ -1,6 +1,20 @@
-jmdict_id: 123456
+jmdictId: 123456
 pattern:
   mecab: "名詞-一般+助詞-格助詞-ガ"
 examples:
   - "https://example.com/texts/ga#text=太郎が学校に行く"
   - "https://example.com/texts/ga2#text=雨が降っている"
+alternativeForms:
+  - ガ
+exampleSentences:
+  - sentence: 太郎が学校に行く。
+    translations:
+      en: Taro goes to school.
+    sourceUrl: https://example.com/texts/ga#text=%E5%A4%AA%E9%83%8E%E3%81%8C%E5%AD%A6%E6%A0%A1%E3%81%AB%E8%A1%8C%E3%81%8F
+  - sentence: 雨が降っている。
+    translations:
+      en: It is raining.
+testData:
+  nonMatchingSentences:
+    - 太郎は学校に行く。
+    - 雨は降っている。

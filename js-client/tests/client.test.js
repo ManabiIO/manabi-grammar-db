@@ -30,10 +30,16 @@ describe('ManabiGrammarDbClient', () => {
     expect(ga).toBeDefined();
     expect(ga.variant).toBe(1);
     expect(ga.data).toHaveProperty('examples');
+    expect(ga.data.alternativeForms).toContain('ガ');
+    expect(ga.data.exampleSentences[0]).toMatchObject({
+      sentence: '太郎が学校に行く。'
+    });
+    expect(ga.data.testData.nonMatchingSentences).toContain('太郎は学校に行く。');
     expect(ga.data.info.en.Guides[0]).toMatchObject({
       url: 'https://example.com/ga-guide',
       recommended: true
     });
+    expect(ga.data.info.en.Meaning).toContain('subject');
   });
 
   it('gets a single headword', () => {

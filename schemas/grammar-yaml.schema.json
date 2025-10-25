@@ -3,9 +3,9 @@
   "$id": "https://manabi.io/schemas/grammar-yaml.schema.json",
   "title": "Manabi Grammar YAML",
   "type": "object",
-  "required": ["pattern", "examples", "jmdict_id"],
+  "required": ["pattern", "examples", "jmdictId"],
   "properties": {
-    "jmdict_id": {
+    "jmdictId": {
       "oneOf": [{ "type": "integer" }, { "type": "string", "minLength": 1 }]
     },
     "pattern": {
@@ -13,6 +13,13 @@
       "required": ["mecab"],
       "properties": { "mecab": { "type": "string", "minLength": 1 } },
       "additionalProperties": false
+    },
+    "alternativeForms": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "description": "Optional list of alternative representations of the headword."
     },
     "examples": {
       "type": "array",
@@ -22,6 +29,37 @@
         "format": "uri",
         "pattern": "#text="
       }
+    },
+    "exampleSentences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["sentence"],
+        "properties": {
+          "sentence": { "type": "string", "minLength": 1 },
+          "translations": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": { "type": "string", "minLength": 1 }
+          },
+          "sourceUrl": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      },
+      "description": "Example sentences tied to the grammar point with optional translations and sourcing."
+    },
+    "testData": {
+      "type": "object",
+      "properties": {
+        "nonMatchingSentences": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "additionalProperties": false,
+      "description": "Test fixtures for regression tooling."
     },
     "variant": {
       "type": "integer",

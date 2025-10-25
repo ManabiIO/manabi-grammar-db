@@ -31,7 +31,7 @@ If you already have the SQLite file loaded as a `Uint8Array`, call `ManabiGramma
 
 - `static async fromFile(path: string)` – load from a SQLite file on disk.
 - `static async fromUint8Array(bytes: Uint8Array | ArrayBuffer)` – load from bytes in memory.
-- `all(): Array<Row>` – return every grammar row. `Row` includes `target_language`, `headword`, and parsed JSON `data`.
+- `all(): Array<Row>` – return every grammar row. `Row` includes `targetLanguage`, `headword`, and parsed JSON `data`.
 - `get(targetLanguage: string, headword: string): Row | null` – fetch a single row.
 - `search(predicate: (row) => boolean): Array<Row>` – filter rows using a callback.
 - `close(): void` – dispose of the underlying database.

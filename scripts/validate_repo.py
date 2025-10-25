@@ -28,27 +28,62 @@ def parse_markdown_sections(md_text: str) -> dict[str, object]:
     """Validate and return structured section data extracted from markdown."""
 
     lines = md_text.splitlines()
-    allowed_h2 = {"Guides", "Q&A", "Related"}
+    allowed_h2 = {"Meaning", "Guides", "Q&A", "Related"}
     sections: dict[str, object] = {}
     h2: str | None = None
     h3: str | None = None
+    in_meaning = False
+    meaning_lines: list[str] | None = None
+    meaning_start_line: int | None = None
+
+    def finalize_meaning(end_line: int | None = None) -> None:
+        nonlocal in_meaning, meaning_lines, meaning_start_line
+        if not in_meaning:
+            return
+        assert meaning_lines is not None and meaning_start_line is not None
+        content = "\n".join(meaning_lines).strip()
+        if not content:
+            err(
+                f"'## Meaning' must include descriptive text "
+                f"(started at line {meaning_start_line})."
+            )
+            raise SystemExit(1)
+        sections["Meaning"] = content
+        in_meaning = False
+        meaning_lines = None
+        meaning_start_line = None
 
     for i, line in enumerate(lines, 1):
         if line.startswith("# "):
+            finalize_meaning(i)
             h2 = None
             h3 = None
             continue
 
         if line.startswith("## "):
+            finalize_meaning(i)
             h2 = line[3:].strip()
             h3 = None
             if h2 not in allowed_h2:
                 err(f"Unknown H2 '{h2}'. Allowed: {sorted(allowed_h2)}")
                 raise SystemExit(1)
+            if h2 == "Meaning":
+                if meaning_lines is not None:
+                    err("Only one '## Meaning' section is allowed per markdown file.")
+                    raise SystemExit(1)
+                in_meaning = True
+                meaning_lines = []
+                meaning_start_line = i
+                continue
+
             sections[h2] = {} if h2 == "Related" else []
             continue
 
         if line.startswith("### "):
+            if in_meaning:
+                assert meaning_lines is not None
+                meaning_lines.append(line)
+                continue
             if h2 != "Related":
                 err(f"H3 only allowed under '## Related'; offending line {i}: '{line}'")
                 raise SystemExit(1)
@@ -56,9 +91,20 @@ def parse_markdown_sections(md_text: str) -> dict[str, object]:
             if not h3:
                 err(f"Empty '###' heading under Related at line {i}.")
                 raise SystemExit(1)
-            related_map = sections.setdefault("Related", {})
-            assert isinstance(related_map, dict)
-            related_map.setdefault(h3, [])
+                related_map = sections.setdefault("Related", {})
+                assert isinstance(related_map, dict)
+                related_map.setdefault(h3, [])
+            continue
+
+        if in_meaning:
+            assert meaning_lines is not None
+            if line.startswith("#"):
+                err(
+                    f"Headings of level 1 or 2 are not allowed inside '## Meaning'; "
+                    f"offending line {i}: '{line}'"
+                )
+                raise SystemExit(1)
+            meaning_lines.append(line)
             continue
 
         if h2:
@@ -114,6 +160,7 @@ def parse_markdown_sections(md_text: str) -> dict[str, object]:
             err(f"Unexpected content outside a recognised section at line {i}: '{line}'")
             raise SystemExit(1)
 
+    finalize_meaning()
     return sections
 
 

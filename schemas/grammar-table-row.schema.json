@@ -3,18 +3,50 @@
   "$id": "https://manabi.io/schemas/grammar-table-row.schema.json",
   "title": "Manabi Grammar Table Row Data",
   "type": "object",
-  "required": ["jmdict_id", "pattern", "examples", "info", "variant"],
+  "required": ["jmdictId", "pattern", "examples", "info", "variant"],
   "properties": {
-    "jmdict_id": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
+    "jmdictId": { "oneOf": [{ "type": "integer" }, { "type": "string" }] },
     "pattern": {
       "type": "object",
       "required": ["mecab"],
       "properties": { "mecab": { "type": "string" } },
       "additionalProperties": false
     },
+    "alternativeForms": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
     "examples": {
       "type": "array",
       "items": { "type": "string", "format": "uri" }
+    },
+    "exampleSentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sentence"],
+        "properties": {
+          "sentence": { "type": "string" },
+          "translations": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": { "type": "string" }
+          },
+          "sourceUrl": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "testData": {
+      "type": "object",
+      "properties": {
+        "nonMatchingSentences": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
     },
     "variant": {
       "type": "integer",
@@ -25,8 +57,11 @@
       "description": "Map: reader language code -> section map (⭐ entries set recommended: true)",
       "additionalProperties": {
         "type": "object",
+        "properties": {
+          "Meaning": { "type": "string", "minLength": 1 }
+        },
         "patternProperties": {
-          "^.+$": {
+          "^(?!Meaning$).+$": {
             "oneOf": [
               {
                 "type": "array",

@@ -25,6 +25,42 @@ JS_CLIENT_ZIP = DBROOT / "js-client" / "dist" / "js-client" / "manabi-grammar-db
 LANG_DIR_RE = re.compile(r"^grammar-([a-z]{2,3})$")
 LANG_FILE_RE = re.compile(r"^(?P<head>.+?)\.(?P<lang>[a-z]{2,3})\.md$")
 
+
+def _rename_key(mapping: dict, old: str, new: str) -> None:
+    if old in mapping:
+        if new in mapping and mapping[new] != mapping[old]:
+            raise ValueError(f"Conflicting keys '{old}' and '{new}' encountered.")
+        mapping[new] = mapping.pop(old)
+
+
+def _normalize_yaml_record(data: dict) -> dict:
+    record = dict(data)
+    _rename_key(record, "jmdict_id", "jmdictId")
+    _rename_key(record, "alternative_forms", "alternativeForms")
+    _rename_key(record, "example_sentences", "exampleSentences")
+    _rename_key(record, "test_data", "testData")
+    _rename_key(record, "level_label", "levelLabel")
+
+    example_sentences = record.get("exampleSentences")
+    if isinstance(example_sentences, list):
+        normalized_sentences: list[dict] = []
+        for item in example_sentences:
+            if not isinstance(item, dict):
+                continue
+            normalized = dict(item)
+            _rename_key(normalized, "source_url", "sourceUrl")
+            normalized_sentences.append(normalized)
+        record["exampleSentences"] = normalized_sentences
+
+    test_data = record.get("testData")
+    if isinstance(test_data, dict):
+        normalized_test = dict(test_data)
+        _rename_key(normalized_test, "non_matching_sentences", "nonMatchingSentences")
+        record["testData"] = normalized_test
+
+    return record
+
+
 def _coerce_variant(value: object, yaml_file: Path) -> int:
     if value is None:
         return 1
@@ -68,6 +104,9 @@ def collect_rows() -> list[tuple[str, str, int, dict]]:
         for yaml_file in sorted(directory.glob("*.yaml")):
             headword = yaml_file.stem
             yaml_data = yaml.safe_load(yaml_file.read_text(encoding="utf-8"))
+            if not isinstance(yaml_data, dict):
+                raise SystemExit(f"{yaml_file}: YAML root must be a mapping/object.")
+            yaml_data = _normalize_yaml_record(yaml_data)
             try:
                 variant = _coerce_variant(yaml_data.get("variant"), yaml_file)
             except ValueError as error:
@@ -75,6 +114,8 @@ def collect_rows() -> list[tuple[str, str, int, dict]]:
             yaml_data.setdefault("variant", variant)
             info = markdown_map.get(headword, {})
             record = dict(yaml_data)
+            record.setdefault("targetLanguage", target_language)
+            record.setdefault("headword", headword)
             record["info"] = info
             ROW_VALIDATOR.validate(record)
             key = (target_language, headword, variant)
@@ -99,17 +140,17 @@ def create_database(rows: list[tuple[str, str, int, dict]]) -> None:
         connection.execute(
             """
             CREATE TABLE IF NOT EXISTS grammar (
-              target_language TEXT NOT NULL,
+              targetLanguage TEXT NOT NULL,
               headword        TEXT NOT NULL,
               variant         INTEGER NOT NULL DEFAULT 1,
               data            TEXT NOT NULL,
               CHECK (variant >= 1),
-              PRIMARY KEY (target_language, headword, variant)
+              PRIMARY KEY (targetLanguage, headword, variant)
             ) STRICT, WITHOUT ROWID;
             """
         )
         connection.executemany(
-            "INSERT INTO grammar(target_language, headword, variant, data) VALUES (?, ?, ?, ?)",
+            "INSERT INTO grammar(targetLanguage, headword, variant, data) VALUES (?, ?, ?, ?)",
             [
                 (target, head, variant, json.dumps(data, ensure_ascii=False))
                 for target, head, variant, data in rows

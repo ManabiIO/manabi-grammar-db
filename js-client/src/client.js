@@ -1,22 +1,22 @@
 import { loadSqlJs } from './loader.js';
 
 const SELECT_ALL = `
-  SELECT target_language, headword, variant, data
+  SELECT targetLanguage, headword, variant, data
   FROM grammar
-  ORDER BY target_language, headword, variant
+  ORDER BY targetLanguage, headword, variant
 `;
 
 const SELECT_ONE = `
-  SELECT target_language, headword, variant, data
+  SELECT targetLanguage, headword, variant, data
   FROM grammar
-  WHERE target_language = ? AND headword = ? AND variant = ?
+  WHERE targetLanguage = ? AND headword = ? AND variant = ?
   LIMIT 1
 `;
 
 function parseRow(row) {
-  const [target_language, headword, variant, data] = row;
+  const [targetLanguage, headword, variant, data] = row;
   return {
-    target_language,
+    targetLanguage,
     headword,
     variant,
     data: JSON.parse(data)

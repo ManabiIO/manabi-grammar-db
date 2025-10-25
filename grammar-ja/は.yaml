@@ -1,5 +1,18 @@
-jmdict_id: 234567
+jmdictId: 234567
 pattern:
   mecab: "名詞-一般+助詞-係助詞-ハ"
 examples:
   - "https://example.com/texts/ha#text=寿司は美味しい"
+alternativeForms:
+  - wa
+exampleSentences:
+  - sentence: 寿司は美味しい。
+    translations:
+      en: Sushi is delicious.
+    sourceUrl: https://example.com/texts/ha#text=%E5%AF%BF%E5%8F%B8%E3%81%AF%E7%BE%8E%E5%91%B3%E3%81%97%E3%81%84
+  - sentence: これはペンです。
+    translations:
+      en: This is a pen.
+testData:
+  nonMatchingSentences:
+    - 寿司が美味しい。
