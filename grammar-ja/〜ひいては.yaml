@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1681
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 健康によく、ひいては仕事にも役立つ。
+- sentence: 地域に役立ち、ひいては国にも役立つ。
+- sentence: 本人に悪く、ひいては家族にも悪い。

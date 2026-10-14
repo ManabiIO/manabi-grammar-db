@@ -1,0 +1,17 @@
+ruleID: grammar.ja.tomirareru.assessment
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: クマは去ったとみられ、その後の目撃情報はありません。
+- sentence: 原因は故障と見られ、調査が続いています。
+- sentence: 明日は雨が降るとみられる。
+- sentence: 原因は故障だったと見られます。
+- sentence: 再開しないとみられる。
+- sentence: 原因は故障だとみられない。
+- sentence: 原因は故障だったと見られた。
+- sentence: 原因は故障だったと見られました。
+- sentence: 原因は故障とみられる。
+- sentence: 原因は故障だとみられません。
+- sentence: 原因は故障だと見られなかった。
+- sentence: 原因は故障だと見られませんでした。
+- sentence: 原因は故障だとみられませんが、調査は続けます。

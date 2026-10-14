@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1326
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 想像にかたくない。
+- sentence: 想像するに難くない。
+- sentence: 推測にかたくない。
+- sentence: 推測するに難くない。
+- sentence: 想像するにかたくない。

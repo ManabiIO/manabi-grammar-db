@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1619
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 食べないで歩く。
+- sentence: 休まないで働く。
+- sentence: 朝食を食べないで学校へ行った。
+- sentence: 何も言わないで帰る。

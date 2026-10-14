@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1348
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は新聞が読めるどころか、仮名も読めない。
+- sentence: 彼は泳げないどころか水が怖い。
+- sentence: 楽しいどころか苦痛だ。

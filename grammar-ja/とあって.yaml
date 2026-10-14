@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1742
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 連休とあって人が多い。
+- sentence: 無料とあって人気だ。
+- sentence: 有名な人が来るとあって賑やかだ。
+- sentence: 開店したとあって人が集まった。
+- sentence: 安いとあって売れた。

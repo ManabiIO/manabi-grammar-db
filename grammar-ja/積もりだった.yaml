@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1632
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 医者になるつもりだった。
+- sentence: これは冗談の積もりだった。
+- sentence: 明日出発するつもりでした。
+- sentence: 帰る積りだった。

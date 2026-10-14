@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1207
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 頂きます。
+- sentence: 紅茶を頂きます。
+- sentence: 手紙をいただきました。

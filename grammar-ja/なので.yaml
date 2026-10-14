@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1248
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 情報なので教えられない。
+- sentence: 学生なので割引がある。
+- sentence: 休日なので休む。
+- sentence: 初心者なので説明する。
+- sentence: 雨なので中止した。
+- sentence: 来たばかりなので案内する。

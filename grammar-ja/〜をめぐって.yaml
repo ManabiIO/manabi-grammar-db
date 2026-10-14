@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1676
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 規則をめぐって議論する。
+- sentence: 予算をめぐって対立する。
+- sentence: 問題をめぐって話し合う。
+- sentence: 選挙をめぐって争う。
+- sentence: 政策をめぐって論争が起きた。
+- sentence: 誰が担当するかをめぐって意見が分かれる。

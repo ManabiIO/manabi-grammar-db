@@ -1,0 +1,385 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://manabi.io/schemas/reference-registry.schema.json",
+  "title": "Canonical grammar reference keys (no external source bodies)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "sources",
+    "references",
+    "bindings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "licenseID",
+          "licenseURL",
+          "attribution",
+          "modifications"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "takoboto",
+              "wiktionary"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "licenseID": {
+            "enum": [
+              "CC-BY-SA-2.0",
+              "CC-BY-SA-4.0"
+            ]
+          },
+          "licenseURL": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://[^\\s/?#@]+(?:[/?#][^\\s]*)?$"
+          },
+          "attribution": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "modifications": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "release": {
+            "type": "object",
+            "required": [
+              "tag",
+              "commit",
+              "repository",
+              "assets"
+            ],
+            "properties": {
+              "tag": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "commit": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              },
+              "repository": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://[^\\s/?#@]+(?:[/?#][^\\s]*)?$"
+              },
+              "assets": {
+                "type": "object",
+                "required": [
+                  "grammar.sqlite",
+                  "release-manifest.json",
+                  "ATTRIBUTION.md",
+                  "LICENSE",
+                  "LICENSE-DATA.md",
+                  "PERMISSION.md"
+                ],
+                "properties": {
+                  "grammar.sqlite": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "release-manifest.json": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "ATTRIBUTION.md": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "LICENSE": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "LICENSE-DATA.md": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "PERMISSION.md": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "id": {
+                  "const": "takoboto"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            },
+            "then": {
+              "properties": {
+                "licenseID": {
+                  "const": "CC-BY-SA-2.0"
+                },
+                "licenseURL": {
+                  "const": "https://creativecommons.org/licenses/by-sa/2.0/"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "id": {
+                  "const": "wiktionary"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            },
+            "then": {
+              "properties": {
+                "licenseID": {
+                  "const": "CC-BY-SA-4.0"
+                },
+                "licenseURL": {
+                  "const": "https://creativecommons.org/licenses/by-sa/4.0/"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "sourceID",
+              "targetLanguage",
+              "contentLanguage",
+              "title",
+              "aliases",
+              "pageID",
+              "pageTitle",
+              "revision",
+              "reviewedAt",
+              "wikitextSHA256",
+              "selector"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9._-]+:[a-z0-9._-]+$"
+              },
+              "sourceID": {
+                "const": "wiktionary"
+              },
+              "targetLanguage": {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}$",
+                "const": "ja"
+              },
+              "contentLanguage": {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}$",
+                "const": "en"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "aliases": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "pageID": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "pageTitle": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "revision": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "reviewedAt": {
+                "type": "string",
+                "format": "date"
+              },
+              "wikitextSHA256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "selector": {
+                "type": "object",
+                "required": [
+                  "sectionPath",
+                  "definitionPath"
+                ],
+                "properties": {
+                  "sectionPath": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "prefixItems": [
+                      {
+                        "const": "Japanese"
+                      }
+                    ]
+                  },
+                  "definitionPath": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "sourceID",
+              "targetLanguage",
+              "contentLanguage",
+              "title",
+              "aliases",
+              "entryID",
+              "sourceURL"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9._-]+:[a-z0-9._-]+$"
+              },
+              "sourceID": {
+                "const": "takoboto"
+              },
+              "targetLanguage": {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}$",
+                "const": "ja"
+              },
+              "contentLanguage": {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}$",
+                "const": "en"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "aliases": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "entryID": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "sourceURL": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://[^\\s/?#@]+(?:[/?#][^\\s]*)?$"
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ruleVersion",
+          "readerLanguage",
+          "references",
+          "ruleID"
+        ],
+        "properties": {
+          "ruleVersion": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
+          "readerLanguage": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}|[0-9]{3}))?$"
+          },
+          "references": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9._-]+:[a-z0-9._-]+$"
+            }
+          },
+          "ruleID": {
+            "type": "string",
+            "pattern": "^grammar\\.[a-z]{2,3}\\.[a-z0-9][a-z0-9.-]*$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

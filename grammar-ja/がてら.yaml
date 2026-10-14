@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1265
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 散歩がてら本屋に寄った。
+- sentence: 買い物がてら友人に会った。
+- sentence: 挨拶がてら事務所を訪ねた。

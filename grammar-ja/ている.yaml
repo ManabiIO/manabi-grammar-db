@@ -1,0 +1,25 @@
+ruleID: grammar.ja.teiru.aspect
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 本を読んでいる。
+  translations:
+    en: I am reading a book.
+- sentence: 鳥が飛んでいます。
+  translations:
+    en: A bird is flying.
+- sentence: 窓が開いていた。
+  translations:
+    en: The window was open.
+- sentence: 今日は働いていない。
+  translations:
+    en: I am not working today.
+- sentence: 弟は食べてる。
+  translations:
+    en: My younger brother is eating.
+- sentence: 妹は歌ってた。
+  translations:
+    en: My younger sister was singing.
+- sentence: 今は走っていません。
+  translations:
+    en: I am not running now.

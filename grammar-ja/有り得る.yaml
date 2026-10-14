@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.479
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: その可能性は有り得る。
+- sentence: それもありえる。
+- sentence: 失敗はあり得ない。
+- sentence: 事故はありえます。

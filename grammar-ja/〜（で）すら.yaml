@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1507
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 私ですらわからない。
+- sentence: 子供すら知っている。
+- sentence: 先生ですら迷った。
+- sentence: 名前すら覚えていない。
+- sentence: 水すら飲めない。

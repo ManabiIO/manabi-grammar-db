@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1241
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 飲んだが最後、止められない。
+- sentence: 言ったが最後、取り消せない。
+- sentence: 触ったが最後、壊れる。

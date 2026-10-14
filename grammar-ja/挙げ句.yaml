@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.978
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 相談したあげくに断った。
+- sentence: 悩んだ挙げ句に決めた。
+- sentence: 考えたあげく失敗した。
+- sentence: 迷った挙げ句帰った。
+- sentence: 話し合った挙げ句別れた。

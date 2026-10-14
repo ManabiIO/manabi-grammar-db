@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.522
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 質問に対し、丁寧に答える。
+- sentence: 質問に対する回答を読む。
+- sentence: 質問に対して答える。
+- sentence: 質問にたいして答える。

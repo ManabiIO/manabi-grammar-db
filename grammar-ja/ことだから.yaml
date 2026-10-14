@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.246
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼のことだから間に合う。
+- sentence: 先生のことだから知っている。
+- sentence: 母のことだから心配する。
+- sentence: 私のことだから忘れるだろう。
+- sentence: この会社のことだから対応は早い。

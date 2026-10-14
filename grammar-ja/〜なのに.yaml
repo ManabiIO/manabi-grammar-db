@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1493
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 学生なのに詳しい。
+- sentence: 休日なのに働く。
+- sentence: 子供なのに落ち着いている。
+- sentence: 初心者なのに上手だ。
+- sentence: 一年前に買ったばかりなのに古い。

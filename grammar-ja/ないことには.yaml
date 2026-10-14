@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.239
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: わからないことには答えられない。
+- sentence: 読まないことにはわからない。
+- sentence: 聞かないことには決められない。
+- sentence: 調べないことには判断できない。
+- sentence: 会わないことには話せない。
+- sentence: 調べないことには結論が出せない。

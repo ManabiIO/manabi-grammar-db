@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1244
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 座れるだけの椅子がある。
+- sentence: 払えるだけのお金がある。
+- sentence: 運べるだけの荷物を持つ。
+- sentence: 飲めるだけの水を用意する。

@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.543
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 入ったとたんに眠った。
+- sentence: 開けた途端に音がした。
+- sentence: 見た途端驚いた。
+- sentence: 着いたとたん雨が降った。
+- sentence: 立ち上がった途端めまいがした。

@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.728
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 私からすると簡単だ。
+- sentence: 学生からすると難しい。
+- sentence: 先生からすると当然だ。
+- sentence: 発信者からすると迷惑だ。
+- sentence: 社員からすると不安だ。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1706
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 急いで。さもないと遅れる。
+- sentence: 謝りなさい。さもないと、怒ります。
+- sentence: 確認して。さもないと危険だ。

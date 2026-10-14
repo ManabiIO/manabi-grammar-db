@@ -1,0 +1,9 @@
+ruleID: grammar.ja.rerurareru.suffix
+ruleVersion: 1
+examples: []
+exampleSentences:
+- sentence: 手紙が読まれた。
+- sentence: 辛い物は食べられる。
+- sentence: 先生が話されます。
+- sentence: 昔のことが思われる。
+- sentence: 私は本を読ませられた。

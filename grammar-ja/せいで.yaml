@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1583
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 寝不足のせいで疲れた。
+- sentence: 雨が降ったせいで遅れた。
+- sentence: 暑いせいで眠れない。

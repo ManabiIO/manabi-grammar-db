@@ -1,0 +1,19 @@
+ruleID: grammar.ja.kotonisuru.decision
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 今日は早く寝ることにした。
+  translations:
+    en: I decided to go to bed early today.
+- sentence: 砂糖を入れないことにします。
+  translations:
+    en: I will decide not to add sugar.
+- sentence: 毎朝歩くことにした。
+  translations:
+    en: I decided to walk every morning.
+- sentence: 読むことにはした。
+- sentence: 読まないことにもした。
+- sentence: 読むことにしている。
+- sentence: '読む
+
+    ことにした。'

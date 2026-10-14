@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.835
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 安いばかりに壊れた。
+- sentence: 嘘をついたばかりに怒られた。
+- sentence: 遅れたばかりに電車を逃した。
+- sentence: 急いだばかりに転んだ。

@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.523
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼が去る前に火を消す。
+- sentence: 寝る前に本を読む。
+- sentence: 食べる前に手を洗う。
+- sentence: 出かける前に確認する。
+- sentence: 確認する前に送らない。

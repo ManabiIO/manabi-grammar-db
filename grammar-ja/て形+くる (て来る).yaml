@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1127
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 新聞を買ってくる。
+- sentence: 本を借りてきた。
+- sentence: 書類を取ってきます。

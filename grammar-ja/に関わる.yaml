@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1255
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 命に関わる問題だ。
+- sentence: 健康に関わる情報を読む。
+- sentence: 命にかかわる問題だ。

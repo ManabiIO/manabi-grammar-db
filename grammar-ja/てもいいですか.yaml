@@ -1,0 +1,13 @@
+ruleID: grammar.ja.temoiidesuka.permission
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: この席に座ってもいいですか。
+  translations:
+    en: May I sit in this seat?
+- sentence: 窓を開けてもよいですか。
+  translations:
+    en: May I open the window?
+- sentence: この水を飲んでもいいですか。
+  translations:
+    en: May I drink this water?

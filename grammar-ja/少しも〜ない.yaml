@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1478
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は少しも食べない。
+- sentence: 私は少しも幸せではない。
+- sentence: 彼は少しも疲れていない。
+- sentence: 彼は少しも疲れてない。

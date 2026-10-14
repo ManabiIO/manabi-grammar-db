@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1712
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 春と言えば桜だ。
+- sentence: 春といえば桜だ。
+- sentence: 秋と言えば、紅葉だ。

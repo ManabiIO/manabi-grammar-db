@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1602
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 高ければ良いというものではない。
+- sentence: 彼は優秀というものでもない。
+- sentence: 安ければいいというものではありません。

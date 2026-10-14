@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1684
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 試合に先立って挨拶する。
+- sentence: 開会に先立って説明する。
+- sentence: 出発に先立って準備する。
+- sentence: 会議に先立って資料を読む。

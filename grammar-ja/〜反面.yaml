@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1481
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 便利な反面危険だ。
+- sentence: 安い反面壊れやすい。
+- sentence: 静かな反面不便だ。
+- sentence: 便利な反面使いにくい。
+- sentence: 人が増える反面負担も増える。

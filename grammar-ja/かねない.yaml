@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.672
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 事故が起こりかねない。
+- sentence: 信用を失いかねない。
+- sentence: 機械を壊しかねない。
+- sentence: 秘密を言いかねない。

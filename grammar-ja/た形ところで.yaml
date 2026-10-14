@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1528
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 友人に相談したところで、同じだろう。
+- sentence: 今さら謝ったところで無駄だ。
+- sentence: 急いだところで間に合わない。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1238
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は病気がちだ。
+- sentence: 会議は長引きがちだ。
+- sentence: 最近は忘れがちだ。

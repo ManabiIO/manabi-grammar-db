@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.1352
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 会議に先立って資料を読む。
+- sentence: 会議に先立つ説明を聞く。

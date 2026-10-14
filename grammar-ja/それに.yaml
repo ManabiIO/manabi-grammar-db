@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1637
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: この町は小さい。それに、静かだ。
+- sentence: 彼は親切だ。それに仕事も速い。
+- sentence: 安い。それに便利だ。

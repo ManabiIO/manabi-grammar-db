@@ -1,0 +1,13 @@
+ruleID: grammar.ja.source.takoboto.1320
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 並んでいることから人気がわかる。
+- sentence: 形が丸いことから名付けられた。
+- sentence: 雨が降ったことから試合を中止した。
+- sentence: 参加しないことから意志がわかる。
+- sentence: 背が高いことから選ばれた。
+- sentence: 有名なことから人が集まる。
+- sentence: 高くないことから選ばれた。
+- sentence: 安かったことから人気だった。
+- sentence: 参加しなかったことから意志がわかる。

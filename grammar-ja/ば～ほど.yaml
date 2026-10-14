@@ -1,0 +1,10 @@
+ruleID: grammar.ja.bahodo.repeated-verb
+ruleVersion: 1
+examples: []
+exampleSentences:
+- sentence: 読めば読むほど面白くなる。
+  translations:
+    en: The more I read, the more interesting it becomes.
+- sentence: 見れば見るほど好きになる。
+  translations:
+    en: The more I look, the more I like it.

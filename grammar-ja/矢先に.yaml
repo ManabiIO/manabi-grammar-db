@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1790
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 出かける矢先に電話が鳴った。
+- sentence: 帰ろうとした矢先に呼ばれた。
+- sentence: 注文した矢先に売り切れた。

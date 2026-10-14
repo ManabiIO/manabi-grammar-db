@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1245
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 社長であれ規則は守る。
+- sentence: 学生であれ責任はある。
+- sentence: 誰であれ参加できる。

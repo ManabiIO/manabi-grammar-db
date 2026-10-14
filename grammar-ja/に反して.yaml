@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.100
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 予想に反して雨が降る。
+- sentence: 期待に反して失敗した。

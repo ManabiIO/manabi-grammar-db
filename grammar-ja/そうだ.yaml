@@ -1,0 +1,16 @@
+ruleID: grammar.ja.souda.hearsay
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 明日は晴れるそうです。
+  translations:
+    en: I hear that it will be sunny tomorrow.
+- sentence: あの部屋は静かだそうだ。
+  translations:
+    en: I hear that the room is quiet.
+- sentence: 弟は来なかったそうだ。
+  translations:
+    en: I heard that my younger brother did not come.
+- sentence: このスープは熱いそうだ。
+  translations:
+    en: I hear that this soup is hot.

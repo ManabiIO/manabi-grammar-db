@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.679
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 約束を守るべきだ。
+- sentence: 彼に話すべきです。
+- sentence: 今すぐ帰るべきだ。
+- sentence: もっと勉強するべきだ。
+- sentence: 今すぐ連絡すべきだ。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1735
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 雪が降らないとも限らない。
+- sentence: 明日は雨が降るとも限らない。
+- sentence: 彼が来ないとも限りません。

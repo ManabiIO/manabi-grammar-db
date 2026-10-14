@@ -1,23 +1,18 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://manabi.io/schemas/grammar-yaml.schema.json",
-  "title": "Manabi Grammar YAML",
+  "title": "Manabi Grammar Content Metadata",
   "type": "object",
   "required": [
     "examples",
-    "jmdictId"
+    "ruleID",
+    "ruleVersion"
   ],
   "properties": {
     "jmdictId": {
-      "oneOf": [
-        {
-          "type": "integer"
-        },
-        {
-          "type": "string",
-          "minLength": 1
-        }
-      ]
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2147483647
     },
     "alternativeForms": {
       "type": "array",
@@ -31,11 +26,16 @@
     },
     "examples": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "string",
         "format": "uri",
-        "pattern": "#text="
+        "pattern": "^https?://[^\\s/?#@]+(?:[/?#][^\\s]*)?$",
+        "allOf": [
+          {
+            "pattern": "#text="
+          }
+        ]
       }
     },
     "exampleSentences": {
@@ -57,11 +57,16 @@
             "additionalProperties": {
               "type": "string",
               "minLength": 1
+            },
+            "propertyNames": {
+              "type": "string",
+              "pattern": "^[a-z]{2,3}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}|[0-9]{3}))?$"
             }
           },
           "sourceUrl": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "pattern": "^https?://[^\\s/?#@]+(?:[/?#][^\\s]*)?$"
           }
         },
         "additionalProperties": false
@@ -72,8 +77,135 @@
       "type": "integer",
       "minimum": 1,
       "default": 1,
-      "description": "Distinct variant identifier for grammar entries sharing the same headword."
+      "description": "Distinct variant identifier for grammar entries sharing the same headword.",
+      "maximum": 2147483647
+    },
+    "ruleID": {
+      "type": "string",
+      "pattern": "^grammar\\.[a-z]{2,3}\\.[a-z0-9][a-z0-9.-]*$"
+    },
+    "ruleVersion": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    "headword": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "targetLanguage": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}$"
+    },
+    "levelLabel": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false,
+  "$defs": {
+    "resource": {
+      "type": "object",
+      "required": [
+        "url",
+        "name"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://[^\\s/?#@]+(?:[/?#][^\\s]*)?$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "recommended": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "referenceBinding": {
+      "type": "object",
+      "required": [
+        "ruleVersion",
+        "readerLanguage",
+        "references"
+      ],
+      "properties": {
+        "ruleVersion": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2147483647
+        },
+        "readerLanguage": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}|[0-9]{3}))?$"
+        },
+        "references": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9._-]+:[a-z0-9._-]+$"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "info": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z]{2,3}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}|[0-9]{3}))?$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "Meaning": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "Guides": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/resource"
+            }
+          },
+          "Q&A": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/resource"
+            }
+          },
+          "Related": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/resource"
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

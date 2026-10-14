@@ -1,0 +1,13 @@
+ruleID: grammar.ja.kotogaaru.occurrence-experience
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 休日に料理することがある。
+  translations:
+    en: I sometimes cook on days off.
+- sentence: 海で泳いだことがある。
+  translations:
+    en: I have swum in the sea before.
+- sentence: 朝ご飯を食べないことがある。
+  translations:
+    en: Sometimes I do not eat breakfast.

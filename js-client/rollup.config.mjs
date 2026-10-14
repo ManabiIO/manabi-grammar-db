@@ -9,7 +9,7 @@ export default {
     format: 'esm',
     sourcemap: true
   },
-  external: ['sql.js/dist/sql-wasm.js'],
+  external: ['./sqlite3-node.mjs', './sqlite3.mjs', 'node:fs/promises'],
   plugins: [
     nodeResolve({ preferBuiltins: true }),
     commonjs(),

@@ -1,25 +1,16 @@
-import initSqlJs from 'sql.js/dist/sql-wasm.js';
+let sqliteModulePromise;
 
-let sqlModulePromise;
-
-export function loadSqlJs() {
-  if (!sqlModulePromise) {
-    const override =
-      typeof process !== 'undefined' && process.env && process.env.MANABI_SQLJS_WASM
-        ? process.env.MANABI_SQLJS_WASM
-        : null;
-    sqlModulePromise = initSqlJs({
-      locateFile: (file) => {
-        if (override) {
-          return override.endsWith('.wasm') ? override : `${override.replace(/\/$/, '')}/${file}`;
-        }
-        return new URL(`./${file}`, import.meta.url).href;
-      }
-    });
-  }
-  return sqlModulePromise;
-}
-
-export function __resetForTests() {
-  sqlModulePromise = undefined;
+export function loadSqlite() {
+    if (!sqliteModulePromise) {
+        const isNode = typeof process !== 'undefined' && Boolean(process.versions?.node);
+        sqliteModulePromise = (isNode ? import('./sqlite3-node.mjs') : import('./sqlite3.mjs'))
+            .then(({ default: initialize }) => initialize({
+                locateFile: (file) => new URL(file, import.meta.url).href
+            }))
+            .catch((error) => {
+                sqliteModulePromise = undefined;
+                throw error;
+            });
+    }
+    return sqliteModulePromise;
 }

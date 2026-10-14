@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.418
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: その一方で問題も増えた。
+- sentence: しかしその一方、成果もあった。
+- sentence: 働く一方で勉強もする。

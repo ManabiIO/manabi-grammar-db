@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.800
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 本を読み続ける。
+- sentence: 彼は走り続けた。
+- sentence: 食べ続けない。

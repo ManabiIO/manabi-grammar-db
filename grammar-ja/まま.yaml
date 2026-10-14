@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1621
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 靴を履いたまま座った。
+- sentence: 窓を開けないまま眠った。
+- sentence: 古いまま使う。
+- sentence: 昔のまま残っている。
+- sentence: このまま待つ。
+- sentence: そのまま帰った。

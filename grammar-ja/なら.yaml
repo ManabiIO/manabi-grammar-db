@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.780
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 日本に行くなら連絡して。
+- sentence: 雨なら休む。
+- sentence: 外からならば見える。

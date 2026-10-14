@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1257
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 年齢を問わず応募できる。
+- sentence: 経験を問わず募集する。
+- sentence: 誰が書いたかを問わず作品を読む。

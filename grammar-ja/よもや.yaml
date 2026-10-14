@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1114
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: よもやそんなことはあるまい。
+- sentence: よもや失敗するとは思わなかった。
+- sentence: よもや彼が来るとは思わない。

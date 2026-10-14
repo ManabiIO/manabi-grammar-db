@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.260
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 天気次第で予定を変える。
+- sentence: 結果次第で決める。

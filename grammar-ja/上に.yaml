@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1298
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 安い上に丈夫だ。
+- sentence: 静かな上に便利だ。
+- sentence: 彼は働く上に勉強もする。
+- sentence: 雨が降ったうえに風も強い。

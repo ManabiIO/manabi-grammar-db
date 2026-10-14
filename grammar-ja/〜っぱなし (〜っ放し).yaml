@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1515
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 窓を開けっぱなしにした。
+- sentence: 電気をつけっぱなしで寝た。
+- sentence: 三時間立ちっぱなしだった。

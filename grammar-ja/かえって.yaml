@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.399
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 薬を飲んだらかえって悪くなった。
+- sentence: 急ぐとかえって危険だ。
+- sentence: 休んだらかえって疲れた。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.317
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 相談してからでないと決められない。
+- sentence: 確認してからでなければ答えられない。
+- sentence: 読んでからでないと分からない。

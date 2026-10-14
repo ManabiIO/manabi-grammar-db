@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1491
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: あなたをおいて適任者はいない。
+- sentence: 彼をおいて他に候補はいない。
+- sentence: 先生を措いて他に適任者はいない。
+- sentence: 君をおいて、この仕事の適任者はいない。

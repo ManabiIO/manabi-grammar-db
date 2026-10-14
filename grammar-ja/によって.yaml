@@ -1,0 +1,14 @@
+ruleID: grammar.ja.source.takoboto.976
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 結果によって対応を変える。
+- sentence: 人によって好みが違う。
+- sentence: 条件によって方法が変わる。
+- sentence: 場合によっては参加しない。
+- sentence: 年齢によって考え方が異なる。
+- sentence: 国によって制度が違う。
+- sentence: 条件によっては中止する。
+- sentence: 季節によって景色が変わった。
+- sentence: 地域によって価格が異なります。
+- sentence: 場合によって結果が違わない。

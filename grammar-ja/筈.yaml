@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1154
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は来るはずがない。
+- sentence: 彼は来るはずだった。
+- sentence: 試験は易しいはずです。

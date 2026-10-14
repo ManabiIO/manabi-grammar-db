@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1636
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 便利とはいえ高い。
+- sentence: 学生とはいえ責任がある。
+- sentence: 安いとは言え買えない。
+- sentence: 成功したとはいえ油断できない。

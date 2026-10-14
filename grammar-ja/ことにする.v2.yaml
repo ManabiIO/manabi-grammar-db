@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1769
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 家に帰ることにした。
+- sentence: 今日は行かないことにする。
+- sentence: 日本語を学ぶことにしました。
+- sentence: 読むことにはした。
+- sentence: 読まないことにもした。
+- sentence: 帰ることにもする。

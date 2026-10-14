@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1707
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: お茶か何か飲もう。
+- sentence: 本かなにか持ってきて。
+- sentence: パンか何かを買う。
+- sentence: 水か何かが欲しい。

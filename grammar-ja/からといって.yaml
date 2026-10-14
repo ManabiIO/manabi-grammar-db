@@ -1,0 +1,11 @@
+ruleID: grammar.ja.source.takoboto.348
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 子供だからといって許せない。
+- sentence: 安いからといって買わない。
+- sentence: 勝ったからと言って油断しない。
+- sentence: 知っているからといって教えない。
+- sentence: 忙しいからと言って忘れてはいけない。
+- sentence: 高かったからといって良いとは限らない。
+- sentence: 参加しなかったからといって責めない。

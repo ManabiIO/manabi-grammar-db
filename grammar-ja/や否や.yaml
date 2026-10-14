@@ -1,0 +1,11 @@
+ruleID: grammar.ja.source.takoboto.1303
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 帰るや否や眠った。
+- sentence: 聞くやいなや出かけた。
+- sentence: 着くや否や連絡した。
+- sentence: 見るやいなや驚いた。
+- sentence: 知らせを受けるや否や飛び出した。
+- sentence: 帰ったや否や眠った。
+- sentence: 知らせを受けたや否や飛び出した。

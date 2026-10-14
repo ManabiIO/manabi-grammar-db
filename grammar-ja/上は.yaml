@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1155
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 飼う上は責任を持つ。
+- sentence: 参加する上は努力する。
+- sentence: 引き受ける上は覚悟が必要だ。
+- sentence: 約束するうえは守る。
+- sentence: 教える上は準備が必要だ。
+- sentence: 飼った上は責任を持つ。

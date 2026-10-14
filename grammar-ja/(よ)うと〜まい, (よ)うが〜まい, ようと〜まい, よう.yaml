@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1753
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 雨が降ろうが降るまいが出かける。
+- sentence: 彼が来ようと来るまいと関係ない。
+- sentence: 参加しようがするまいが払う。

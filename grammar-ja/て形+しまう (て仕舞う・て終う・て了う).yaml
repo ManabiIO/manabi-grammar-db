@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1400
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 本を読んでしまう。
+- sentence: ケーキを食べちゃう。
+- sentence: 約束を忘れてしまった。

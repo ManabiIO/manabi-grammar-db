@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1559
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: この服を着てみる。
+- sentence: 薬を飲んでみた。
+- sentence: 新しい方法を試してみよう。

@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1499
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 生活をしたし子供もそうだった。
+- sentence: 安いし便利だ。
+- sentence: 食べたし飲んだ。
+- sentence: 知らないし聞いていない。
+- sentence: 便利だし安い。

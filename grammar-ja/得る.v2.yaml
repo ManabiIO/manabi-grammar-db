@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1220
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: この事故は起こり得る。
+- sentence: これは考えうる問題だ。
+- sentence: その結果は予測し得ない。
+- sentence: あらゆる事態を想定し得ます。

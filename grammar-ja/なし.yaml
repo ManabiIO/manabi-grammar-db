@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1203
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: コートなしで出かけた。
+- sentence: 許可無しで入った。
+- sentence: 準備なしだ。
+- sentence: 説明なしの計画だ。
+- sentence: 砂糖無しの飲み物だ。

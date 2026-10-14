@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1145
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 京都と言うと寺を思い出す。
+- sentence: スイスというと山を思い出す。
+- sentence: 夏と言うと、祭りを思い出す。

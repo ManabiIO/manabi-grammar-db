@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1556
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼が行くわけがない。
+- sentence: 彼が行くわけはない。
+- sentence: 安いわけがない。
+- sentence: 彼が知らないわけがない。

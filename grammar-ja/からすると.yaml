@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.614
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 表情からすると困っている。
+- sentence: 結果からすると成功だ。
+- sentence: 状況からすると難しい。
+- sentence: 様子からすると疲れている。
+- sentence: 証拠からすると間違いだ。

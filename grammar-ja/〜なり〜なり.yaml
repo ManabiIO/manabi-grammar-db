@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1752
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: お茶なり水なり飲んで。
+- sentence: 読むなり書くなりしなさい。
+- sentence: 君が来るなり僕が行くなりしよう。

@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1643
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 報道によれば雨だ。
+- sentence: 予報によれば晴れる。
+- sentence: 資料によれば正しい。
+- sentence: 速報によれば事故だ。

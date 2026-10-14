@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1722
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: もしかして彼が犯人ですか。
+- sentence: もしかして、あなたは社長ですか。
+- sentence: もしかして雨が降るかもしれない。

@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1783
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 何度も言ったというのに聞かない。
+- sentence: 何度も言ったというのに聞かない。
+- sentence: 雨が降るというのに出かけた。
+- sentence: 忙しいというのに呼び出された。
+- sentence: 知っていると言うのに教えない。
+- sentence: 来ないというのに待つ。

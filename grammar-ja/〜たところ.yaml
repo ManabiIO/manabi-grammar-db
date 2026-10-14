@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.413
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 試したところ、うまくいった。
+- sentence: 調べてみたところ正しかった。
+- sentence: 聞いたところ返事が来た。
+- sentence: 調べたところ、▼「問題がある」と判明した。
+- sentence: 聞いたところ、「大丈夫」と答えた。

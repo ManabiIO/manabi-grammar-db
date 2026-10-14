@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.784
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 窓が開けてある。
+- sentence: 名前が書いてある。
+- sentence: 準備してあります。

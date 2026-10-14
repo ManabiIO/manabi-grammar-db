@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1163
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 一人っ子なものだから甘やかされた。
+- sentence: 雨が降ったものだから遅れた。
+- sentence: 忙しいものだから忘れた。
+- sentence: 道を知らないものだから迷った。
+- sentence: 慣れていないものだから困った。

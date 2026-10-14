@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1635
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 買ったつもりで貯金した。
+- sentence: 運動したつもりで歩いた。
+- sentence: 飲んだ積もりで節約した。

@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1100
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 本を読んだり、絵を描いたりする。
+- sentence: 読まなかったり、行かなかったりする。
+- sentence: 赤かったり、青かったりする。
+- sentence: 静かだったり、賑やかだったりする。
+- sentence: 誉められたり、叱られたりする。

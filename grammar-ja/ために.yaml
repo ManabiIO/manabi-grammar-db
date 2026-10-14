@@ -1,0 +1,16 @@
+ruleID: grammar.ja.tameni.purpose-reason
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 本を買うために店へ行った。
+  translations:
+    en: I went to the shop to buy a book.
+- sentence: 家族のために働く。
+  translations:
+    en: I work for my family.
+- sentence: 雪が降ったために遅れた。
+  translations:
+    en: I was late because it snowed.
+- sentence: 道路が凍結するため、通行を止める。
+  translations:
+    en: Traffic is stopped because the road freezes.

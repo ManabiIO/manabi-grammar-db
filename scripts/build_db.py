@@ -2,133 +2,49 @@
 from __future__ import annotations
 
 import json
-import re
 import sqlite3
 import sys
 from pathlib import Path
 import shutil
+import tempfile
+import uuid
 
-import yaml
-from jsonschema import Draft202012Validator, FormatChecker
-
-from validate_repo import ROOT as DBROOT, parse_markdown_sections
+from content import ROOT as DBROOT, collect_rows as load_rows
+from schema_contract import check_row_schema
 
 SCHEMAS = DBROOT / "schemas"
-ROW_SCHEMA = json.loads((SCHEMAS / "grammar-table-row.schema.json").read_text(encoding="utf-8"))
-ROW_VALIDATOR = Draft202012Validator(ROW_SCHEMA, format_checker=FormatChecker())
 
 OUTDIR = DBROOT / "dist"
-OUTDIR.mkdir(exist_ok=True)
 DBFILE = OUTDIR / "manabi-grammar.sqlite"
 JS_CLIENT_ZIP = DBROOT / "js-client" / "dist" / "js-client" / "manabi-grammar-db-client.zip"
 
-LANG_DIR_RE = re.compile(r"^grammar-([a-z]{2,3})$")
-LANG_FILE_RE = re.compile(r"^(?P<head>.+?)\.(?P<lang>[a-z]{2,3})\.md$")
-
-
-def _rename_key(mapping: dict, old: str, new: str) -> None:
-    if old in mapping:
-        if new in mapping and mapping[new] != mapping[old]:
-            raise ValueError(f"Conflicting keys '{old}' and '{new}' encountered.")
-        mapping[new] = mapping.pop(old)
-
-
-def _normalize_yaml_record(data: dict) -> dict:
-    record = dict(data)
-    _rename_key(record, "jmdict_id", "jmdictId")
-    _rename_key(record, "alternative_forms", "alternativeForms")
-    _rename_key(record, "example_sentences", "exampleSentences")
-    _rename_key(record, "level_label", "levelLabel")
-
-    example_sentences = record.get("exampleSentences")
-    if isinstance(example_sentences, list):
-        normalized_sentences: list[dict] = []
-        for item in example_sentences:
-            if not isinstance(item, dict):
-                continue
-            normalized = dict(item)
-            _rename_key(normalized, "source_url", "sourceUrl")
-            normalized_sentences.append(normalized)
-        record["exampleSentences"] = normalized_sentences
-
-    return record
-
-
-def _coerce_variant(value: object, yaml_file: Path) -> int:
-    if value is None:
-        return 1
-    if isinstance(value, bool):
-        raise ValueError(f"{yaml_file}: variant cannot be a boolean")
-    if isinstance(value, int):
-        if value < 1:
-            raise ValueError(f"{yaml_file}: variant must be >= 1")
-        return value
-    if isinstance(value, str) and value.isdigit():
-        parsed = int(value, 10)
-        if parsed < 1:
-            raise ValueError(f"{yaml_file}: variant must be >= 1")
-        return parsed
-    raise ValueError(f"{yaml_file}: variant must be a positive integer")
-
-
 def collect_rows() -> list[tuple[str, str, int, dict]]:
-    rows: list[tuple[str, str, int, dict]] = []
-    seen: set[tuple[str, str, int]] = set()
-    for directory in sorted(DBROOT.iterdir()):
-        if not directory.is_dir() or not directory.name.startswith("grammar-"):
-            continue
-
-        match = LANG_DIR_RE.match(directory.name)
-        if not match:
-            continue
-
-        target_language = match.group(1)
-
-        markdown_map: dict[str, dict[str, object]] = {}
-        for md_file in directory.glob("*.md"):
-            md_match = LANG_FILE_RE.match(md_file.name)
-            if not md_match:
-                continue
-            headword = md_match.group("head")
-            reader_lang = md_match.group("lang")
-            sections = parse_markdown_sections(md_file.read_text(encoding="utf-8"))
-            markdown_map.setdefault(headword, {})[reader_lang] = sections
-
-        for yaml_file in sorted(directory.glob("*.yaml")):
-            headword = yaml_file.stem
-            yaml_data = yaml.safe_load(yaml_file.read_text(encoding="utf-8"))
-            if not isinstance(yaml_data, dict):
-                raise SystemExit(f"{yaml_file}: YAML root must be a mapping/object.")
-            yaml_data = _normalize_yaml_record(yaml_data)
-            try:
-                variant = _coerce_variant(yaml_data.get("variant"), yaml_file)
-            except ValueError as error:
-                raise SystemExit(str(error)) from error
-            yaml_data.setdefault("variant", variant)
-            info = markdown_map.get(headword, {})
-            record = dict(yaml_data)
-            record.setdefault("targetLanguage", target_language)
-            record.setdefault("headword", headword)
-            record["info"] = info
-            ROW_VALIDATOR.validate(record)
-            key = (target_language, headword, variant)
-            if key in seen:
-                raise SystemExit(
-                    f"Duplicate grammar entry detected for {target_language}/{headword} "
-                    f"variant {variant} in '{yaml_file}'."
-                )
-            seen.add(key)
-            rows.append((target_language, headword, variant, record))
-    return rows
+    check_row_schema()
+    try:
+        return load_rows(DBROOT)
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
 
 
 def create_database(rows: list[tuple[str, str, int, dict]]) -> None:
-    if DBFILE.exists():
-        DBFILE.unlink()
-
-    connection = sqlite3.connect(DBFILE)
+    for _, _, _, data in rows:
+        if {"pattern", "compiledPattern", "authoringPattern", "analysisStatus", "testData"} & data.keys():
+            raise ValueError("Public content database cannot contain private matching fields")
+    if OUTDIR.resolve() != OUTDIR or (DBFILE.exists() and DBFILE.resolve() != DBFILE):
+        raise ValueError(f"Unexpected database output target: {DBFILE}")
+    OUTDIR.mkdir(exist_ok=True)
+    trash = Path.home() / ".Trash"
+    if trash.resolve() != trash:
+        raise ValueError(f"Unexpected Trash target: {trash}")
+    trash.mkdir(exist_ok=True)
+    with tempfile.NamedTemporaryFile(prefix=".grammar-", suffix=".sqlite", dir=OUTDIR, delete=False) as temporary:
+        staged = Path(temporary.name)
+    connection = None
+    built = False
     try:
-        connection.execute("PRAGMA journal_mode=WAL;")
+        connection = sqlite3.connect(staged)
+        # Distribute a complete single-file snapshot that sqlite3_deserialize can read.
+        connection.execute("PRAGMA journal_mode=DELETE;")
         connection.execute("PRAGMA synchronous=NORMAL;")
         connection.execute(
             """
@@ -149,15 +65,58 @@ def create_database(rows: list[tuple[str, str, int, dict]]) -> None:
                 for target, head, variant, data in rows
             ],
         )
+        connection.execute("CREATE UNIQUE INDEX grammar_rule_id ON grammar(json_extract(data, '$.ruleID'))")
+        # Additive, normalized read surfaces; legacy JSON/Swift clients still
+        # read exactly the same grammar table. No duplicated authored bodies.
+        connection.execute("""CREATE VIEW grammar_explanations AS
+            SELECT g.targetLanguage, g.headword, g.variant,
+                   json_extract(g.data, '$.ruleID') AS ruleID,
+                   json_extract(g.data, '$.ruleVersion') AS ruleVersion,
+                   explanation.key AS contentLocale, explanation.value AS sections
+            FROM grammar AS g, json_each(g.data, '$.info') AS explanation""")
+        connection.execute("""CREATE VIEW grammar_example_translations AS
+            SELECT g.targetLanguage, g.headword, g.variant,
+                   json_extract(g.data, '$.ruleID') AS ruleID,
+                   CAST(example.key AS INTEGER) AS exampleIndex,
+                   json_extract(example.value, '$.sentence') AS sentence,
+                   translation.key AS contentLocale, translation.value AS translation
+            FROM grammar AS g, json_each(g.data, '$.exampleSentences') AS example,
+                 json_each(example.value, '$.translations') AS translation""")
+        connection.execute("""CREATE VIEW grammar_reference_bindings AS
+            SELECT g.targetLanguage, g.headword, g.variant,
+                   json_extract(g.data, '$.ruleID') AS ruleID,
+                   json_extract(binding.value, '$.ruleVersion') AS ruleVersion,
+                   json_extract(binding.value, '$.readerLanguage') AS explanationLocale,
+                   reference.value AS referenceID
+            FROM grammar AS g, json_each(g.data, '$.referenceBindings') AS binding,
+                 json_each(binding.value, '$.references') AS reference""")
         connection.commit()
+        if connection.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
+            raise ValueError("Generated grammar database failed integrity validation")
+        built = True
     finally:
-        connection.close()
+        if connection is not None:
+            connection.close()
+        if not built:
+            shutil.move(str(staged), str(trash / f"manabi-failed-grammar-{uuid.uuid4()}.sqlite"))
+
+    # Publication is a single atomic replacement. A failed build or backup leaves
+    # the prior snapshot available, rather than exposing an incomplete database.
+    try:
+        if DBFILE.exists():
+            shutil.copy2(DBFILE, trash / f"manabi-grammar-{uuid.uuid4()}.sqlite")
+        staged.replace(DBFILE)
+    finally:
+        if staged.exists():
+            shutil.move(str(staged), str(trash / f"manabi-failed-grammar-{uuid.uuid4()}.sqlite"))
 
 
 def copy_schemas() -> None:
-    for schema_name in ("grammar-table-row.schema.json", "grammar-yaml.schema.json"):
+    for schema_name in ("grammar-table-row.schema.json", "grammar-yaml.schema.json", "reference-registry.schema.json"):
         source = SCHEMAS / schema_name
         target = OUTDIR / schema_name
+        if target.resolve() != target:
+            raise ValueError(f"Unexpected schema output target: {target}")
         target.write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
 
 
@@ -167,14 +126,23 @@ def copy_js_client_bundle() -> None:
             "JS client bundle was not found. Ensure 'mise run client-build' has completed successfully."
         )
     target = OUTDIR / "manabi-grammar-db-client.zip"
+    if target.resolve() != target:
+        raise ValueError(f"Unexpected client output target: {target}")
     shutil.copy2(JS_CLIENT_ZIP, target)
 
 
 def main() -> int:
+    if not JS_CLIENT_ZIP.is_file():
+        raise SystemExit("JS client bundle missing. Run 'mise run client-build' before rebuilding the database.")
     rows = collect_rows()
     create_database(rows)
     copy_schemas()
     copy_js_client_bundle()
+    registry = DBROOT / "references/registry.json"
+    registry_target = OUTDIR / "reference-registry.json"
+    if registry_target.resolve() != registry_target:
+        raise ValueError(f"Unexpected registry output target: {registry_target}")
+    shutil.copy2(registry, registry_target)
     print(f"Wrote {DBFILE} with {len(rows)} rows")
     return 0
 

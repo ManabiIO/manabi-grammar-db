@@ -1,0 +1,10 @@
+ruleID: grammar.ja.dakedenaku.nominal-addition
+ruleVersion: 1
+examples: []
+exampleSentences:
+- sentence: 勉強だけでなく、運動も大切だ。
+  translations:
+    en: Exercise as well as study is important.
+- sentence: 日本語だけでなく中国語も話す。
+  translations:
+    en: I speak Chinese as well as Japanese.

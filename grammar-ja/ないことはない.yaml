@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.740
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 食べないことはない。
+- sentence: 読まないこともない。
+- sentence: 使えないことはない。
+- sentence: 行けないこともない。

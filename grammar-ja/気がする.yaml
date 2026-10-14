@@ -1,0 +1,11 @@
+ruleID: grammar.ja.source.takoboto.1117
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 雨が降る気がする。
+- sentence: 彼は元気な気がした。
+- sentence: 夢のような気がします。
+- sentence: 彼は来ない気がする。
+- sentence: 彼に会ったような気がする。
+- sentence: 私は帰りたいような気がする。
+- sentence: 高いような気がしている。

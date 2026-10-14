@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1750
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 男性であれ女性であれ平等だ。
+- sentence: 有名であれ無名であれ人生は短い。
+- sentence: 本であれ雑誌であれ読む。

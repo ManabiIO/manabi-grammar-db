@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.966
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 経験しただけにわかる。
+- sentence: 知っているだけに心配だ。
+- sentence: 練習しただけに上手だ。
+- sentence: 長く住んでいただけに詳しい。

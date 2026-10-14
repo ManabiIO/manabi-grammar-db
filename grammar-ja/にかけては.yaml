@@ -1,0 +1,12 @@
+ruleID: grammar.ja.source.takoboto.1683
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 料理にかけては自信がある。
+- sentence: 数学にかけては彼が一番だ。
+- sentence: 法律にかけては詳しい。
+- sentence: 卓球にかけては負けない。
+- sentence: 技術にかけては負けない。
+- sentence: 美しさにかけては優れている。
+- sentence: 日本語にかけては自信がある。
+- sentence: 速さにかけては一番だ。

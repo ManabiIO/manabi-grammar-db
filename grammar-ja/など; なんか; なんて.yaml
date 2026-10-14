@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1606
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 本や雑誌などを読む。
+- sentence: 本や雑誌等を読む。
+- sentence: 仕事を辞めるなど考えられない。
+- sentence: 私なんか何も知らない。
+- sentence: 行くなんて聞いていない。

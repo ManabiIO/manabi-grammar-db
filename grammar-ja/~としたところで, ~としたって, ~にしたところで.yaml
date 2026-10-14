@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1693
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 参加するとしたところで二十人だ。
+- sentence: 読んだとしたって覚えていない。
+- sentence: 学生にしたところで同じだ。
+- sentence: 高いとしたところで買わない。
+- sentence: 知らないとしたって困らない。

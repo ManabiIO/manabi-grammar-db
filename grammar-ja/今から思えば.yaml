@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1093
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 今から思えば失敗だった。
+- sentence: 今から思えば彼は正しかった。
+- sentence: 今から思えばあの判断はよかった。

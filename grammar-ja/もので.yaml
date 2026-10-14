@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.416
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 初心者なものでわかりません。
+- sentence: 忙しいもので忘れました。
+- sentence: 雨が降ったもので遅れました。
+- sentence: 道を知らないもので迷いました。
+- sentence: 慣れていないもので困りました。

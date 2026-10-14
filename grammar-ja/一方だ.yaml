@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.220
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 人口は増える一方だ。
+- sentence: 物価は上がる一方です。
+- sentence: 損失は膨らむ一方だ。
+- sentence: 客は減る一方だ。

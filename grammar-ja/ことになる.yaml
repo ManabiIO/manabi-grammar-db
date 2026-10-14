@@ -1,0 +1,19 @@
+ruleID: grammar.ja.kotoninaru.arrangement-outcome
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 来月ここで働くことになった。
+  translations:
+    en: It was arranged that I will work here next month.
+- sentence: 明日は出かけないことになった。
+  translations:
+    en: It was decided that we will not go out tomorrow.
+- sentence: 一人で作業することになります。
+  translations:
+    en: I will end up working alone.
+- sentence: 読むことにもなった。
+- sentence: 読まないことにはなった。
+- sentence: 読むことになる。
+- sentence: '読む
+
+    ことになった。'

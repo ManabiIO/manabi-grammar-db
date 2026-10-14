@@ -1,0 +1,13 @@
+ruleID: grammar.ja.tewaikenai.prohibition
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: ここで泳いではいけない。
+  translations:
+    en: You must not swim here.
+- sentence: 人を押してはいけません。
+  translations:
+    en: You must not push people.
+- sentence: この本を持ち出してはいけない。
+  translations:
+    en: You must not take this book away.

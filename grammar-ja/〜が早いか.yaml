@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1366
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 聞くが早いか走り出した。
+- sentence: 見るが早いか逃げた。
+- sentence: 着くが早いか電話した。
+- sentence: 終わるが早いか帰った。
+- sentence: 入ったが早いか会議が始まった。
+- sentence: 口を開くが早いか質問した。

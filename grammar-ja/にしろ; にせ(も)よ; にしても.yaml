@@ -1,0 +1,11 @@
+ruleID: grammar.ja.source.takoboto.1235
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 同意するにせよ考える。
+- sentence: 行くにしろ準備する。
+- sentence: 学生にしろ勉強は大切だ。
+- sentence: 参加しないにせよ連絡する。
+- sentence: 雨にしろ予定は変えない。
+- sentence: 忙しいにせよ連絡する。
+- sentence: 行ったにせよ会えなかった。

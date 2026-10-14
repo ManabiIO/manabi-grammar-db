@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1269
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 食べてから出かける。
+- sentence: 読んでから寝る。
+- sentence: 勉強してから遊ぶ。
+- sentence: 帰ってから電話する。

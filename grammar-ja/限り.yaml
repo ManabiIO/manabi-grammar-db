@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.838
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 学生ではない限り参加できない。
+- sentence: 会員でない限り入れない。
+- sentence: 雨が降らない限り出かける。

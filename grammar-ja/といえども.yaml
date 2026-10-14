@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1730
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 医学が進歩したといえども病気はある。
+- sentence: 専門家といえども間違える。
+- sentence: 安いといえども買わない。
+- sentence: 学生といえども責任はある。
+- sentence: 知っていると言えども説明できない。

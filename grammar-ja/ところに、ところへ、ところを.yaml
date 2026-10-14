@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1162
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 食べているところに電話が来た。
+- sentence: 歩いているところへ雨が降った。
+- sentence: 寝ているところを起こされた。

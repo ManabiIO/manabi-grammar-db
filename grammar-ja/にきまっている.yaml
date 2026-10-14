@@ -1,0 +1,12 @@
+ruleID: grammar.ja.source.takoboto.275
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 失敗するにきまっている。
+- sentence: 難しいに決まっている。
+- sentence: 嘘に決まっている。
+- sentence: 彼がやったにきまっている。
+- sentence: 彼は来ないに決まっている。
+- sentence: 高かったに決まっている。
+- sentence: 高くないに決まっている。
+- sentence: 知らなかったに決まっている。

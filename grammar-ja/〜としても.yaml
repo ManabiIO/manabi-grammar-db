@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.410
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 帰るとしても明日だ。
+- sentence: 失敗したとしても続ける。
+- sentence: 健康だとしても休む。
+- sentence: 成功するとしても時間がかかる。

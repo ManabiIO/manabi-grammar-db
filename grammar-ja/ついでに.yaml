@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.917
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 帰ったついでに買い物をした。
+- sentence: 帰るついでに買い物をする。
+- sentence: 買い物のついでに寄る。

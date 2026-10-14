@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1739
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 登山をするのではあるまいし大げさだ。
+- sentence: 子供ではあるまいし自分で決める。
+- sentence: 学生ではあるまいし甘えるな。
+- sentence: 遊びではあるまいし真剣にやる。
+- sentence: 初めてではあるまいし慌てるな。

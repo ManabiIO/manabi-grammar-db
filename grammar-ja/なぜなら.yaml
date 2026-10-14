@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1623
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: なぜなら、時間がないからだ。
+- sentence: なぜならば彼は病気だからだ。
+- sentence: 参加できない。何故なら用事があるからだ。
+- sentence: 何故なら、準備が必要だからだ。

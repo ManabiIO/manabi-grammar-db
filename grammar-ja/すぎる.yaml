@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1537
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 昨日は食べすぎました。
+- sentence: 値段が高すぎる。
+- sentence: 彼は飲み過ぎた。

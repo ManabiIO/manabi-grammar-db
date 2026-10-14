@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.631
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 時計が壊れていたものですから遅れました。
+- sentence: 忙しいものですから忘れました。
+- sentence: 初心者なものですからわかりません。
+- sentence: 知らないものですから困りました。
+- sentence: 雨が降ったものですから遅れました。

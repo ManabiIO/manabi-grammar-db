@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1788
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 音楽を聞くことで学ぶ。
+- sentence: 本を読むことで知識が増える。
+- sentence: 毎日歩くことで健康になる。
+- sentence: 練習することで上達する。
+- sentence: 対話することで信頼を築く。

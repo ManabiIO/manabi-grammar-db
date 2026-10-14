@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.1791
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 学生に限り割引する。
+- sentence: 会員に限り、割引する。

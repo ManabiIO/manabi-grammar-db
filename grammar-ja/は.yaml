@@ -1,13 +1,14 @@
-jmdictId: 234567
-examples:
-- https://example.com/texts/ha#text=寿司は美味しい
+ruleID: grammar.ja.ha.topic
+ruleVersion: 4
+examples: []
 alternativeForms:
 - wa
 exampleSentences:
 - sentence: 寿司は美味しい。
   translations:
     en: Sushi is delicious.
-  sourceUrl: https://example.com/texts/ha#text=%E5%AF%BF%E5%8F%B8%E3%81%AF%E7%BE%8E%E5%91%B3%E3%81%97%E3%81%84
 - sentence: これはペンです。
   translations:
     en: This is a pen.
+- sentence: 港には船が到着した。
+- sentence: 「始める」は答えではない。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1488
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 雨だった。それが、急に晴れた。
+- sentence: 彼は断った。それが、翌日参加した。
+- sentence: 寒かった。其れが、今日は暖かい。

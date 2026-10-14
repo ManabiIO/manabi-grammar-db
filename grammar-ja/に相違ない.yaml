@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.420
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: これは事実に相違ない。
+- sentence: 彼は本物に相違ない。
+- sentence: 彼が勝つに相違ない。
+- sentence: 彼が勝ったに相違ない。

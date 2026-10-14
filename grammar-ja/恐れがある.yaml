@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.563
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 戦争になるおそれがある。
+- sentence: 橋が崩れる恐れがある。
+- sentence: 道路が凍るおそれがある。
+- sentence: 事故が起こる恐れがある。

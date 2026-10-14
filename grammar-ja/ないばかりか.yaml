@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1638
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は働かないばかりか文句を言う。
+- sentence: この店は安くないばかりか遠い。
+- sentence: 彼は来ないばかりか連絡もしない。

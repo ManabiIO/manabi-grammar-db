@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1591
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 冗談を抜きにして話そう。
+- sentence: 感情をぬきにして考える。
+- sentence: 建前はぬきにして話す。
+- sentence: 理屈は抜きにして楽しむ。
+- sentence: 砂糖を抜きにして作る。

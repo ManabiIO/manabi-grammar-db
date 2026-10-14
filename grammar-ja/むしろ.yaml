@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.842
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 安いよりむしろ安全だ。
+- sentence: 彼は教師というよりむしろ研究者だ。
+- sentence: 私はむしろ静かな町が好きだ。

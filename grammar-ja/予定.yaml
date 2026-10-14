@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1482
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 来月移転する予定です。
+- sentence: 来月の予定です。
+- sentence: 開館する予定の施設を見た。
+- sentence: 参加しない予定です。

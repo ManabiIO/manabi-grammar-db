@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1721
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 今夜は眠れそうもない。
+- sentence: 明日は雨が降りそうもない。
+- sentence: 時間に間に合いそうもありません。

@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.1732
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 家に帰ることになった。
+- sentence: 留学することになりました。
+- sentence: 明日は行かないことになった。
+- sentence: 読むことにもなった。
+- sentence: 行かないことにはなる。
+- sentence: 働くことにもなりました。

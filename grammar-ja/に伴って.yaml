@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.645
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 人口増加に伴って交通量が増える。
+- sentence: 制度変更に伴って手続きが変わる。

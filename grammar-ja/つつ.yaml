@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.703
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 音楽を聞きつつ歩く。
+- sentence: 問題を考えつつ答える。
+- sentence: 悪いと知りつつ続ける。
+- sentence: 本を読みつつ待つ。

@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.1313
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 本や雑誌などを読む。
+- sentence: 本や雑誌等を読む。

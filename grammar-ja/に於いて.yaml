@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.527
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 学校において学ぶ。
+- sentence: 会議において説明する。
+- sentence: 東京に於いて開催する。
+- sentence: この場合に於いて必要だ。

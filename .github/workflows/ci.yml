@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish a content-only release and notify downstream consumers
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -20,10 +25,12 @@ jobs:
         with:
           persist-credentials: false
       - uses: jdx/mise-action@707444d7bcb0f9a85e0eaca75c6cb825de997d5d
-      - run: mise run lint
+      # Pull requests must exercise publication regressions and the actual
+      # packaged SQLite client as well as schema validation.
+      - run: mise run build-db
 
   build-release-deploy:
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'workflow_dispatch' && inputs.publish
     needs: [lint]
     runs-on: ubuntu-latest
     steps:
@@ -38,7 +45,7 @@ jobs:
         id: checksum
         run: |
           cd dist
-          shasum -a 256 manabi-grammar.sqlite grammar-table-row.schema.json grammar-yaml.schema.json js-client/manabi-grammar-db-client.zip > checksums.txt
+          shasum -a 256 manabi-grammar.sqlite grammar-table-row.schema.json grammar-yaml.schema.json reference-registry.schema.json reference-registry.json manabi-grammar-db-client.zip > checksums.txt
           {
             echo "Checksums (SHA-256):"
             echo '```'
@@ -55,7 +62,10 @@ jobs:
             dist/manabi-grammar.sqlite
             dist/grammar-table-row.schema.json
             dist/grammar-yaml.schema.json
-            dist/js-client/manabi-grammar-db-client.zip
+            dist/reference-registry.schema.json
+            dist/reference-registry.json
+            dist/manabi-grammar-db-client.zip
+            dist/checksums.txt
       - name: Get release asset URLs
         id: rel
         uses: actions/github-script@d7906e4ad0b1822421a7aa52039b67d12c2d079a
@@ -68,13 +78,17 @@ jobs:
             });
             const asset = name => release.assets.find(a => a.name === name);
             const dbAsset = asset('manabi-grammar.sqlite');
-            const clientAsset = asset('js-client/manabi-grammar-db-client.zip');
+            const clientAsset = asset('manabi-grammar-db-client.zip');
             const yamlSchema = asset('grammar-yaml.schema.json');
             const tableSchema = asset('grammar-table-row.schema.json');
-            if (!dbAsset || !clientAsset || !yamlSchema || !tableSchema) {
+            const checksums = asset('checksums.txt');
+            const referenceRegistry = asset('reference-registry.json');
+            const referenceSchema = asset('reference-registry.schema.json');
+            if (!dbAsset || !clientAsset || !yamlSchema || !tableSchema || !checksums || !referenceRegistry || !referenceSchema) {
               core.setFailed('Missing expected release assets.');
             } else {
               core.setOutput('db_url', dbAsset.browser_download_url);
+              core.setOutput('checksums_url', checksums.browser_download_url);
               core.setOutput('client_url', clientAsset.browser_download_url);
               core.setOutput('yaml_schema_url', yamlSchema.browser_download_url);
               core.setOutput('table_schema_url', tableSchema.browser_download_url);
@@ -105,6 +119,7 @@ jobs:
             {
               "db_url": "${{ steps.rel.outputs.db_url }}",
               "client_url": "${{ steps.rel.outputs.client_url }}",
+              "checksums_url": "${{ steps.rel.outputs.checksums_url }}",
               "yaml_schema_url": "${{ steps.rel.outputs.yaml_schema_url }}",
               "table_schema_url": "${{ steps.rel.outputs.table_schema_url }}",
               "release_tag": "db-${{ github.sha }}"

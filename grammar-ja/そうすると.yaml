@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1407
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: そうすると時間が足りない。
+- sentence: そうすると、彼も来る。
+- sentence: そうすると費用が増える。

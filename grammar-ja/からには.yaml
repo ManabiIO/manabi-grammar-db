@@ -1,0 +1,10 @@
+ruleID: grammar.ja.source.takoboto.554
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 決めたからには最後までやる。
+- sentence: 参加するからには努力する。
+- sentence: 引き受けたからには責任を持つ。
+- sentence: 約束したからには守る。
+- sentence: 始めたからには諦めない。
+- sentence: 約束しなかったからには強制できない。

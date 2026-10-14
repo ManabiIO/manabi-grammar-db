@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.965
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 知っているだけあって詳しい。
+- sentence: よく練習しただけあって上手だ。
+- sentence: よく読むだけあって賢い。
+- sentence: 経験しただけあって強い。

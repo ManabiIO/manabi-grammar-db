@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.816
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 扉が開いたかどうかのうちに乗り込んだ。
+- sentence: 話が終わったかどうかのうちに帰った。
+- sentence: 座ったかどうかのうちに呼ばれた。

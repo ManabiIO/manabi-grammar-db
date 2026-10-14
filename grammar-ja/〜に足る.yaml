@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1332
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 信頼するに足る人物だ。
+- sentence: 評価するに足る作品だ。
+- sentence: 読むに足る本だ。
+- sentence: 尊敬するにたる先生だ。
+- sentence: 検討するに足る提案だ。

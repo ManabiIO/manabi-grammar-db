@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1316
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: すべて知っているかのようだ。
+- sentence: 雨が降ったかのようだった。
+- sentence: 生きているかのように動く。
+- sentence: 知っているかのような顔だ。
+- sentence: 誰もいないかのようだ。

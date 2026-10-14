@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1704
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 未だに古いペンを使う。
+- sentence: 彼はいまだに来ない。
+- sentence: いまだに覚えている。

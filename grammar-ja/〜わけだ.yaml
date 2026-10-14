@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1727
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は詳しいわけだ。
+- sentence: 警備が厳重なわけだ。
+- sentence: 事情を知っていたわけです。

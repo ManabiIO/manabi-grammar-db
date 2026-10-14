@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.55
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 両親のおかげで勉強できる。
+- sentence: あいつのお陰で助かった。
+- sentence: 雨がやんだおかげで帰れた。
+- sentence: 涼しいおかげでよく眠れる。

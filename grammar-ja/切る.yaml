@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.859
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: ケーキを食べきった。
+- sentence: 川を泳ぎきる。
+- sentence: 本を読み切った。

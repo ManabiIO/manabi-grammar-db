@@ -1,7 +1,7 @@
 [tools]
 python = "3.12"
-bun = "1"
-node = "20"
+bun = "1.4.2"
+node = "24"
 
 [tasks.lint]
 description = "Validate directory structure, YAML schema, and Markdown rules"
@@ -15,13 +15,14 @@ description = "Compile YAML+MD to SQLite, run JS client build/test, copy schemas
 run = [
   "python -m pip install -r requirements.txt",
   "python scripts/validate_repo.py",
-  "python scripts/build_db.py",
+  "python -m unittest discover -s scripts -p 'test_*.py'",
   "mise run client-build",
+  "python scripts/build_db.py",
   "mise run client-test"
 ]
 
 [tasks.client-build]
-description = "Bundle sql.js client and pack tarball"
+description = "Bundle the official SQLite WASM client and pack the distribution"
 dir = "js-client"
 run = [
   "bun install",

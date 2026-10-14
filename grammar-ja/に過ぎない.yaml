@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.144
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: これは噂に過ぎない。
+- sentence: これは噂にすぎない。
+- sentence: それは一例に過ぎない。
+- sentence: 成功は偶然にすぎない。

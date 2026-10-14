@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.729
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 朝起きたら水を飲む。
+- sentence: 雨が降ったら休む。
+- sentence: 鳥だったら空を飛びたい。

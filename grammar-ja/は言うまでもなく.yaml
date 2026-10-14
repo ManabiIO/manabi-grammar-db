@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1498
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 日本語は言うまでもなく英語も話す。
+- sentence: 先生はいうまでもなく学生も来る。
+- sentence: 費用は言うまでもなく時間も必要だ。
+- sentence: 父は言うまでもなく母も喜ぶ。
+- sentence: 安全は言うまでもなく品質も重要だ。

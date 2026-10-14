@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1243
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 問題を解決すべく努力する。
+- sentence: 真実を知るべく調べた。
+- sentence: 結果を伝えるべく訪ねた。

@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1272
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 説明の通りに組み立てる。
+- sentence: 彼が言ったとおりにする。
+- sentence: マニュアルに書いてあるとおりにすればよい。
+- sentence: 彼が言った通りにする。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.297
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 本を読むとしたら図書館だ。
+- sentence: 雨だとすれば中止だ。
+- sentence: 彼が来るとすると忙しい。

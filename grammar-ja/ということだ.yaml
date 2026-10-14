@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.616
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 来月は休みということだ。
+- sentence: 明日は晴れるということです。
+- sentence: 彼は帰ったと言うことだ。

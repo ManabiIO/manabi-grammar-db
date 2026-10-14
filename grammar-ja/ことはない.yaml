@@ -1,0 +1,13 @@
+ruleID: grammar.ja.kotowanai.no-need
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: わざわざ買うことはない。
+  translations:
+    en: There is no need to go out of your way to buy it.
+- sentence: 急ぐことはありません。
+  translations:
+    en: There is no need to hurry.
+- sentence: 今すぐ決めることはない。
+  translations:
+    en: There is no need to decide right now.

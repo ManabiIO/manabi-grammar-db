@@ -1,0 +1,13 @@
+ruleID: grammar.ja.youninaru.change
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 朝に走るようになった。
+  translations:
+    en: I have started running in the morning.
+- sentence: 最近は夜に出かけないようになった。
+  translations:
+    en: Recently I have stopped going out at night.
+- sentence: 日本語を読めるようになりました。
+  translations:
+    en: I have become able to read Japanese.

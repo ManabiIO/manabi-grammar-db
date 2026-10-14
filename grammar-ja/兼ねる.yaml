@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1266
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: その質問には答えかねる。
+- sentence: 詳しいことは言いかねます。
+- sentence: その要求には応じかねた。

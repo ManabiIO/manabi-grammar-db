@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1551
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 辞書があるならいざ知らず読めない。
+- sentence: 専門家ならいざ知らず無理だ。
+- sentence: 昔ならいざ知らず今は違う。
+- sentence: 高いならいざ知らず安い。
+- sentence: 知っているならいざ知らず説明できない。

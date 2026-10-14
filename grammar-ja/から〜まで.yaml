@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.169
+ruleVersion: 4
+examples: []
+exampleSentences:
+- sentence: 東京から京都まで旅をする。
+- sentence: 東京から京都の駅まで行く。
+- sentence: 春から寒い冬まで滞在する。

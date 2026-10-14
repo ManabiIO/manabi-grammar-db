@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.59
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 会議の最中に電話が鳴る。
+- sentence: 食べている最中に電話が鳴る。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.960
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は先生というより友人だ。
+- sentence: この本は難しいというより退屈だ。
+- sentence: 彼は天才と言うより変人だ。

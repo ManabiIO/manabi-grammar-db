@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.312
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: この写真だけでは判断しようがない。
+- sentence: 鍵がなくて入りようがない。
+- sentence: これでは食べようがない。

@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1486
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 寝坊した。それで遅れた。
+- sentence: 雨だった。それで中止した。
+- sentence: 電車が止まった。それで困った。

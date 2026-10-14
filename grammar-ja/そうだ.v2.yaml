@@ -1,0 +1,17 @@
+ruleID: grammar.ja.souda.appearance
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 雨が降りそうだ。
+  translations:
+    en: It looks like it will rain.
+- sentence: この料理はおいしそうです。
+  translations:
+    en: This dish looks delicious.
+- sentence: あの猫は元気そうだ。
+  translations:
+    en: That cat looks lively.
+- sentence: この案はよさそうだ。
+  translations:
+    en: This proposal looks good.
+variant: 2

@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1675
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼と同様に私も考える。
+- sentence: 去年と同様だ。
+- sentence: 日本と同様に雨が多い。
+- sentence: 先生と同様の意見だ。
+- sentence: 昨年と同様の方法だ。

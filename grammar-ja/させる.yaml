@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1302
+ruleVersion: 3
+examples: []
+exampleSentences:
+- sentence: 子供に本を読ませた。
+- sentence: 生徒に答えを考えさせる。
+- sentence: 機械を停止させた。
+- sentence: 子供に本を読ませられた。

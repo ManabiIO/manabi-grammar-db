@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1702
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 誰も行かないとあれば私が行く。
+- sentence: 必要とあれば手伝う。
+- sentence: 頼まれたとあれば断れない。
+- sentence: 安いとあれば買う。
+- sentence: 先生が来るとあれば準備する。

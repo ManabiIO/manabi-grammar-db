@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.363
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 冷めないうちに食べる。
+- sentence: 若いうちに学ぶ。
+- sentence: 明るいうちに帰る。
+- sentence: 雨が降らないうちに出かける。

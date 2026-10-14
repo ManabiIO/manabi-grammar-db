@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1682
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 彼は専門家並みに詳しい。
+- sentence: 台風並みに強い風だ。
+- sentence: この本は辞書並みに厚い。

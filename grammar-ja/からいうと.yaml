@@ -1,0 +1,9 @@
+ruleID: grammar.ja.source.takoboto.1270
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 視点からいうと合理的だ。
+- sentence: 立場から言うと難しい。
+- sentence: 観点からいうと問題だ。
+- sentence: 条件から言うと有利だ。
+- sentence: 品質からいうと優れている。

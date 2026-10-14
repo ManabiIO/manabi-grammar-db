@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.124
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: よく考えた上で決める。
+- sentence: 読んだ上で答える。
+- sentence: 検討の上で判断する。
+- sentence: 相談のうえで進める。

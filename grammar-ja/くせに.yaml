@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.112
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 知っているくせに答えない。
+- sentence: 学生のくせに偉そうだ。
+- sentence: 元気なくせに休む。
+- sentence: 安いくせに丈夫だ。

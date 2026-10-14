@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1213
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 料理としてはおいしい。
+- sentence: 作品としては優秀だ。
+- sentence: 学生としては立派だ。
+- sentence: 商品としては安い。

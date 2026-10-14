@@ -1,0 +1,7 @@
+ruleID: grammar.ja.source.takoboto.1691
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 覚えるそばから忘れる。
+- sentence: 掃除するそばから散らかす。
+- sentence: 読んだそばから忘れる。

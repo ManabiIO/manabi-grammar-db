@@ -1,0 +1,13 @@
+ruleID: grammar.ja.nakerebanaranai.obligation
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 明日までに返さなければならない。
+  translations:
+    en: I must return it by tomorrow.
+- sentence: 明日までに返さなければなりません。
+  translations:
+    en: I must return it by tomorrow.
+- sentence: ここで待たなければならない。
+  translations:
+    en: I must wait here.

@@ -1,0 +1,6 @@
+ruleID: grammar.ja.source.takoboto.225
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 雨に加えて風も強い。
+- sentence: 費用に加えて時間も必要だ。

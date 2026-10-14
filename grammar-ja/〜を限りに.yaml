@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.1641
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 今日を限りにやめる。
+- sentence: 今月を限りに閉店する。
+- sentence: 今年を限りに引退する。
+- sentence: 本日を限りに終了する。

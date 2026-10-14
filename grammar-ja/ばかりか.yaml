@@ -1,0 +1,8 @@
+ruleID: grammar.ja.source.takoboto.303
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 安いばかりか丈夫だ。
+- sentence: 彼は英語を話すばかりか数学も教える。
+- sentence: 雨ばかりか風も吹く。
+- sentence: 彼は働いたばかりか勉強もした。

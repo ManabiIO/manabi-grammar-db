@@ -1,0 +1,11 @@
+ruleID: grammar.ja.source.takoboto.1589
+ruleVersion: 2
+examples: []
+exampleSentences:
+- sentence: 買わなくちゃ。
+- sentence: 行かなくちゃ。
+- sentence: 食べなくちゃ。
+- sentence: 読まなくちゃ。
+- sentence: しなくちゃ。
+- sentence: 寒くなくちゃ困る。
+- sentence: 安くなくちゃ買えない。
