@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.1590
-ruleVersion: 5
+ruleVersion: 6
 examples: []
 exampleSentences:
 - sentence: 暑くてたまらない。
@@ -87,3 +87,43 @@ exampleSentences:
 - sentence: たまらなく寂しく感じています。
 - sentence: たまらなく母の声を懐かしく感じています。
 - sentence: たまらなく彼女が愛しく思えています。
+- sentence: 堪らなく助けられたい。
+- sentence: 堪らなく助けられたかった。
+- sentence: 堪らなく助けられたくて泣いた。
+- sentence: 堪らなく助けられたくない。
+- sentence: 堪らなく助けられたくなかった。
+- sentence: 堪らなく愛されたい。
+- sentence: 堪らなく褒められたい。
+- sentence: 堪らなく認められたい。
+- sentence: 堪らなく守られたい。
+- sentence: 堪らなく名前を呼ばれたい。
+- sentence: 堪らなく母に褒められたい。
+- sentence: 堪らなく彼女から頼られたい。
+- sentence: 堪らなく皆には認められたい。
+- sentence: 堪らなく母の友人に褒められたかった。
+- sentence: 堪らなく彼女に名前を呼ばれたい。
+- sentence: 堪らなく彼女の父に自分の名前を呼ばれたい。
+- sentence: 堪らなく母にも褒められたくない。
+- sentence: 堪らなく彼に助けられたくなかった。
+- sentence: 堪らなく不安に感じています。
+- sentence: 堪らなく嬉しく感じています。
+- sentence: 堪らなく幸せに感じています。
+- sentence: 堪らなく寂しく感じています。
+- sentence: 堪らなく母の声を懐かしく感じています。
+- sentence: 堪らなく彼女が愛しく思えています。
+- sentence: 堪らなく彼女に会いたい。
+- sentence: 堪らなく会いたくない。
+- sentence: 堪らなく母の友人に彼女の手紙を送りたい。
+- sentence: 堪らなく母の友人の声が聞きたかった。
+- sentence: 堪らなく彼女には会いたい。
+- sentence: 堪らなく母にも会いたい。
+- sentence: 堪らなく彼女が好きだった。
+- sentence: 堪らなく不安だ。
+- sentence: 堪らなく好きな人だ。
+- sentence: 堪らなく嬉しく感じた。
+- sentence: 堪らなく不安に感じました。
+- sentence: 堪らなく母の声が聞きたい。
+- sentence: 堪らなく寂しかった。
+- sentence: 堪らなく彼女と話したくて泣いた。
+- sentence: 堪らなく彼女に手紙を送りたくなかった。
+- sentence: 堪らなく母の友人に彼女の手紙を送られたい。
