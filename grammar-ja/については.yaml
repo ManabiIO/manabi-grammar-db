@@ -1,6 +1,14 @@
 ruleID: grammar.ja.source.takoboto.562
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 計画については説明する。
 - sentence: 日本語については詳しい。
+- sentence: いつ帰るかについては相談した。
+- sentence: 参加するかについては
+- sentence: 何かについては話した。
+- sentence: 誰が担当だったかについては確認した。
+- sentence: 何が必要かについては答えた。
+- sentence: 計画については話した。
+- sentence: 猫については詳しい。
+- sentence: 駅についてはすぐ説明した。

@@ -1,6 +1,38 @@
 ruleID: grammar.ja.source.takoboto.1305
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 日本語について話す。
 - sentence: 計画について説明する。
+- sentence: どこで会うかについて話した。
+- sentence: 誰が来たかについて調べる。
+- sentence: 何を買わないかについて相談した。
+- sentence: 参加するかについて
+- sentence: 参加するかについては
+- sentence: 参加するかについても説明した。
+- sentence: いつ帰るかについては相談した。
+- sentence: 誰が来ましたかについて話した。
+- sentence: どちらが安いかについて調べた。
+- sentence: 誰が担当かについて確認した。
+- sentence: 誰が担当だったかについて話した。
+- sentence: 誰が担当ですかについて話した。
+- sentence: 誰が来なかったかについて調べた。
+- sentence: 何が必要だったかについて考えた。
+- sentence: どこに住んでいるかについて話した。
+- sentence: 何を食べたいかについて相談した。
+- sentence: 誰かについて話した。
+- sentence: 何かについては話した。
+- sentence: 計画について話した。
+- sentence: 駅についての説明を読んだ。
+- sentence: 正午ごろについてどう思う？
+- sentence: 「誰が来たか」という文字について説明した。
+- sentence: 誰が担当だったかについては確認した。
+- sentence: 何が必要かについては答えた。
+- sentence: 計画については話した。
+- sentence: 床について話した。
+- sentence: 床についてすぐ説明した。
+- sentence: 先生について話した。
+- sentence: 猫については詳しい。
+- sentence: 駅についてはすぐ説明した。
+- sentence: 歴史について歩きながら話した。
+- sentence: 猫についての本を読んだ。

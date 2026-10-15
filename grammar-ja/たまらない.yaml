@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.1590
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 暑くてたまらない。
@@ -7,3 +7,15 @@ exampleSentences:
 - sentence: 旅行に行きたくてたまらない。
 - sentence: 彼女が心配でたまらない。
 - sentence: 水が欲しくてたまりません。
+- sentence: たまらなく嬉しい。
+- sentence: たまらなく寂しかった。
+- sentence: たまらなく会いたい。
+- sentence: たまらなく会いたかった。
+- sentence: たまらなく不安だ。
+- sentence: たまらなく嫌です。
+- sentence: たまらなく嫌な音だ。
+- sentence: たまらなく好きだった。
+- sentence: たまらなく眠い。
+- sentence: たまらなくおいしい。
+- sentence: たまらなく欲しくて買った。
+- sentence: たまらなく会いたくて出かけた。
