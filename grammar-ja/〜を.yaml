@@ -1,3 +1,15 @@
 ruleID: grammar.ja.source.takoboto.765
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 新しいカメラを買った。
+- sentence: それをください。
+- sentence: 私はチキンをもらいます。
+- sentence: 仕事を探している。
+- sentence: 薬を飲む。
+- sentence: 少し日本語を話します。
+- sentence: ゴミを出してくる。
+- sentence: 彼は歌を歌いました。
+- sentence: 手を洗う。
+- sentence: 注意を払った。
+- sentence: 時間を過ごした。

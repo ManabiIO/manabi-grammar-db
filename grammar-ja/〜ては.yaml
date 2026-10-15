@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.721
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 死んじゃ、ダメ！
+- sentence: 落としてはまずい。
+- sentence: ここで泳いでは危険だ。
+- sentence: 遅れちゃ困る。
+- sentence: そんなことを言ってはいけません。
+- sentence: 薬を飲んではならない。
+- sentence: 忘れちゃだめだ。
+- sentence: 休んではいられない。

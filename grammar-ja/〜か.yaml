@@ -1,3 +1,13 @@
 ruleID: grammar.ja.source.takoboto.693
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 誰が来たか教えてください。
+- sentence: 飛行機がいつ到着するかわからない。
+- sentence: どの本を買うか決めた。
+- sentence: 彼が医者かどうか知りません。
+- sentence: この料理がおいしいか聞いた。
+- sentence: 今度の出張はいつかまだ分かりません。
+- sentence: 彼が誰か知っています。
+- sentence: 私が書いたかを問わず公開する。
+- sentence: 行くかどうかは別の問題だ。

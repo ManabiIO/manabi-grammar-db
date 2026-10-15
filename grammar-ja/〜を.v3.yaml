@@ -1,3 +1,14 @@
 ruleID: grammar.ja.source.takoboto.767
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 部屋を出た。
+- sentence: 大阪を出発する。
+- sentence: 去年日本を離れた。
+- sentence: 彼はイギリスを去った。
+- sentence: 駅を出て右に曲がる。
+- sentence: 故郷を離れて暮らす。
+- sentence: 家を出ます。
+- sentence: 港を出発した。
+- sentence: 親元を離れない。
+- sentence: 席を立った。

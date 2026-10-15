@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.766
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 公園を歩きました。
+- sentence: 川を泳いで渡った。
+- sentence: 道路を走る。
+- sentence: 空を飛んでいる。
+- sentence: 橋を渡りました。
+- sentence: 廊下を歩いて来た。
+- sentence: 山道を登る。
+- sentence: ニューヨークとボストン間を走っている。
