@@ -1,9 +1,14 @@
 import { loadSqlite } from './loader.js';
 
 export async function openReadonlySnapshot(bytes, validationSQL) {
-    const view = bytes instanceof Uint8Array ? bytes
+    const borrowed = bytes instanceof Uint8Array ? bytes
         : bytes instanceof ArrayBuffer ? new Uint8Array(bytes) : null;
-    if (!view) throw new TypeError('Expected a Uint8Array or ArrayBuffer.');
+    if (!borrowed) throw new TypeError('Expected a Uint8Array or ArrayBuffer.');
+    if (borrowed.byteLength > 0x7fffffff) throw new RangeError('Database exceeds the supported WASM buffer size.');
+    // Own the exact view before validation or the first await. Callers may
+    // mutate/transfer their buffer, and a WASM-backed view may detach on growth.
+    // Construct a plain array: Buffer.slice() would retain borrowed storage.
+    const view = new Uint8Array(borrowed);
     if (view.byteLength < 100 || new TextDecoder().decode(view.subarray(0, 16)) !== 'SQLite format 3\0') {
         throw new Error('Invalid SQLite database header.');
     }
