@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.726
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: でも、まだ希望はある。
+- sentence: 雨が降った。でも試合は続いた。
+- sentence: 品質はいい、でも値段が高い。
+- sentence: 「でも私は反対だ」と答えた。
+- sentence: でもあなたに渡す資料はない。
+- sentence: でも、なぜでしょう。

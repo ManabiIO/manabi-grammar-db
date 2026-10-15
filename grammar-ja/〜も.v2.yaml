@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.622
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 僕も知らない。
+- sentence: 妹も魚を食べない。
+- sentence: これも先生の車ではない。
+- sentence: 弟も来ません。
+- sentence: コーヒーも紅茶も飲まない。
+- sentence: 私も行かなかった。

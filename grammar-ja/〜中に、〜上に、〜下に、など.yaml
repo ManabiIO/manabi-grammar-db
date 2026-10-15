@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.1517
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 箱の中に猫がいる。
+- sentence: 机の上に鍵がある。
+- sentence: 棚の下に犬がいた。
+- sentence: 冷凍庫の中です。
+- sentence: 右側に郵便局があります。
+- sentence: 会議室は二階にある。
+- sentence: 箱の中で遊ぶ。
+- sentence: 上に行く。

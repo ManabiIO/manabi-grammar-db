@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.624
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 電車で港へ向かった。
+- sentence: 木のペンで手紙を書く。
+- sentence: 森で鳥を観察した。
+- sentence: 自分で朝食を作った。
+- sentence: 一週間で模型を完成させた。
+- sentence: 三千円で古い本を買った。

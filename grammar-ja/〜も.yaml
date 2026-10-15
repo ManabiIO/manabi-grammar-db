@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.576
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 妹も音楽が好きだ。
+- sentence: お茶も飲みたい。
+- sentence: この本も私のです。
+- sentence: 今日も雨が降った。
+- sentence: 僕も行きません。
+- sentence: あの小さいのも欲しい。

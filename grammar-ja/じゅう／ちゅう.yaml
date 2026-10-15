@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.739
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 一日中働いた。
+- sentence: 会議中に電話が鳴った。
+- sentence: 夏休み中ずっと旅をした。
+- sentence: 世界中の猫が好きだ。
+- sentence: インストール中に止まった。
+- sentence: 一晩中雨が降った。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1497
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 旅行ひとつとっても楽しい思い出がある。
+- sentence: 部屋探しひとつとっても手続きが難しい。
+- sentence: 文化ひとつとっても違いがある。
+- sentence: ラベンダーひとつとっても様々な味がある。
+- sentence: 価格一つ取っても大きな違いがある。
+- sentence: 言葉ひとつとっても歴史が分かる。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.626
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 東京に住んでいる。
+- sentence: かばんの中に猫がいる。
+- sentence: 学校に行きます。
+- sentence: 午後三時に集合した。
+- sentence: 遊びに来た。
+- sentence: 勉強しに図書館へ行った。

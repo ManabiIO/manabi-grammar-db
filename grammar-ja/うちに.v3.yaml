@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1761
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 練習を重ねるうちに上手になった。
+- sentence: 何度も読むうちに意味が分かってきた。
+- sentence: 話しているうちに不安が消えた。
+- sentence: 働くうちに仕事が好きになった。
+- sentence: 暮らしているうちに町が好きになった。
+- sentence: 歩いているうちに暗くなった。
