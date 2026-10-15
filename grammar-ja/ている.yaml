@@ -1,5 +1,5 @@
 ruleID: grammar.ja.teiru.aspect
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 本を読んでいる。
@@ -32,3 +32,15 @@ exampleSentences:
 - sentence: 本を読んでた。
   translations:
     en: I was reading a book.
+- sentence: 本を読んで居る。
+  translations:
+    en: I am reading a book.
+- sentence: 本を読んで無かった。
+  translations:
+    en: I was not reading a book.
+- sentence: 本を読んでいたい。
+  translations:
+    en: I want to keep reading a book.
+- sentence: 想像していなかった。
+  translations:
+    en: I had not imagined it.

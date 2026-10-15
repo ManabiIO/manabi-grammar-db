@@ -8032,7 +8032,7 @@
     },
     {
       "ruleID": "grammar.ja.teiru.aspect",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:783"
