@@ -1,8 +1,11 @@
 ruleID: grammar.ja.source.takoboto.1555
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 帰るわけにはいかない。
 - sentence: 約束を破るわけにはいかない。
 - sentence: 行かないわけにはいかない。
 - sentence: 黙っているわけには行かない。
+- sentence: そういうわけにはいかない。
+- sentence: こういう訳には行かない。
+- sentence: 彼が来ないわけにはいかない。

@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.482
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 実に楽しいものですね。
+- sentence: 本当に美しいものだ。
+- sentence: よく助かったものだ。
+- sentence: あんな事故にあってよく生き残ったものだ。
+- sentence: 子供のころはよく川で泳いだものだ。
+- sentence: 若いころはよく旅をしたものです。
+- sentence: 約束はきちんと守るものだ。
+- sentence: 人の話はよく聞くものです。

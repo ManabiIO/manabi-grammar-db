@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.589
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 今から出発するところです。
@@ -7,3 +7,7 @@ exampleSentences:
 - sentence: たった今帰ったところです。
 - sentence: 今、食べるところだった。
 - sentence: 電話をかけようとしているところを見られた。
+- sentence: 今読み終えたところだ。
+- sentence: ちょうど読み終えたところだ。
+- sentence: 今読み切ったところだ。
+- sentence: ちょうど食べ始めたところです。

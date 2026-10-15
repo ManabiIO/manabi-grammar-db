@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.544
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 読まないわけではない。
@@ -7,3 +7,5 @@ exampleSentences:
 - sentence: 嫌いなわけではない。
 - sentence: 失敗したわけではない。
 - sentence: 安かった訳ではない。
+- sentence: 農業が嫌いな訳じゃない。
+- sentence: 嫌いなわけじゃない。

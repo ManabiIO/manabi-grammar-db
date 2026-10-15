@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.1562
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: だって寒いもの。
+- sentence: だって、まずいもの。
+- sentence: だって雨が降っているもの。
+- sentence: 子供なんだもん。
+- sentence: 嫌いだもの。
+- sentence: まだ子供だもん。
+- sentence: 電話は明日にしよう、もう遅いもの。
+- sentence: しょうがないよ。学生なんだもの。

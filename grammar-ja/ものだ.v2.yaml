@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.699
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 会社はつぶれるものだ。
+- sentence: 人間の命ははかないものだ。
+- sentence: 人間は間違えるものだ。
+- sentence: 人は誰でも年を取るものだ。
+- sentence: 人生は難しいものだ。
+- sentence: 世の中は変わるものです。
+- sentence: 子供は成長するものだ。
+- sentence: 花はいつか枯れるものだ。

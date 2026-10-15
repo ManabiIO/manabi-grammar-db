@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.781
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は詳しいわけだ。
+- sentence: 警備が厳重なわけだ。
+- sentence: 事情を知っていた訳です。
+- sentence: 彼は来るわけではない。
+- sentence: 農業が嫌いな訳じゃない。
+- sentence: 彼が来るわけがない。
+- sentence: 約束を破るわけにはいかない。
+- sentence: そんなに食べられる訳ないよ。

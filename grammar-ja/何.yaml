@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.629
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 何にしますか。
+- sentence: 何を見ましたか。
+- sentence: 何の用ですか。
+- sentence: 何が欲しいの？
+- sentence: 何ですか。
+- sentence: なんですか。
+- sentence: 何を食べたか覚えている。
+- sentence: この花は何と言いますか。

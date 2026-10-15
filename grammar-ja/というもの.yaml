@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.403
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: それは無駄というものだ。
+- sentence: それは無責任というものです。
+- sentence: これこそ努力というものだ。
+- sentence: 自由というものを考える。
+- sentence: 忍耐というものを知っている。
+- sentence: これが友情というものです。
+- sentence: これ以上待つのは時間の浪費というものだ。
+- sentence: それは本当の親切というものだった。

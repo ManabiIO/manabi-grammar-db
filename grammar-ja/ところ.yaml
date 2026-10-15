@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.888
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 今着いたところです。
@@ -8,3 +8,6 @@ exampleSentences:
 - sentence: ちょうど読んでいるところです。
 - sentence: 今始めたところです。
 - sentence: 今から帰るところだった。
+- sentence: 今読み終えたところだ。
+- sentence: 今読み切ったところだ。
+- sentence: ちょうど食べ始めたところです。
