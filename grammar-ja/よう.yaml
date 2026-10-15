@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.861
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 星のように輝く。
@@ -8,3 +8,18 @@ exampleSentences:
 - sentence: 雨が降るような音がした。
 - sentence: 猫のような動物だ。
 - sentence: そのようなこともある。
+- sentence: 幼児が這うようにして前へ進んだ。
+- sentence: 彼は這うように廊下を進んだ。
+- sentence: 画面を覗き込むように眺めた。
+- sentence: 穴を覗くように見ていた。
+- sentence: 口を何か噛んでいるように動かした。
+- sentence: 彼は噛みつくようにそう言った。
+- sentence: 彼女は噛み付くように怒鳴った。
+- sentence: 草を取るように毛を一本ずつ抜いた。
+- sentence: 「足が震える」ように感じた。
+- sentence: 『誰かが笑う』ように思えた。
+- sentence: 話すように見えた。
+- sentence: 彼は這うように階段を上り詰める。
+- sentence: 彼らは這うように坂を登りつめた。
+- sentence: 彼は這うように上り詰めよう。
+- sentence: 草を取るように髪を抜き始めた。

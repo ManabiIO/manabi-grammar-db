@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.638
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 変な人に会った。
@@ -8,3 +8,15 @@ exampleSentences:
 - sentence: 便利な道具を使う。
 - sentence: 元気な子供だ。
 - sentence: 親切な先生だ。
+- sentence: きれいなの
+- sentence: 静かなの。
+- sentence: 便利なの？
+- sentence: 元気なのよ。
+- sentence: 静かなのね。
+- sentence: きれいなのです。
+- sentence: 静かなんです。
+- sentence: 便利なので休む。
+- sentence: 好きな人だ。
+- sentence: 静かなのが好きだ。
+- sentence: 便利なのか？
+- sentence: きれいなのだ。

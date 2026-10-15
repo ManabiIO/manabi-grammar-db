@@ -1,7 +1,14 @@
 ruleID: grammar.ja.source.takoboto.1559
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: この服を着てみる。
 - sentence: 薬を飲んでみた。
 - sentence: 新しい方法を試してみよう。
+- sentence: 将来の計画を考えて見るべきだ。
+- sentence: 別の方法を考えて見るべきです。
+- sentence: 一度やって見ようか。
+- sentence: この作業もやって見ようか？
+- sentence: 一緒にやって見よう。
+- sentence: 試してはみた。
+- sentence: 食べてもみた。
