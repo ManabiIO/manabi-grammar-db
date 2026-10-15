@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.673
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 三人以上が来た。
+- sentence: 二時間以上待った。
+- sentence: 十八歳以上が対象だ。
+- sentence: 必要以上に心配する。
+- sentence: 期待以上の結果だ。
+- sentence: これ以上は無理だ。

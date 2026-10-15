@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1511
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 鳥のごとく空を飛ぶ。
+- sentence: 烈火のごとき怒りだ。
+- sentence: 人生は夢のごとし。
+- sentence: 彼は山の如く動かない。
+- sentence: 人生は夢のごとし

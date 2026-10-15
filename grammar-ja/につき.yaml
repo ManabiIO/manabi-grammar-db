@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.138
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 一人につき二枚配る。
+- sentence: 一時間につき千円だ。
+- sentence: 一個につき百円です。
+- sentence: 一回につき三分かかる。

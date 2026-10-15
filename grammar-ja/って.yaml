@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.879
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は来るって言った。
+- sentence: 知らないって。
+- sentence: 明日は雨だって聞いた。
+- sentence: 行かないって言った。
+- sentence: 『本』って言った。
+- sentence: 「行く」って言った。
+- sentence: 幾らたのまれたってできない。
+- sentence: 彼は鍵ってこれと言った。

@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1217
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 雨が降ったので帰る。
+- sentence: 今日は寒いので休む。
+- sentence: 明日は休日なので休みます。
+- sentence: これから出発しますので座ってください。

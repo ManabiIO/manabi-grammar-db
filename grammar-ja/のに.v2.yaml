@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.552
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 急いだのに間に合わない。
+- sentence: 寒いのに、彼は泳ぐ。
+- sentence: 雨なのに出かけた。
+- sentence: 彼は来なかったのに準備を続けた。

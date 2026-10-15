@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.249
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼だけが来た。
+- sentence: 好きなだけ食べる。
+- sentence: 食べたいだけ食べる。
+- sentence: できるだけ急ぐ。
+- sentence: 本を読むだけだ。
+- sentence: 一度だけ会った。

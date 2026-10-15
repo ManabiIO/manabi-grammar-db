@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.705
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 馬鹿なことをするな。
+- sentence: あまり飲むな。
+- sentence: 誰も動くな。
+- sentence: 約束を破るな。
+- sentence: ここに来るな。
+- sentence: 危険な物に触るな。

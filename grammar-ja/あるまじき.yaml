@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1766
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 教師にあるまじき発言だ。
+- sentence: 医者にあるまじき行為だった。
+- sentence: 市長にあるまじき態度だ。

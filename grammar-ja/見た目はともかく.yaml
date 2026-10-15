@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1762
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 値段はともかく味はいい。
+- sentence: 外見はともかく性能が優れている。
+- sentence: 顔はともかくとして演技は上手だ。
+- sentence: 見た目はともかく味が良い。
+- sentence: 結果はともかく努力は認める。

@@ -1,3 +1,11 @@
 ruleID: grammar.ja.source.takoboto.1768
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 宝石のような星だ。
+- sentence: 鳥の様な形だ。
+- sentence: 夢のような景色だった。
+- sentence: 先生のような人になりたい。
+- sentence: 雪の様な肌だ。
+- sentence: 雲のような柔らかい布だ。
+- sentence: 雲のような、柔らかい布だ。

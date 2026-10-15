@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.509
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 日本に行った時に会った。
+- sentence: 困ったときは相談する。
+- sentence: 忙しい時は休む。
+- sentence: 静かな時に読む。
+- sentence: 子供の時によく泳いだ。
+- sentence: 会議のときに話す。

@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1226
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 理由のいかんによらず禁止する。
+- sentence: 国籍の如何を問わず応募できる。
+- sentence: 結果のいかんにかかわらず参加する。

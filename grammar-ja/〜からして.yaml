@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1566
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 田舎は天気からして違う。
+- sentence: 彼は服装からして変わっている。
+- sentence: 名前からして面白い。
+- sentence: 値段からして違う。
+- sentence: 雰囲気からして違う。
+- sentence: 入口からして豪華だ。

@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1674
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: だからといって諦めるわけではない。
+- sentence: だからといって、無駄ではない。
+- sentence: だからといって安全とは限らない。
+- sentence: だからといって許されるわけではありません。

@@ -1,3 +1,13 @@
 ruleID: grammar.ja.source.takoboto.1760
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 一時間ほど待った。
+- sentence: 君ほど速く走れない。
+- sentence: 死ぬほど疲れた。
+- sentence: 声が出ないほど驚いた。
+- sentence: 驚くほど安い。
+- sentence: あれほど言ったのに。
+- sentence: それほど嬉しい。
+- sentence: これほど美しい。
+- sentence: どれほど辛い。

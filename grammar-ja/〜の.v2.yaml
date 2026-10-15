@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.641
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 走るのは楽しい。
+- sentence: 彼が来るのを待つ。
+- sentence: 本を読むのが好きだ。
+- sentence: 彼が来たのに気づいた。
+- sentence: ここで休むのもいい。
+- sentence: 彼が来ないのは困る。

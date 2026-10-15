@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.425
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: そんな噂は信じまい。
+- sentence: 大した金にはなるまい。
+- sentence: 遠くあるまい。
+- sentence: 彼は来るまい。
+- sentence: もう教えまい。
+- sentence: 彼女はそんなことはすまい。

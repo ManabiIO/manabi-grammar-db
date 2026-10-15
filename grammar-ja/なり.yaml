@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1526
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は入るなり泣き出した。
+- sentence: 母は帰るなり寝てしまった。
+- sentence: 顔を見るなり笑い出した。
+- sentence: 窓を開けるなり叫んだ。
+- sentence: 話を聞くなり走り出した。

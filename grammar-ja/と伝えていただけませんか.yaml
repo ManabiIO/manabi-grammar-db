@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1598
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: ありがとうと伝えていただけませんか。
+- sentence: 明日来ると伝えていただけませんか。
+- sentence: 無事だと伝えて頂けませんか。
+- sentence: 少し遅れると伝えていただけませんか。
+- sentence: よろしくと伝えていただけませんか。

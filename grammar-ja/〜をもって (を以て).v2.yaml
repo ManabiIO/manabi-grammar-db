@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1757
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 書面をもって通知する。
+- sentence: 身をもって知った。
+- sentence: 努力をもって成功した。
+- sentence: 態度をもって示す。

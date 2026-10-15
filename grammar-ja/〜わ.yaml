@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.776
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 今日は暑いわ。
+- sentence: 私は帰るわ。
+- sentence: もう帰ったわ。
+- sentence: 本当だわ。
+- sentence: 彼は来ないわ。
+- sentence: これは困ったわ

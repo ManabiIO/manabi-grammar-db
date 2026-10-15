@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1620
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 声が出ないほどです。
+- sentence: 手が痛いほどだった。
+- sentence: 涙が出るほどの感動だった。
+- sentence: 息ができないほどだ。

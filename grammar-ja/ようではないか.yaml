@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1267
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 雨が降るようではないか。
+- sentence: 彼が知っているようではないか。
+- sentence: 進んでいないようではないか。
+- sentence: みんなで行こうではないか。
+- sentence: 環境を守ろうではないか。
+- sentence: 一緒に考えようではないか。

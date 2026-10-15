@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.714
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 何だい？
+- sentence: 君は誰だい。
+- sentence: どこへ行くんだい？
+- sentence: 何を食べたんだい。
+- sentence: 何をしているんだい？
+- sentence: 何時なんだい

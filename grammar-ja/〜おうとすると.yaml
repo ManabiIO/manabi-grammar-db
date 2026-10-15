@@ -1,5 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1671
-ruleVersion: 1
+ruleVersion: 2
 examples: []
 exampleSentences:
-- sentence: 説明を聞こうとすると、電話が鳴った。
+- sentence: 出かけようとすると、電話が鳴った。
+- sentence: バスを降りようとすると、後ろから押された。
+- sentence: お風呂に入ろうとしたときに、電話が鳴った。
+- sentence: 彼女に告白しようとすると、友達が来た。
+- sentence: 話そうとすると、電話が鳴る。
+- sentence: 帰ろうとすると、雨が降ってきた。

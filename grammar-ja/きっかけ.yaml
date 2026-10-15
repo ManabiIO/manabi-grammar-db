@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1509
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 留学がきっかけで日本語を学んだ。
+- sentence: 事故をきっかけに制度が変わった。
+- sentence: 出会いをきっかけとして活動を始めた。

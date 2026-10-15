@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.253
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 勇気こそ必要だ。
+- sentence: 今回こそ成功したい。
+- sentence: あなたこそ適任だ。
+- sentence: 努力こそ大切だ。
+- sentence: 明日こそ出発する。

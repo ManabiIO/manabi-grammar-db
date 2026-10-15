@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.674
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 法律上は問題ない。
+- sentence: 健康上の理由だ。
+- sentence: 理論上は可能だ。
+- sentence: 教育上よくない。
+- sentence: 計算上は正しい。
+- sentence: 貿易上の問題だ。

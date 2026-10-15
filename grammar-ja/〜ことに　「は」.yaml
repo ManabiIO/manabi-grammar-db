@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.341
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 嬉しいことに合格した。
+- sentence: 残念なことに中止になった。
+- sentence: 驚いたことには彼が勝った。
+- sentence: 嬉しいことに、合格した。

@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1754
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 起きようにも起きられない。
+- sentence: 帰ろうにも帰れない。
+- sentence: 話そうにも話せなかった。

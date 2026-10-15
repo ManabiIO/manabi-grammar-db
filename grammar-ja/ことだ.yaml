@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1273
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 上達したければ毎日練習することだ。
+- sentence: 合格したければよく勉強することです。
+- sentence: 健康でいたければ無理をしないことだ。
+- sentence: 風邪なら早く寝ることだ。
+- sentence: それなら無理をしないことです。

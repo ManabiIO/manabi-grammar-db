@@ -1,5 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1795
-ruleVersion: 1
+ruleVersion: 2
 examples: []
 exampleSentences:
-- sentence: この仕事をやり上げる。
+- sentence: 論文を書き上げた。
+- sentence: 作品を作り上げた。
+- sentence: 彼は小説を書き上げる。
+- sentence: 資料をまとめ上げた。
+- sentence: 原稿を書き上げて提出した。
+- sentence: 彼女は作品を作り上げた。

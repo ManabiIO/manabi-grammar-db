@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.373
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 工事につき通行止めだ。
+- sentence: 休業中につき入れません。
+- sentence: 特売品につき返品できない。
+- sentence: 出張につき休講です。

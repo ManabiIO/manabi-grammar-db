@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1665
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 犬が子供に飛び掛かった。
+- sentence: 見知らぬ人に吠え掛かる。
+- sentence: 犬が子供に襲いかかった。
+- sentence: 男が彼に殴りかかった。
+- sentence: 犬が子供に飛びかかった。
+- sentence: 敵が彼に襲い掛かった。

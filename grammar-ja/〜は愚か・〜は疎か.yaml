@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1339
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 漢字はおろかひらがなも読めない。
+- sentence: 名前はおろか住所さえ知らない。
+- sentence: 英語は疎か日本語も怪しい。
+- sentence: 漢字はおろか、ひらがなも読めない。

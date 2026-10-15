@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1367
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: これが愛でなくてなんだろう。
+- sentence: 彼は英雄でなくて何だろう。
+- sentence: これは奇跡でなくてなんだろう。
+- sentence: これが幸運でなくて何だろうか。
+- sentence: これが努力でなくてなんだろう
+- sentence: これは成功でなくて何だろう。

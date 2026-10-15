@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1778
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 赤字であるからして節約する。
+- sentence: 学生であるからして学ぶべきだ。
+- sentence: 噂からして結婚するだろう。
+- sentence: その事情からして無理だ。
+- sentence: 準備がないからして失敗する。
+- sentence: 危険だからして近づかない。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1773
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 君も行くかい？
+- sentence: そろそろ終わりかい。
+- sentence: もう食べたかい？
+- sentence: 今日は寒いかい。
+- sentence: 本当かい
+- sentence: 君は来ないかい？

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.223
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 二人きりで話した。
+- sentence: 一人っきりで待つ。
+- sentence: 一度きりの機会だ。
+- sentence: 今朝水を飲んだきりだ。
+- sentence: 彼は独りきりだ。
+- sentence: 彼とは会ったきりだ。

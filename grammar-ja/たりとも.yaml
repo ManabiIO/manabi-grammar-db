@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1514
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 一秒たりとも無駄にできない。
+- sentence: 一人たりとも残さない。
+- sentence: 一点たりとも譲れない。
+- sentence: 一秒たりとも、無駄にできない。

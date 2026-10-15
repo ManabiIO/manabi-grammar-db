@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.638
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 変な人に会った。
+- sentence: きれいな花が咲く。
+- sentence: 静かな部屋で読む。
+- sentence: 便利な道具を使う。
+- sentence: 元気な子供だ。
+- sentence: 親切な先生だ。

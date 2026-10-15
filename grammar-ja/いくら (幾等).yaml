@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.623
-ruleVersion: 1
+ruleVersion: 3
 examples: []
+exampleSentences:
+- sentence: この本はいくらですか。
+- sentence: 修理はいくらかかりますか。
+- sentence: 昨日の料金はいくらだった？
+- sentence: 切手は幾らですか。

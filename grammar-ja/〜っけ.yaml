@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1276
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 何を食べたっけ？
+- sentence: 名前は何だっけ。
+- sentence: 鍵を閉めましたっけ？
+- sentence: 昨日は寒かったっけ。
+- sentence: 彼は来るんだっけ？
+- sentence: 彼は学生でしたっけ

@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.640
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 聖なる山を登る。
+- sentence: 新たなる旅が始まる。
+- sentence: 偉大なる先人に感謝する。
+- sentence: 母なる海を守る。
+- sentence: 大いなる希望を抱く。

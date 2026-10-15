@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1652
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 荷物はあっという間に届いた。
+- sentence: 鳥はあっと言う間に消えた。
+- sentence: 時間はあっという間だった。

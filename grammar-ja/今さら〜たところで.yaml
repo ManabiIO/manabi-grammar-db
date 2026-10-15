@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1089
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 今さら謝ったところで遅い。
+- sentence: いまさら戻ったところで意味がない。
+- sentence: 今更説明したところで無駄だ。
+- sentence: 今さら、謝ったところで、意味がない。

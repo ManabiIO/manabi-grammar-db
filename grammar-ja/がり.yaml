@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.696
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は暑がりだ。
+- sentence: 妹は寒がりだ。
+- sentence: 彼は怖がりだ。
+- sentence: 強がりを言う。
+- sentence: 弟は恐がりだ。
+- sentence: 彼は恥ずかしがりだ。

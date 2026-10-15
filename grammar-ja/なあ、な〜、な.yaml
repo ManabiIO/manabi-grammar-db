@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.652
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: いいなあ。
+- sentence: 冷たい水を飲みたいなあ。
+- sentence: きれいだな。
+- sentence: 腹が減ったなあ。
+- sentence: 明日は晴れるといいな。
+- sentence: 楽しいな。

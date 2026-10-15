@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1563
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 失敗を天気のせいにする。
+- sentence: 彼は遅刻を私のせいにした。
+- sentence: 他人のせいにしない。

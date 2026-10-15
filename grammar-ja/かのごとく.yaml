@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.498
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 時が止まったかのごとく静かだ。
+- sentence: 彼は何も知らないかのごとく振る舞う。
+- sentence: 夢であるかのごとく感じた。
+- sentence: 何もなかったかの如く振る舞った。

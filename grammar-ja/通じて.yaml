@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.386
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 友達を通じて知り合った。
+- sentence: 仕事を通じて学ぶ。
+- sentence: 一年を通して雨が多い。
+- sentence: インターネットを通じて注文する。
+- sentence: 読書を通じて知識を得る。
+- sentence: 一生を通して働いた。

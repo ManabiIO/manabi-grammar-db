@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1771
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 何でも食べる。
+- sentence: 誰でも参加できる。
+- sentence: どこでも働ける。
+- sentence: いつでも来てください。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1485
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 本ばかり読んでいる。
+- sentence: 遊んでばかりいる。
+- sentence: 買ったばかりだ。
+- sentence: 彼は泣いてばかりだ。
+- sentence: 彼は文句ばかり言う。
+- sentence: 帰ってきたばかりです。

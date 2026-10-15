@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1358
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼の行動に怒りを禁じ得ない。
+- sentence: その知らせに驚きを禁じえなかった。
+- sentence: 私は同情を禁じ得ません。

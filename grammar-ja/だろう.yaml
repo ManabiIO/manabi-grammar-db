@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.856
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 明日は雨だろう。
+- sentence: 彼は来るだろう。
+- sentence: 今日は寒いでしょう。
+- sentence: 彼は帰っただろう。
+- sentence: 本当だろうか。
+- sentence: 学生だろうが参加する。

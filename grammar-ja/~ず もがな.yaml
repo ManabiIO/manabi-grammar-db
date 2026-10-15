@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.750
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: それは言わずもがなだ。
+- sentence: 言わずもがなのことだ。
+- sentence: いわずもがなである。
+- sentence: 買わずもがなの品だった。
+- sentence: あらずもがなの一言だ。
+- sentence: 無くもがなの言葉だ。

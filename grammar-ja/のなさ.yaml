@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1785
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 能力のなさに驚いた。
+- sentence: 経験のなさが問題だ。
+- sentence: 常識のなさに呆れた。
+- sentence: お金のなさに困る。
+- sentence: 彼の勇気のなさを嘆く。
+- sentence: 人気のなさに驚く。

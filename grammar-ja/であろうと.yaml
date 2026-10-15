@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1361
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 誰であろうと規則を守る。
+- sentence: どんな仕事であろうとも努力する。
+- sentence: たとえ雨であろうと出発する。
+- sentence: いかに粗末であろうとも我が家だ。
+- sentence: 誰だろうと断る。
+- sentence: どんな人だろうとも歓迎する。

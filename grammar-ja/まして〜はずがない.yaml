@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1558
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: まして子供に分かるはずがない。
+- sentence: まして彼が来るはずがない。
+- sentence: まして私には買えるはずがない。
+- sentence: まして初心者が勝てる筈がない。
+- sentence: まして何も知らないはずがない。

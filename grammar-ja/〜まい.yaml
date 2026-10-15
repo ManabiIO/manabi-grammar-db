@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.424
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼女に話すまいと決めた。
+- sentence: もう頼むまいと決心した。
+- sentence: 二度と行くまいと決めた。
+- sentence: このことは忘れるまいと心に決めた。
+- sentence: 彼女は寝るまいと決心した。
+- sentence: 慰謝料は払うまいと決心した。

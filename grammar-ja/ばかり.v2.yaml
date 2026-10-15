@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1502
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 本を買ったばかりだ。
+- sentence: 日本に来たばかりです。
+- sentence: 食べたばかりなので眠い。
+- sentence: 仕事を始めたばかりだ。
+- sentence: 帰ってきたばかりです。
+- sentence: 出版されたばかりだ。

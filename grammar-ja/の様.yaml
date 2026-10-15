@@ -1,3 +1,12 @@
 ruleID: grammar.ja.source.takoboto.1713
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 猫のようだ。
+- sentence: 鳥の様に飛ぶ。
+- sentence: 夢のようだった。
+- sentence: 王様の様な服だ。
+- sentence: 雪のように白い。
+- sentence: 球のようになった。
+- sentence: 雲のような柔らかい布だ。
+- sentence: 雲のような、柔らかい布だ。

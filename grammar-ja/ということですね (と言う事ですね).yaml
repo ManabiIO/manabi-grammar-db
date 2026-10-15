@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1734
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 来週来るということですね。
+- sentence: もう帰ったということですね。
+- sentence: 参加しないということですね。
+- sentence: 静かだということですね。
+- sentence: 届いたと言う事ですね。

@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1524
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 正直に言えばいいものを黙っていた。
+- sentence: 頼めばよかったものを無理をした。
+- sentence: 一言謝ったらいいものを言い訳した。
+- sentence: 聞けば良かったものを勝手に決めた。

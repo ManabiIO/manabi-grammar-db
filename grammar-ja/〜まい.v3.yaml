@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.475
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 外には漏らすまい。
+- sentence: 一人たりとも逃すまいぞ。
+- sentence: あいつはやるまい。
+- sentence: もう繰り返すまい。
+- sentence: 油断するまい。
+- sentence: 二度と失敗すまい。

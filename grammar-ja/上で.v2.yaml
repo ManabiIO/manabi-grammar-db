@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.675
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 地球上で生きる。
+- sentence: 画面上で確認する。
+- sentence: インターネット上で公開する。
+- sentence: パソコン上で動く。
+- sentence: 地図上で位置を確認する。
+- sentence: ネット上から削除する。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.343
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は出かけたきり戻らない。
+- sentence: 手紙をもらったきりだ。
+- sentence: 寝たきりの老人だ。
+- sentence: 彼に任せきりだった。
+- sentence: 両親に頼りきりだ。
+- sentence: あれきり彼と会っていない。

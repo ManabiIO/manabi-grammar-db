@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1593
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 雨がやめばいいのに。
+- sentence: もっと早く来たらよかったのに。
+- sentence: 今日は休日だったらよかったのに。
+- sentence: 彼がここにいればいいのに。
+- sentence: 雨がやめばいいのに

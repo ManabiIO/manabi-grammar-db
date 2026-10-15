@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.551
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 泳ぐのに水着が必要だ。
+- sentence: 書くのにペンを使う。
+- sentence: 駅へ行くのに一時間かかる。
+- sentence: この作業をするのには道具が必要です。

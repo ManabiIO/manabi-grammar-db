@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.752
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: バスが来るよ。
+- sentence: 今日は寒いよ。
+- sentence: 彼は学生だよ。
+- sentence: もう帰りますよ。
+- sentence: 彼は帰ったよ。
+- sentence: 本当ですよ

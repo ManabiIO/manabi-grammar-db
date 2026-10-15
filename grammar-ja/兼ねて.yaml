@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1355
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 練習を兼ねて手紙を書く。
+- sentence: 仕事を兼ねて京都へ行く。
+- sentence: 散歩を兼ねて買い物に行く。
+- sentence: 観光を兼ねて旅行する。
+- sentence: 練習をかねて、手紙を書く。
+- sentence: 勉強を兼ねている仕事だ。

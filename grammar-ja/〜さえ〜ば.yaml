@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.376
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 水さえあれば生きられる。
+- sentence: 君さえいれば安心だ。
+- sentence: 調べさえすれば分かる。
+- sentence: 読んでさえいれば分かる。

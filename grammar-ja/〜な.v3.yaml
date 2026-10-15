@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.792
-ruleVersion: 1
+ruleVersion: 3
 examples: []
+exampleSentences:
+- sentence: 早く起きな。
+- sentence: 先生に聞いてみな。
+- sentence: さっさと食べな。
+- sentence: ここに座りな。
+- sentence: 早く帰りな。
+- sentence: これを見な。

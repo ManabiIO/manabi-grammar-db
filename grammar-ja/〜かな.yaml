@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.749
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は来るかな。
+- sentence: 間違えたかな？
+- sentence: 誰か来ないかな。
+- sentence: 本当かな。
+- sentence: 明日は暑いかな
+- sentence: 行こうかな。

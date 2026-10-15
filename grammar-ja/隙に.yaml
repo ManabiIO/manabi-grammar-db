@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1611
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼が寝ている隙に逃げた。
+- sentence: 先生がいないすきに話した。
+- sentence: 目を離した隙に消えた。
+- sentence: 母が見ていないすきに食べた。
+- sentence: 店員がよそ見をする隙に逃げた。

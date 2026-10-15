@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1731
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は来るのだ。
+- sentence: 彼は来たんです。
+- sentence: 頭が痛いのです。
+- sentence: 学生なのだ。
+- sentence: 静かなんです。
+- sentence: 彼は来ないんだ

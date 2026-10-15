@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.996
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 曜日にかかわらず開く。
+- sentence: 年齢に関わらず参加できる。
+- sentence: 雨にもかかわらず出発した。
+- sentence: 疲れていたにもかかわらず眠れない。
+- sentence: 反対にも拘らず続けた。
+- sentence: 合格したにもかかわらず辞退した。

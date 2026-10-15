@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1640
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 高くなるにつれて寒くなる。
+- sentence: 年を取るにつれて忘れっぽくなる。
+- sentence: 時間がたつにつれて慣れた。
+- sentence: 人口が増えるにつれ問題も増えた。
+- sentence: 成長するにつれて変わる。
+- sentence: 日が暮れるにつれ暗くなる。

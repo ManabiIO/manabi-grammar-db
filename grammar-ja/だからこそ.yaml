@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1494
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: だからこそ努力する。
+- sentence: 友達だからこそ言える。
+- sentence: 彼が来たからこそ安心した。
+- sentence: 努力したからこそ成功した。

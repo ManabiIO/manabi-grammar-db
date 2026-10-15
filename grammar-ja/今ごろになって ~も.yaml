@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1167
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 今ごろになって謝っても遅い。
+- sentence: 今頃になって始めても遅い。
+- sentence: 今ごろになって頼んでも遅い。
+- sentence: 今頃になって走っても遅すぎる。
+- sentence: 今ごろになって言っても遅い。

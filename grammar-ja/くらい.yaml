@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.57
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 一時間くらい待った。
+- sentence: 彼くらい背の高い人はいない。
+- sentence: 泣きたいくらい嬉しい。
+- sentence: どのくらい必要ですか。
+- sentence: それくらいはできる。
+- sentence: 声が出ないくらい驚いた。

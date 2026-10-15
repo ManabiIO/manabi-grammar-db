@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1630
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: あまりの暑さに驚いた。
+- sentence: あまりのおいしさに食べ過ぎた。
+- sentence: 余りの痛みに声を上げた。
+- sentence: あまりの暑さに、驚いた。

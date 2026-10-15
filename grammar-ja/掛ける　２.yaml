@@ -1,5 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1663
-ruleVersion: 1
+ruleVersion: 2
 examples: []
 exampleSentences:
-- sentence: 電話を掛ける。
+- sentence: 彼に話しかけた。
+- sentence: 注意を呼びかけた。
+- sentence: 彼に語りかける。
+- sentence: 彼女に笑いかけた。
+- sentence: 水を吹きかけた。
+- sentence: 問題を投げかけた。

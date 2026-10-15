@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.775
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 明日は休みですか。
+- sentence: お茶を飲みますか？
+- sentence: もう出発しましたか
+- sentence: ここで待ってもいいですか。
+- sentence: 日本語が分かりますか！
+- sentence: これは本ですか.

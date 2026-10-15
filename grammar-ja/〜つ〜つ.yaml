@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1749
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 押しつ押されつ進む。
+- sentence: 行きつ戻りつ歩く。
+- sentence: 見えつ隠れつする。
+- sentence: 持ちつ持たれつの関係だ。

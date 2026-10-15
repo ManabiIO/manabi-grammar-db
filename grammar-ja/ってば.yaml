@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1516
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 行くってば。
+- sentence: 早く帰りなさいってば。
+- sentence: 何だってば。
+- sentence: それでいいってば。
+- sentence: 知らないってば。
+- sentence: 本当だってば。

@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.619
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 明日も続くのかと思うと落ち込む。
+- sentence: また失敗するかと思うと怖い。
+- sentence: 一人で行くのかと思うと不安になる。
+- sentence: また会えるかと思うと嬉しい。
+- sentence: これから働くのかと思うとぞっとする。

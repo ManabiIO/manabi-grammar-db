@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1487
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: それっきり彼に会っていない。
+- sentence: それっきりだった。
+- sentence: それきり連絡がない。
+- sentence: 彼とはそれっきりだ。
+- sentence: それっきり帰ってこない。
+- sentence: それきり話をしていない。

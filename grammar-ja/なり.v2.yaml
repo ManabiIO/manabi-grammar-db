@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1546
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 家を出たなり帰らない。
+- sentence: 座ったなり動かない。
+- sentence: 窓を見つめたなり何も言わなかった。
+- sentence: 横になったなり起きてこない。
+- sentence: 部屋に入ったなり出てこなかった。

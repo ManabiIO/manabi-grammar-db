@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1543
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は結論を急ぐきらいがある。
+- sentence: 昔は他人を疑う嫌いがあった。
+- sentence: 彼女は物事を決めつけるきらいがあります。

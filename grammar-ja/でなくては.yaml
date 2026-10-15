@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1484
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 君でなくては書けない。
+- sentence: 母親でなくては作れない。
+- sentence: 健康でなくては暮らせない。
+- sentence: そうでなくては話にならない。
+- sentence: 勤勉でなくてはならない。
+- sentence: 忠実でなくてはいけない。

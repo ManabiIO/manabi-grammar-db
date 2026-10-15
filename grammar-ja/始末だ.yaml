@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1512
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 最後には泣き出す始末だ。
+- sentence: 彼は約束を忘れる始末だった。
+- sentence: 注意すると逆に怒る始末です。

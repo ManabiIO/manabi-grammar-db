@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1764
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 値段の割に丈夫だ。
+- sentence: よく食べるわりには太らない。
+- sentence: 忙しい割りに元気だ。
+- sentence: 値段の割には、丈夫だ。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.725
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 雨だが出発する。
+- sentence: 彼は来たが帰った。
+- sentence: 寒いが我慢する。
+- sentence: 静かですが不便です。
+- sentence: 彼は来ないが心配ない。
+- sentence: 雨だったが、出発した。

@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.778
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 駅へ歩いて行く。
+- sentence: 未来へ進もう。
+- sentence: 東京へ戻った。
+- sentence: 君への手紙だ。
+- sentence: 海外へ引っ越す。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1501
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: それは嘘であろう。
+- sentence: 彼は来るであろう。
+- sentence: 誰も信じないであろう。
+- sentence: 昨日は寒かったであろう。
+- sentence: 学生であろうと働く。
+- sentence: 静かであろう

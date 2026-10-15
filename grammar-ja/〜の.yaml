@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.574
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 私の本を読む。
+- sentence: 東京の大学に通う。
+- sentence: 日本の文化を学ぶ。
+- sentence: 彼の車が来た。
+- sentence: 学生の生活は忙しい。
+- sentence: 私のです。

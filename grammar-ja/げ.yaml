@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.669
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 子供たちは楽しげだ。
+- sentence: 彼は寂しげに笑う。
+- sentence: 彼は得意げな顔だ。
+- sentence: 彼女は嬉しげだった。
+- sentence: 彼は何か言いたげだ。
+- sentence: 悲しげな声がする。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.502
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 態度からして失礼だ。
+- sentence: ひらがなからして読めない。
+- sentence: 名前からして独特だ。
+- sentence: 値段からして高すぎる。
+- sentence: 健康状態からして無理だ。
+- sentence: 住む所からして決まらない。

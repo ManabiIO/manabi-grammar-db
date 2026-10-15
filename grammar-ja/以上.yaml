@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.671
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 約束した以上は守る。
+- sentence: 参加する以上は努力する。
+- sentence: 引き受けた以上、最後までやる。
+- sentence: 学生である以上、勉強する。
+- sentence: 信頼できない以上、雇わない。
+- sentence: ここに来た以上は楽しもう。

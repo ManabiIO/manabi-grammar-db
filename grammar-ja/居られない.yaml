@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1608
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: ここで遊んではいられない。
+- sentence: いつまでも寝ていられない。
+- sentence: 黙ってはいられなかった。
+- sentence: 目を開けていられない。
+- sentence: のんびりしてはいられません。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.733
-ruleVersion: 1
+ruleVersion: 3
 examples: []
+exampleSentences:
+- sentence: 彼は医者である。
+- sentence: これは事実であった。
+- sentence: 私は学生であります。
+- sentence: 正直であることが大切だ。
+- sentence: 我輩は猫である
+- sentence: 静かである部屋を選ぶ。

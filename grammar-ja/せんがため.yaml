@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.490
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 成功せんがため努力する。
+- sentence: 勝たんがために練習する。
+- sentence: 生きんがため働く。

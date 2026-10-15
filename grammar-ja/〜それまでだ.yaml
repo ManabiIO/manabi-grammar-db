@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1340
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 諦めたらそれまでだ。
+- sentence: 失えばそれまでだ。
+- sentence: 壊れたらそれまでだった。
+- sentence: 断ればそれまでです。

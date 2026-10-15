@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.293
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 雨が降ったかと思うともうやんだ。
+- sentence: 彼は来たかと思ったらすぐ帰った。
+- sentence: 晴れたかと思うとすぐに曇った。
+- sentence: 泣いたかと思ったらもう笑っていた。
+- sentence: 立ったかと思うとすぐ走り出した。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1736
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 本を読みかけた。
+- sentence: 書きかけの手紙だ。
+- sentence: 料理を食べかけてやめた。
+- sentence: 彼は倒れかけた。
+- sentence: 彼女は言いかけてやめた。
+- sentence: 飲みかけの水だ。

@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1304
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 名前さえ知らない。
+- sentence: 子供でさえ分かる。
+- sentence: 水さえ飲めない。
+- sentence: 専門家さえ間違えた。

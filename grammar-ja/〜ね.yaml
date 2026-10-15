@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.628
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は来るね。
+- sentence: 寒いですね。
+- sentence: 雨だったね。
+- sentence: 彼は来たね。
+- sentence: もう帰りますね。
+- sentence: 本当だね

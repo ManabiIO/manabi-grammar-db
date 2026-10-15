@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.372
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼の歌には心を動かすものがある。
+- sentence: 彼の演技には胸を打つものがあった。
+- sentence: この映画には胸に迫るものがあります。

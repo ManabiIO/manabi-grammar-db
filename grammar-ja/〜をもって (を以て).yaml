@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1492
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 本日をもって終了します。
+- sentence: 今月末をもって閉店する。
+- sentence: 三月をもって退職した。
+- sentence: 七時をもって営業を終了した。

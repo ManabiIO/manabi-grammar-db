@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1123
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 赤ちゃんくらいかわいいものはない。
+- sentence: 漢字を覚えるくらい難しいことはない。
+- sentence: 彼くらい親切な人はいない。
+- sentence: 外国で病気になるくらい不安なことはない。
+- sentence: 海で泳ぐくらい楽しいことはない。
+- sentence: 休みの日くらい嬉しいものはない。

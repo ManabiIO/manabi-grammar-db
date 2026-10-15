@@ -1,3 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1172
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 何も言わずに帰った。
+- sentence: 勉強せず遊んだ。
+- sentence: 彼は振り向かず歩いた。
+- sentence: 思わず笑った。

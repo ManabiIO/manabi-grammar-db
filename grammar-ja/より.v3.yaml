@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1650
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 山田さんよりの報告だ。
+- sentence: 先生よりの手紙を読む。
+- sentence: 会社よりのお知らせです。
+- sentence: 東京よりの便りだ。
+- sentence: 父よりの贈り物だ。
+- sentence: 事務局よりの連絡です。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1781
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 学生であろうが先生であろうが参加する。
+- sentence: 学生だろうが先生だろうが参加する。
+- sentence: 雨であろうが雪であろうが出発する。
+- sentence: 食べようが飲もうが自由だ。
+- sentence: 寒かろうが暑かろうが働く。
+- sentence: 晴れだろうが雨だろうが行く。

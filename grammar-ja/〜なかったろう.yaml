@@ -1,5 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1784
-ruleVersion: 1
+ruleVersion: 2
 examples: []
 exampleSentences:
-- sentence: 昨日は寒くなかったろう。
+- sentence: 昨日は暑くなかったろう。
+- sentence: そんなに難しくなかったろう。
+- sentence: 彼は来なかったろう。
+- sentence: 何も食べなかったろう。
+- sentence: 無理ではなかったろう。

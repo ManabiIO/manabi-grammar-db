@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1647
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 知らぬこととて失礼しました。
+- sentence: 部屋が狭いこととて申し訳ない。
+- sentence: 急なこととて連絡が遅れた。

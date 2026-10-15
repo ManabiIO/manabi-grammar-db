@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1211
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 友達を傷つけるくらいなら我慢したほうがいい。
+- sentence: ここにいるくらいなら出発したほうがいい。
+- sentence: 嘘をつくくらいなら黙ったほうがましだ。
+- sentence: あなたと結婚するくらいだったら鳥と結婚する。
+- sentence: 降参するぐらいなら死んだほうがましだ。
+- sentence: この暑さの中を歩くくらいなら家にいた方がよい。

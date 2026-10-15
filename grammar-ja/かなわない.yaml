@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1763
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: うるさくてかなわない。
+- sentence: 不便でかなわない。
+- sentence: 暑くてかなわなかった。
+- sentence: 眠くてかないません。
+- sentence: 待つなんてかなわない。

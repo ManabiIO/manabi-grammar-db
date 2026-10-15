@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.882
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼らは助け合った。
+- sentence: 二人は話し合う。
+- sentence: お互いに理解し合う。
+- sentence: 連絡を取り合う。
+- sentence: 彼と知り合った。
+- sentence: 二人は笑い合った。

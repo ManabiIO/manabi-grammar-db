@@ -1,3 +1,7 @@
 ruleID: grammar.ja.source.takoboto.1588
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 今日は暑くてたまらない。
+- sentence: 子供が心配でたまらない。
+- sentence: その話がおかしくてたまらなかった。

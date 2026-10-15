@@ -1,3 +1,11 @@
 ruleID: grammar.ja.source.takoboto.1557
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: まさかの時に使う。
+- sentence: まさかの場合に備える。
+- sentence: まさかのときには連絡する。
+- sentence: まさかの時のために残す。
+- sentence: まさかのときこそ冷静に。
+- sentence: まさかの優勝だった。
+- sentence: まさかの急な雨だった。
