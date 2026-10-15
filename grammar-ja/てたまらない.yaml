@@ -1,8 +1,25 @@
 ruleID: grammar.ja.source.takoboto.832
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 寒くてたまらない。
 - sentence: 会いたくてたまらない。
 - sentence: 心配でたまらない。
 - sentence: 眠くてたまらない。
+- sentence: 寒くてたまらなかった。
+- sentence: 会いたくてたまりません。
+- sentence: 眠くてたまりませんでした。
+- sentence: 不便でたまらない。
+- sentence: 楽しみでたまらなかった。
+- sentence: 寒くてたまらなくなった。
+- sentence: 続きが知りたくてたまらなくなった。
+- sentence: 欲しくてたまらなくなる。
+- sentence: 寒くてたまらなくなっています。
+- sentence: 会いたくてたまらなくなりました。
+- sentence: 痛くてたまらなくて眠れない。
+- sentence: 寒くて堪らない。
+- sentence: 会いたくて堪らなかった。
+- sentence: 助けられたくてたまらない。
+- sentence: ここにいたくてたまらない。
+- sentence: 働いていたくてたまらない。
+- sentence: 寒くてたまらなくなっていました。

@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.1590
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 暑くてたまらない。
@@ -19,3 +19,47 @@ exampleSentences:
 - sentence: たまらなくおいしい。
 - sentence: たまらなく欲しくて買った。
 - sentence: たまらなく会いたくて出かけた。
+- sentence: たまらなく彼女に会いたい。
+- sentence: たまらなく母の声が聞きたい。
+- sentence: たまらなく彼女に手紙を送りたい。
+- sentence: たまらなく頭が痛い。
+- sentence: たまらなく不安に感じた。
+- sentence: たまらなく不安になった。
+- sentence: たまらなく欲しくなった。
+- sentence: たまらなく嬉しく感じる。
+- sentence: たまらなく彼の話が嫌だった。
+- sentence: たまらなく彼女を抱きしめたかった。
+- sentence: たまらなく好きだ。
+- sentence: 寒くてたまらなかった。
+- sentence: 会いたくてたまりません。
+- sentence: 眠くてたまりませんでした。
+- sentence: 不便でたまらない。
+- sentence: 楽しみでたまらなかった。
+- sentence: 寒くてたまらなくなった。
+- sentence: 続きが知りたくてたまらなくなった。
+- sentence: 欲しくてたまらなくなる。
+- sentence: 寒くてたまらなくなっています。
+- sentence: 会いたくてたまらなくなりました。
+- sentence: 痛くてたまらなくて眠れない。
+- sentence: 寒くて堪らない。
+- sentence: 会いたくて堪らなかった。
+- sentence: たまらなく彼女の歌が好きだった。
+- sentence: たまらなく彼女には会いたい。
+- sentence: たまらなく彼女に会いたくない。
+- sentence: たまらなく帰りたくなかった。
+- sentence: たまらなく母にも会いたい。
+- sentence: たまらなく母の声が聞きたくて泣いた。
+- sentence: たまらなく彼女に手紙を送りたかった。
+- sentence: 助けられたくてたまらない。
+- sentence: ここにいたくてたまらない。
+- sentence: 働いていたくてたまらない。
+- sentence: たまらなく彼女と話したい。
+- sentence: たまらなく故郷へ帰りたい。
+- sentence: たまらなく母から話を聞きたい。
+- sentence: たまらなくそこまで行きたい。
+- sentence: たまらなく母も会いたい。
+- sentence: たまらなく彼女は好きだった。
+- sentence: たまらなく母の友人の声が聞きたい。
+- sentence: たまらなく母の友人に彼女の手紙を送りたい。
+- sentence: たまらなく不安に感じました。
+- sentence: 寒くてたまらなくなっていました。

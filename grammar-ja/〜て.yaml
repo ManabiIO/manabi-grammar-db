@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.609
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 本屋に行って買います。
@@ -10,3 +10,33 @@ exampleSentences:
 - sentence: 喜んで手伝います。
 - sentence: 手紙を持って行きました。
 - sentence: 待って。
+- sentence: 行きたくて休んだ。
+- sentence: 食べたくて注文した。
+- sentence: 行かなくて済んだ。
+- sentence: 買わなくてよい。
+- sentence: 高くなくて安心した。
+- sentence: 寒くなくて助かった。
+- sentence: 元気ではなくて休んだ。
+- sentence: 学生でなくて教師だった。
+- sentence: 言われなくてよかった。
+- sentence: 助けられたくて叫んだ。
+- sentence: 見ていなくて分からなかった。
+- sentence: 読んでいなくて答えられなかった。
+- sentence: 静かで落ち着く。
+- sentence: 彼は学生で、妹は会社員だ。
+- sentence: お金がなくて困った。
+- sentence: 忙しくて行けなかった。
+- sentence: 「なくて」という文字だ。
+- sentence: なくてと書いた。
+- sentence: お金はなくて困った。
+- sentence: お金もなくて困った。
+- sentence: 学生でもなくて教師だった。
+- sentence: 学生では無くて教師だった。
+- sentence: 答えは「はい」であった。
+- sentence: 語尾は『すれば』であった。
+- sentence: 「読んで」である。
+- sentence: 学生であります。
+- sentence: 適当である。
+- sentence: 静かであった。
+- sentence: 静かであろう。
+- sentence: 静かであります。
