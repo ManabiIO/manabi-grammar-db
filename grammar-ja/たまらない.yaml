@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.1590
-ruleVersion: 4
+ruleVersion: 5
 examples: []
 exampleSentences:
 - sentence: 暑くてたまらない。
@@ -63,3 +63,27 @@ exampleSentences:
 - sentence: たまらなく母の友人に彼女の手紙を送りたい。
 - sentence: たまらなく不安に感じました。
 - sentence: 寒くてたまらなくなっていました。
+- sentence: たまらなく助けられたい。
+- sentence: たまらなく助けられたかった。
+- sentence: たまらなく助けられたくて泣いた。
+- sentence: たまらなく助けられたくない。
+- sentence: たまらなく助けられたくなかった。
+- sentence: たまらなく愛されたい。
+- sentence: たまらなく褒められたい。
+- sentence: たまらなく認められたい。
+- sentence: たまらなく守られたい。
+- sentence: たまらなく名前を呼ばれたい。
+- sentence: たまらなく母に褒められたい。
+- sentence: たまらなく彼女から頼られたい。
+- sentence: たまらなく皆には認められたい。
+- sentence: たまらなく母の友人に褒められたかった。
+- sentence: たまらなく彼女に名前を呼ばれたい。
+- sentence: たまらなく彼女の父に自分の名前を呼ばれたい。
+- sentence: たまらなく母にも褒められたくない。
+- sentence: たまらなく彼に助けられたくなかった。
+- sentence: たまらなく不安に感じています。
+- sentence: たまらなく嬉しく感じています。
+- sentence: たまらなく幸せに感じています。
+- sentence: たまらなく寂しく感じています。
+- sentence: たまらなく母の声を懐かしく感じています。
+- sentence: たまらなく彼女が愛しく思えています。
