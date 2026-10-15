@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.482
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 実に楽しいものですね。
@@ -10,3 +10,10 @@ exampleSentences:
 - sentence: 若いころはよく旅をしたものです。
 - sentence: 約束はきちんと守るものだ。
 - sentence: 人の話はよく聞くものです。
+- sentence: 学生のころ、友達と遊んで、よく先生に叱られたものです。
+- sentence: 子供のころはよく父に叱られたものだ。
+- sentence: 昔はよく祖母に褒められたものだ。
+- sentence: かつて近所の人に助けられたものだ。
+- sentence: 昔、よく図書館で本を読んだものだ。
+- sentence: 約束をしたらちゃんと守るものです。
+- sentence: 約束したら、ちゃんと守るものだった。

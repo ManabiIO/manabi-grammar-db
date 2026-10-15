@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.1550
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 昔はよく川で遊んだものだ。
@@ -10,3 +10,8 @@ exampleSentences:
 - sentence: 子供のころはよく川で泳いだものだ。
 - sentence: 若いころはよく旅をしたものです。
 - sentence: 昔はよく歌ったものだ。
+- sentence: 学生のころ、友達と遊んで、よく先生に叱られたものです。
+- sentence: 子供のころはよく父に叱られたものだ。
+- sentence: 昔はよく祖母に褒められたものだ。
+- sentence: かつて近所の人に助けられたものだ。
+- sentence: 昔、よく図書館で本を読んだものだ。
