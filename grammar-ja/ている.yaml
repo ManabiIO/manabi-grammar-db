@@ -1,5 +1,5 @@
 ruleID: grammar.ja.teiru.aspect
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 本を読んでいる。
@@ -23,3 +23,12 @@ exampleSentences:
 - sentence: 今は走っていません。
   translations:
     en: I am not running now.
+- sentence: 本を読んでいなかった。
+  translations:
+    en: I was not reading a book.
+- sentence: 昨日は働いていませんでした。
+  translations:
+    en: I was not working yesterday.
+- sentence: 本を読んでた。
+  translations:
+    en: I was reading a book.
