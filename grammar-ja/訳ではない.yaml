@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.544
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 読まないわけではない。
@@ -9,3 +9,15 @@ exampleSentences:
 - sentence: 安かった訳ではない。
 - sentence: 農業が嫌いな訳じゃない。
 - sentence: 嫌いなわけじゃない。
+- sentence: 彼が来るわけではありません。
+- sentence: 彼が来るわけではなかった。
+- sentence: 忙しいわけじゃなかった。
+- sentence: 馬鹿というわけではない。
+- sentence: 暑いというわけではない。
+- sentence: 新鮮というわけではありません。
+- sentence: 責任というわけではありません。
+- sentence: 嬉しくないってわけじゃない。
+- sentence: 彼が来るわけではありませんでした。
+- sentence: 忙しいわけじゃありませんでした。
+- sentence: 新鮮というわけじゃありませんでした。
+- sentence: 嬉しくないってわけじゃなかった。

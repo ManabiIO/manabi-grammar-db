@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.781
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 彼は詳しいわけだ。
@@ -10,3 +10,20 @@ exampleSentences:
 - sentence: 彼が来るわけがない。
 - sentence: 約束を破るわけにはいかない。
 - sentence: そんなに食べられる訳ないよ。
+- sentence: 彼が来るわけではありません。
+- sentence: 彼が来るわけではなかった。
+- sentence: 忙しいわけじゃなかった。
+- sentence: 馬鹿というわけではない。
+- sentence: 暑いというわけではない。
+- sentence: 新鮮というわけではありません。
+- sentence: 責任というわけではありません。
+- sentence: 嬉しくないってわけじゃない。
+- sentence: 彼が来るわけではありませんでした。
+- sentence: 忙しいわけじゃありませんでした。
+- sentence: 新鮮というわけじゃありませんでした。
+- sentence: 嬉しくないってわけじゃなかった。
+- sentence: そういうわけにはいきません。
+- sentence: 約束を破るわけにはいきません。
+- sentence: 約束を破るわけにはいきませんでした。
+- sentence: そういうわけには行きませんでした。
+- sentence: 彼は来るわけだ。

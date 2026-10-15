@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.1555
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 帰るわけにはいかない。
@@ -9,3 +9,7 @@ exampleSentences:
 - sentence: そういうわけにはいかない。
 - sentence: こういう訳には行かない。
 - sentence: 彼が来ないわけにはいかない。
+- sentence: そういうわけにはいきません。
+- sentence: 約束を破るわけにはいきません。
+- sentence: 約束を破るわけにはいきませんでした。
+- sentence: そういうわけには行きませんでした。
