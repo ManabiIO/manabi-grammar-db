@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.788
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: より良い方法を探す。
+- sentence: より速く走る。
+- sentence: より安全な道を選ぶ。
+- sentence: より一層努力する。
+- sentence: より多くの人が来た。

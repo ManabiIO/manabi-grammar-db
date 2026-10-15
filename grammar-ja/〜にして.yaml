@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1327
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 専門家にして初めて分かる。
+- sentence: 職人にして初めてできる技だ。
+- sentence: 天才にして初めて成し得る。
+- sentence: 先生にして初めて気づくことだ。
+- sentence: 大人にして初めて理解する。

@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.649
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 昼食はうどんにする。
+- sentence: 飲み物はお茶にします。
+- sentence: 会場は東京にしよう。
+- sentence: 日程は日曜日にしました。
+- sentence: どれにしますか。

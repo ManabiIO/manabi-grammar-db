@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1628
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 雨にしろ雪にしろ出発する。
+- sentence: 好きにせよ嫌いにせよ伝えてほしい。
+- sentence: 行くにしろ行かないにしろ連絡する。
+- sentence: 賛成にしても反対にしても意見を言う。
+- sentence: 暑いにしろ寒いにしろ運動する。

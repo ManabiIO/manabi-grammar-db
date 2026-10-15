@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1605
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼は結婚したとか。
+- sentence: 明日は雨が降るとか。
+- sentence: 彼女は有名だとか。
+- sentence: 駅前の店は安いとか。
+- sentence: 新しい店ができたとか

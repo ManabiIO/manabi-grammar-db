@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.541
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 彼が来るとすれば準備が必要だ。
+- sentence: 温度は一定であるとする。
+- sentence: 雨が降ったとすれば道は濡れる。
+- sentence: 値はゼロだとする。
+- sentence: 彼が来ないとすれば困る。

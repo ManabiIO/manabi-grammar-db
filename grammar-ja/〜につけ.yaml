@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.480
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 故郷を思い出すにつけ涙が出る。
+- sentence: 写真を見るにつけ懐かしくなる。
+- sentence: 暑いにつけ寒いにつけ母を思う。
+- sentence: 良いにつけ悪いにつけ話題になる。
+- sentence: 失敗を聞くにつけ悲しくなる。

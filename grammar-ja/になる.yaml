@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.687
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 寒くなった。
+- sentence: 部屋が静かになった。
+- sentence: 将来は医者になりたい。
+- sentence: 仕事が楽になりました。
+- sentence: 字が上手になってきた。

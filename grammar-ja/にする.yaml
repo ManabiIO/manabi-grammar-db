@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.449
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 部屋を明るくする。
+- sentence: 説明を分かりやすくしました。
+- sentence: 音を小さくしてほしい。
+- sentence: 部屋を静かにする。
+- sentence: 話を簡単にします。

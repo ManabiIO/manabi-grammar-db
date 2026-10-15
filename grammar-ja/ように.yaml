@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1001
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 漢字が読めるようになった。
+- sentence: 毎朝走るようになりました。
+- sentence: 酒を飲まないようになった。
+- sentence: 早く起きられるようになる。
+- sentence: 子供が歩くようになった。

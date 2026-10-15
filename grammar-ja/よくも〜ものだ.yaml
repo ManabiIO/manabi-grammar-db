@@ -1,3 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1787
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: よくもそんなことが言えるものだ。
+- sentence: よくも一人で食べられるものだ。
+- sentence: よくも平気で笑えるものだ。
+- sentence: よくも嘘をつけるものです。
+- sentence: よくもこんな所まで来たものだ。
