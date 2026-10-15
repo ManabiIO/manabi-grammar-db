@@ -1,5 +1,5 @@
 ruleID: grammar.ja.teiru.aspect
-ruleVersion: 4
+ruleVersion: 5
 examples: []
 exampleSentences:
 - sentence: 本を読んでいる。
@@ -44,3 +44,15 @@ exampleSentences:
 - sentence: 想像していなかった。
   translations:
     en: I had not imagined it.
+- sentence: 説明されている。
+  translations:
+    en: It is being explained.
+- sentence: 子供に本を読ませている。
+  translations:
+    en: I am having the child read a book.
+- sentence: 毎日勉強させられている。
+  translations:
+    en: I am being made to study every day.
+- sentence: その本は広く読まれている。
+  translations:
+    en: That book is widely read.
