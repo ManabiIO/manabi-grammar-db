@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1660
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: あまり本を読まない。
+- sentence: 余り寒くないですよ。
+- sentence: あまりにも速すぎる。
+- sentence: あまり遅いので電話した。
+- sentence: 彼は余り金持ちじゃない。
+- sentence: あまり期待をかけすぎるな。

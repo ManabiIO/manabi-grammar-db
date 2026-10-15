@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.861
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 星のように輝く。
+- sentence: 安いようだ。
+- sentence: 重要なようです。
+- sentence: 雨が降るような音がした。
+- sentence: 猫のような動物だ。
+- sentence: そのようなこともある。

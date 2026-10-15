@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1717
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: どうぞお座りください。
+- sentence: さあ、どうぞ。
+- sentence: こちらへどうぞ。
+- sentence: どうぞこちらへ。
+- sentence: どうぞ、ご自由に。
+- sentence: どうぞ座ったままで結構です。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.888
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 今着いたところです。
+- sentence: ちょうど読み終えたところだ。
+- sentence: 今から出かけるところだ。
+- sentence: ちょうど読んでいるところです。
+- sentence: 今始めたところです。
+- sentence: 今から帰るところだった。

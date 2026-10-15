@@ -28,7 +28,7 @@ def collect_rows() -> list[tuple[str, str, int, dict]]:
 
 def create_database(rows: list[tuple[str, str, int, dict]]) -> None:
     for _, _, _, data in rows:
-        if {"pattern", "compiledPattern", "authoringPattern", "analysisStatus", "testData"} & data.keys():
+        if {"pattern", "compiledPattern", "authoringPattern", "analysisStatus", "analysisSuppression", "testData"} & data.keys():
             raise ValueError("Public content database cannot contain private matching fields")
     if OUTDIR.resolve() != OUTDIR or (DBFILE.exists() and DBFILE.resolve() != DBFILE):
         raise ValueError(f"Unexpected database output target: {DBFILE}")

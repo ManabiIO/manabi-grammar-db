@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1387
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 駅で待つ。
+- sentence: カフェで話す。
+- sentence: 金曜日に会う。
+- sentence: 七時に出かける。
+- sentence: 公園に猫がいる。
+- sentence: 駅前で会います。

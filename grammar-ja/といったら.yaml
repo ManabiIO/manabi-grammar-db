@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1610
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 部屋の汚さといったら、ひどい。
+- sentence: 彼の食べ方といったら、見ていられない。
+- sentence: 私の驚きといったら。
+- sentence: 声の大きさといったら、すごかった。
+- sentence: 暑さといったら、たまらない。
+- sentence: その美しさといったら。

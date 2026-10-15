@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.789
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 肉より魚の方がいい。
+- sentence: 京都より東京が大きい。
+- sentence: 彼より速く走る。
+- sentence: 昨日より寒い。
+- sentence: 聞いたよりも悲しい。
+- sentence: 私より彼の方が詳しい。

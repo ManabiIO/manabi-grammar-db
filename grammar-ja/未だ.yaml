@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1624
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: まだ雨が降っている。
+- sentence: 宿題は未だ終わっていない。
+- sentence: まだ若い。
+- sentence: 未だに忘れられない。
+- sentence: まだ三冊ある。
+- sentence: まだ働いています。

@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.694
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: どうして来なかったのですか。
+- sentence: どうして空が青いの。
+- sentence: どうしてそんなことが起こったのか。
+- sentence: どうして嘘をついたの？
+- sentence: どうして彼が怒ったのか分からない。
+- sentence: どうしてなのか教えてください。

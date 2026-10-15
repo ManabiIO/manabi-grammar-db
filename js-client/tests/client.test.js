@@ -32,7 +32,7 @@ describe('ManabiGrammarDbClient', () => {
     expect(ga.data.exampleSentences[0]).toMatchObject({
       sentence: '太郎が学校に行く。'
     });
-    for (const field of ['pattern', 'compiledPattern', 'authoringPattern', 'analysisStatus', 'testData']) {
+    for (const field of ['pattern', 'compiledPattern', 'authoringPattern', 'analysisStatus', 'analysisSuppression', 'testData']) {
       expect(ga.data).not.toHaveProperty(field);
     }
     expect(ga.data.info.en.Guides[0]).toMatchObject({

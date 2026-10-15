@@ -1,3 +1,10 @@
 ruleID: grammar.ja.source.takoboto.786
-ruleVersion: 1
+ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 肉より魚の方がいい。
+- sentence: もう帰ったほうがいい。
+- sentence: 無理をしない方がいい。
+- sentence: 静かな方が落ち着く。
+- sentence: 早い方が便利だ。
+- sentence: 電話した方が安い。
