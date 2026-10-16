@@ -1,5 +1,5 @@
 ruleID: grammar.ja.dakedenaku.nominal-addition
-ruleVersion: 1
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 勉強だけでなく、運動も大切だ。
