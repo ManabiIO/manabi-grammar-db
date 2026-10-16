@@ -8096,7 +8096,7 @@
     },
     {
       "ruleID": "grammar.ja.kotowanai.no-need",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:366"
@@ -8304,7 +8304,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.239",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:239"
@@ -8360,7 +8360,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.259",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:259"
@@ -8448,7 +8448,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.312",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:312"
@@ -8456,7 +8456,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.317",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:317"
@@ -8488,7 +8488,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.346",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:346"
@@ -8840,7 +8840,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.516",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:516"
@@ -9088,7 +9088,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.618",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:618"
@@ -9320,7 +9320,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.681",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:681"
@@ -9520,7 +9520,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.740",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:740"
@@ -9760,7 +9760,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.823",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:823"
@@ -11752,7 +11752,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1556",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:1556"
