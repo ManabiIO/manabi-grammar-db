@@ -8112,7 +8112,7 @@
     },
     {
       "ruleID": "grammar.ja.nagara.link",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:707"
