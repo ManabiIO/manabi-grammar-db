@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.868
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: ところで、明日は暇ですか。
@@ -7,3 +7,4 @@ exampleSentences:
 - sentence: ところで、仕事はどうですか。
 - sentence: ところで、宿題は終わりましたか。
 - sentence: ところで、質問があります。
+- sentence: 急いだところで間に合わない。
