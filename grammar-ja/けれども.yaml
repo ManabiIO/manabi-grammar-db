@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.724
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 雨が降っていたけれども楽しかった。
@@ -7,3 +7,6 @@ exampleSentences:
 - sentence: 便利だけれども重い。
 - sentence: 知らないけれど聞いてみる。
 - sentence: 歩いたけれど疲れない。
+- sentence: 高い。けれども買った。
+  translations:
+    en: It's expensive. But I bought it.
