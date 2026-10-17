@@ -1,3 +1,6 @@
 ruleID: grammar.ja.source.takoboto.536
 ruleVersion: 2
 examples: []
+exampleSentences:
+- sentence: 手本を弾いてみせた。
+- sentence: 実際に折って見せた。
