@@ -1,5 +1,5 @@
 ruleID: grammar.ja.bahodo.repeated-verb
-ruleVersion: 4
+ruleVersion: 5
 examples: []
 exampleSentences:
 - sentence: 読めば読むほど面白くなる。
