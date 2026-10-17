@@ -1,5 +1,5 @@
 ruleID: grammar.ja.kotogaaru.occurrence-experience
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 休日に料理することがある。
