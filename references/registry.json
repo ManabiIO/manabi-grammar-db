@@ -8014,7 +8014,7 @@
   "bindings": [
     {
       "ruleID": "grammar.ja.ga.subject",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "references": [
         "takoboto:754",
         "wiktionary:ja-ga-subject"
@@ -8023,7 +8023,7 @@
     },
     {
       "ruleID": "grammar.ja.ha.topic",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "references": [
         "takoboto:753",
         "wiktionary:ja-ha-topic"
