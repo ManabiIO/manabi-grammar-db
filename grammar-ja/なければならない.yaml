@@ -1,5 +1,5 @@
 ruleID: grammar.ja.nakerebanaranai.obligation
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 明日までに返さなければならない。
