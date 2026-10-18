@@ -1,8 +1,10 @@
 ruleID: grammar.ja.source.takoboto.1737
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 明日までに終える。
 - sentence: 金曜日までに出す。
 - sentence: 五時までに帰る。
 - sentence: 来週までに決める。
+- sentence: これまでに一度もない。
+- sentence: 卒業するまでに決める。
