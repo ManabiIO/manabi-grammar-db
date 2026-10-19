@@ -1,10 +1,8 @@
 ruleID: grammar.ja.source.takoboto.1138
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 彼は元気だと聞いた。
 - sentence: 結婚したことを聞いた。
-- sentence: 雷鳴を聞いた。
 - sentence: 彼が歌うのを聞いた。
-- sentence: 事故のことを聞きました。
 - sentence: 本を読むということを母から聞いた。
