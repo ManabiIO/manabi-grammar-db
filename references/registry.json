@@ -9432,7 +9432,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.723",
-      "ruleVersion": 2,
+      "ruleVersion": 3,
       "readerLanguage": "en",
       "references": [
         "takoboto:723"
