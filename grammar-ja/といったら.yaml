@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.1610
-ruleVersion: 2
+ruleVersion: 3
 examples: []
 exampleSentences:
 - sentence: 部屋の汚さといったら、ひどい。
@@ -8,3 +8,4 @@ exampleSentences:
 - sentence: 声の大きさといったら、すごかった。
 - sentence: 暑さといったら、たまらない。
 - sentence: その美しさといったら。
+- sentence: 私にできることといったら手伝うことだけだ。
