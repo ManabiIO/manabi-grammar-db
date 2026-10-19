@@ -13008,7 +13008,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1773",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:1773"
@@ -13016,7 +13016,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1774",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:1774"
@@ -13088,7 +13088,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1785",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:1785"
