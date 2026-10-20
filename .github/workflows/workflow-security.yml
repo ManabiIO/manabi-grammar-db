@@ -15,7 +15,12 @@ jobs:
   workflow-security:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@9bb56186c3b09b5ef4cd2ddca0f4871dcd2b9de9
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
-      - uses: github/codeql-action/workflow-security@255f7f3d1417812d7ed63de4b8739ec42c382919
+      - uses: zizmorcore/zizmor-action@85b2b9fb8e3325e7a23d7d0a9d7ba5ae0f999e3e # v0.7.1
+        with:
+          version: 1.31.1
+          min-severity: low
+          advanced-security: false
+          annotations: true

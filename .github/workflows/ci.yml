@@ -12,33 +12,36 @@ on:
         default: false
 
 permissions:
-  contents: write
-  deployments: write
+  contents: read
   actions: read
-  id-token: write
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@9bb56186c3b09b5ef4cd2ddca0f4871dcd2b9de9
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
-      - uses: jdx/mise-action@707444d7bcb0f9a85e0eaca75c6cb825de997d5d
+      - uses: jdx/mise-action@c37c93293d6b742fc901e1406b8f764f6fb19dac # v2
       # Pull requests must exercise publication regressions and the actual
       # packaged SQLite client as well as schema validation.
       - run: mise run build-db
 
   build-release-deploy:
+    permissions:
+      contents: write
+      deployments: write
     if: github.event_name == 'workflow_dispatch' && inputs.publish
     needs: [lint]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@9bb56186c3b09b5ef4cd2ddca0f4871dcd2b9de9
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
       - name: Install mise
-        uses: jdx/mise-action@707444d7bcb0f9a85e0eaca75c6cb825de997d5d
+        uses: jdx/mise-action@c37c93293d6b742fc901e1406b8f764f6fb19dac # v2
+        with:
+          cache: false
       - name: Build DB + JS client
         run: mise run build-db
       - name: Compute checksums
@@ -53,7 +56,7 @@ jobs:
             echo '```'
           } > release-notes.md
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@b7db734d67472f2dca10c1b510a6445f76fbad2d
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
         with:
           tag_name: db-${{ github.sha }}
           name: Grammar DB ${{ github.sha }}
@@ -68,7 +71,7 @@ jobs:
             dist/checksums.txt
       - name: Get release asset URLs
         id: rel
-        uses: actions/github-script@d7906e4ad0b1822421a7aa52039b67d12c2d079a
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           script: |
             const { data: release } = await github.rest.repos.getReleaseByTag({
@@ -95,19 +98,19 @@ jobs:
             }
       - name: Create Deployment
         id: dep
-        uses: chrnorm/deployment-action@73a1a996a96b0f99b0ff61bcc24d0f5a2dc9ff69
+        uses: chrnorm/deployment-action@500aa6a23c81ffa1acf71072aee3cfa2cc2e556a # v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           environment: grammar-db
           ref: ${{ github.ref }}
       - name: Set Deployment Status
-        uses: chrnorm/deployment-status@f215202df6c0f5d98ecd9bfb843491f0de85be09
+        uses: chrnorm/deployment-status@6df8d036fd2fee9eb82936733953da1f8382b41e # v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          deployment_id: ${{ steps.dep.outputs.deployment_id }}
+          deployment-id: ${{ steps.dep.outputs.deployment_id }}
           state: success
-          environment_url: ${{ steps.rel.outputs.db_url }}
-          log_url: ${{ steps.rel.outputs.client_url }}
+          environment-url: ${{ steps.rel.outputs.db_url }}
+          log-url: ${{ steps.rel.outputs.client_url }}
           description: db-${{ github.sha }}
       - name: repository_dispatch to web repo
         uses: peter-evans/repository-dispatch@5fc4efd1a4797ddb68ffd0714a238564e4cc0e6f
