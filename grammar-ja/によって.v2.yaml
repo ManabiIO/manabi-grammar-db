@@ -1,7 +1,9 @@
 ruleID: grammar.ja.source.takoboto.1249
-ruleVersion: 5
+ruleVersion: 6
 examples: []
 exampleSentences:
 - sentence: 職員による点検を始める。
 - sentence: 電話による調査を続ける。
 - sentence: 大雪によって電車が止まった。
+- sentence: 企業への不正アクセスによる情報の流出が続いた。
+- sentence: 学校への寄付による基金の増加を報告した。

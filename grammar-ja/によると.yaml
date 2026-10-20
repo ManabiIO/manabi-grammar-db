@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.974
-ruleVersion: 6
+ruleVersion: 7
 examples: []
 exampleSentences:
 - sentence: 天気予報によると明日は雨だ。
@@ -8,3 +8,5 @@ exampleSentences:
 - sentence: 警察によりますと、事故がありました。
 - sentence: 日本経済新聞社によりますと、情報が流出しました。
 - sentence: 報道によりますと会議は延期されます。
+- sentence: NECによりますと、サービスは復旧しました。
+- sentence: 田中さんによれば、会議は延期された。
