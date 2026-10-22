@@ -8040,7 +8040,7 @@
     },
     {
       "ruleID": "grammar.ja.temoiidesuka.permission",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:1723"
