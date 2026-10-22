@@ -8056,7 +8056,7 @@
     },
     {
       "ruleID": "grammar.ja.kotogaaru.occurrence-experience",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "readerLanguage": "en",
       "references": [
         "takoboto:1625"
@@ -8112,7 +8112,7 @@
     },
     {
       "ruleID": "grammar.ja.nagara.link",
-      "ruleVersion": 7,
+      "ruleVersion": 8,
       "readerLanguage": "en",
       "references": [
         "takoboto:707"
@@ -10096,7 +10096,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.975",
-      "ruleVersion": 5,
+      "ruleVersion": 6,
       "readerLanguage": "en",
       "references": [
         "takoboto:975"
@@ -11120,7 +11120,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1350",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "readerLanguage": "en",
       "references": [
         "takoboto:1350"
