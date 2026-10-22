@@ -1,5 +1,5 @@
 ruleID: grammar.ja.kotonisuru.decision
-ruleVersion: 5
+ruleVersion: 6
 examples: []
 exampleSentences:
 - sentence: 今日は早く寝ることにした。
