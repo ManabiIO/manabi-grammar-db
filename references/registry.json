@@ -8032,7 +8032,7 @@
     },
     {
       "ruleID": "grammar.ja.teiru.aspect",
-      "ruleVersion": 6,
+      "ruleVersion": 7,
       "readerLanguage": "en",
       "references": [
         "takoboto:783"
@@ -8104,7 +8104,7 @@
     },
     {
       "ruleID": "grammar.ja.tameni.purpose-reason",
-      "ruleVersion": 6,
+      "ruleVersion": 7,
       "readerLanguage": "en",
       "references": [
         "takoboto:1130"
