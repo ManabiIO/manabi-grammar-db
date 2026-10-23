@@ -8056,7 +8056,7 @@
     },
     {
       "ruleID": "grammar.ja.kotogaaru.occurrence-experience",
-      "ruleVersion": 8,
+      "ruleVersion": 9,
       "readerLanguage": "en",
       "references": [
         "takoboto:1625"
