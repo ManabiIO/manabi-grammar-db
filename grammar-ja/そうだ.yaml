@@ -1,5 +1,5 @@
 ruleID: grammar.ja.souda.hearsay
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 明日は晴れるそうです。
