@@ -8104,7 +8104,7 @@
     },
     {
       "ruleID": "grammar.ja.tameni.purpose-reason",
-      "ruleVersion": 11,
+      "ruleVersion": 12,
       "readerLanguage": "en",
       "references": [
         "takoboto:1130"
