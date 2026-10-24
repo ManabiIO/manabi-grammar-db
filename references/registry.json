@@ -9872,7 +9872,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.879",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:879"
