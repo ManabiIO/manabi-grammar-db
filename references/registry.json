@@ -8128,7 +8128,7 @@
     },
     {
       "ruleID": "grammar.ja.souda.appearance",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:684"
@@ -9624,7 +9624,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.775",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "readerLanguage": "en",
       "references": [
         "takoboto:775"
