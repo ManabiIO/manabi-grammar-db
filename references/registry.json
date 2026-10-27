@@ -8376,7 +8376,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.264",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:264"
