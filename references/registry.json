@@ -12880,7 +12880,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1754",
-      "ruleVersion": 3,
+      "ruleVersion": 4,
       "readerLanguage": "en",
       "references": [
         "takoboto:1754"
