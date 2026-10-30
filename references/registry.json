@@ -8640,7 +8640,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.416",
-      "ruleVersion": 12,
+      "ruleVersion": 13,
       "readerLanguage": "en",
       "references": [
         "takoboto:416"
