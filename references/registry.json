@@ -8408,7 +8408,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.303",
-      "ruleVersion": 15,
+      "ruleVersion": 16,
       "readerLanguage": "en",
       "references": [
         "takoboto:303"
