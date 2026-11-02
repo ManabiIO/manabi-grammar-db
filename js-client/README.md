@@ -48,6 +48,14 @@ more than 512 candidates would be returned. Search aliases with no reading are
 eligible for a reading-filtered lookup and retain their empty reading plus
 `isSearchAlias`. This class does not import Yomitan ZIPs or manage downloads.
 
+Schema 2 additionally declares `categoryCoverage` in its metadata and returns
+`applicableCategories` on each candidate. Categories belong to the exact spelling,
+reading and entry ID; aliases always return an empty category array. An empty
+array means this projection contains no applicable category for that candidate.
+Schema 1 remains readable and omits this field, indicating unavailable category
+evidence. Consumers that require categories must check declared coverage before
+interpreting an empty lookup. Category membership does not select a contextual sense.
+
 The self-contained `dist/` bundle selects `sqlite3-node.mjs` in Node/Bun and `sqlite3.mjs` in browsers. Keep those modules and `sqlite3.wasm` beside `index.js`; serve `.wasm` as `application/wasm`. The upstream runtime modules are copied unchanged, including their license notices. Browser module workers can fetch the database and pass its bytes to `fromUint8Array` without COOP/COEP headers:
 
 ```js
