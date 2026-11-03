@@ -116,7 +116,7 @@ jobs:
         uses: peter-evans/repository-dispatch@5fc4efd1a4797ddb68ffd0714a238564e4cc0e6f
         with:
           token: ${{ secrets.WEB_REPO_TOKEN }}
-          repository: ManabiIO/manabi-grammar-web
+          repository: lake-of-fire/manabi-grammar-web
           event-type: grammar-db-deployed
           client-payload: |
             {
