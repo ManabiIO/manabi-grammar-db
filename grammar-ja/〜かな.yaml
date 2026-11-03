@@ -1,5 +1,5 @@
 ruleID: grammar.ja.source.takoboto.749
-ruleVersion: 3
+ruleVersion: 4
 examples: []
 exampleSentences:
 - sentence: 彼は来るかな。
@@ -8,3 +8,5 @@ exampleSentences:
 - sentence: 本当かな。
 - sentence: 明日は暑いかな
 - sentence: 行こうかな。
+- sentence: 行こうかなと考えている。
+- sentence: 本当かなという疑問は残る。
