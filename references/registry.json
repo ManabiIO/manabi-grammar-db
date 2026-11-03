@@ -9024,7 +9024,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.576",
-      "ruleVersion": 6,
+      "ruleVersion": 7,
       "readerLanguage": "en",
       "references": [
         "takoboto:576"
