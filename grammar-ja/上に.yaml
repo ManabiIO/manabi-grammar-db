@@ -1,8 +1,12 @@
 ruleID: grammar.ja.source.takoboto.1298
-ruleVersion: 9
+ruleVersion: 10
 examples: []
 exampleSentences:
 - sentence: 安い上に丈夫だ。
 - sentence: 静かな上に便利だ。
 - sentence: 彼は働く上に勉強もする。
 - sentence: 雨が降ったうえに風も強い。
+- sentence: 安い上、丈夫だ。
+- sentence: 静かな上、便利だ。
+- sentence: 雨が降ったうえ、風も強い。
+- sentence: 海に恵まれている上、歴史も豊かだ。
