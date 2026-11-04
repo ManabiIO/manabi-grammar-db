@@ -20,6 +20,33 @@ LANG_RE = re.compile(r"^[a-z]{2,3}$")
 LANG_DIR_RE = re.compile(r"^grammar-([a-z]{2,3})$")
 EXPLANATION_LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}|[0-9]{3}))?$")
 LANG_FILE_RE = re.compile(r"^(?P<stem>.+)\.(?P<lang>[a-z]{2,3}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}|[0-9]{3}))?)\.md$")
+AUTHORING_HEADINGS = {"matching scope", "recognized parts", "detector coverage", "matcher notes"}
+AUTHORING_PROSE = re.compile(
+    r"\b(?:(?:this|the(?: current)?) (?:matcher|detector|parser)|MeCab|IPADIC|JMdict identity|"
+    r"(?:context|ending) component|tokenization|confidence (?:remains|is) unassessed|"
+    r"form evidence is tentative)\b", re.IGNORECASE
+)
+
+
+def validate_learner_meaning(meaning, source):
+    """Meaning teaches the language; implementation notes have a private owner.
+
+    Inspect rendered prose/headings rather than raw Markdown, so literal fenced
+    examples remain lossless. This guards known authoring boilerplate; editorial
+    review still determines whether an explanation is useful and correct.
+    """
+    tokens = MarkdownIt("commonmark").parse(meaning)
+    for index, token in enumerate(tokens):
+        if token.type == "heading_open" and tokens[index + 1].content.casefold() in AUTHORING_HEADINGS:
+            raise ValueError(f"{source}: private matching notes cannot be a learner Meaning")
+        if token.type == "inline":
+            prose = "".join(child.content if child.type in {"text", "code_inline"} else
+                            " " if child.type in {"softbreak", "hardbreak"} else ""
+                            for child in token.children or [])
+            if AUTHORING_PROSE.search(prose):
+                raise ValueError(f"{source}: private matching notes cannot be a learner Meaning")
+
+
 class StrictLoader(yaml.SafeLoader):
     """PyYAML safe scalar semantics, with only true/false implicit booleans.
 
@@ -162,6 +189,7 @@ def parse_markdown_sections(text, headword=None, source="<markdown>"):
             meaning = "\n".join(body)
             if not meaning:
                 raise ValueError(f"{source}:{start + 1}: Meaning must include descriptive text")
+            validate_learner_meaning(meaning, source)
             sections[name] = meaning
             continue
         section = {} if name == "Related" else []

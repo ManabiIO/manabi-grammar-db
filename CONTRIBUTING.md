@@ -13,6 +13,8 @@ Thanks for helping improve **Manabi Grammar DB**!
 - Markdown requires exactly one matching H1; H2 sections are Meaning, Guides, Q&A and Related. Duplicate sections/groups fail. Meaning supports H3–H6 and fenced code; resources use structured HTTP(S) dash links. See README for the complete subset.
 - YAML uses strict camelCase fields. Duplicate keys, aliases, merges, non-string map keys and unknown fields fail. Only true/false resolve as implicit booleans.
 - External citations belong in `references/registry.json`: commit keys, pins, selectors and attribution metadata, never external explanation bodies. Bind references explicitly to a content identity/version and reader language.
+- `Meaning` explains Japanese usage, meaning, and contrasts for a learner. Matcher coverage, parser/token details, component contracts and confidence-policy notes belong in the private implementation repository's `GrammarRules/authoring-notes/`. Known authoring headings and boilerplate fail validation here.
+- A reference-backed page may use only its `# <headword>` title. Add `Meaning` when you have a real explanation; do not publish TODOs or fill the section with implementation notes. The scaffold deliberately creates a title-only companion.
 
 ## Checks
 - Run `mise run lint` before sending PRs. CI will block merges if checks fail.

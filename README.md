@@ -20,6 +20,15 @@ Lint and build use the same strict loader (`scripts/content.py`). It rejects dup
 
 `grammar-yaml.schema.json` owns shared definitions. `scripts/schema_contract.py --write` derives a **self-contained** row schema from it; lint/tests reject a stale generated schema. No external schema resolution is needed by release consumers.
 
+`Meaning` contains learner explanations, rather than parser coverage or matching
+implementation notes. Those notes have a private owner in the implementation
+repository's `GrammarRules/authoring-notes/`; known authoring boilerplate is
+rejected by the content validator. A title-only Markdown companion keeps a
+reference-backed explanation locale available without inventing prose. The
+scaffold creates that form; add a Meaning section when there is a real
+explanation to contribute. Citation/prose-only edits leave matcher versions
+unchanged.
+
 ## Canonical external citations
 
 `references/registry.json` is the only maintained source registry and binding collection. It contains metadata, foreign entry/page IDs, pinned release/revision IDs, hashes, selectors, source attribution and original labels; it contains **no fetched explanations, snippets or wiki markup**. Its strict `reference-registry.schema.json` rejects unknown fields, duplicate identities, unresolved keys and invalid metadata. Bindings explicitly carry stable `ruleID`, reviewed `ruleVersion`, reader language and source IDs. Changed matching semantics increment the rule version and require citation review; citation/prose edits alone do not change matcher versions.

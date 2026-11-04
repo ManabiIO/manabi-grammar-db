@@ -34,11 +34,9 @@ def build_yaml_stub(headword: str, target_lang: str, reader_lang: str, rule_id: 
 
 
 def build_markdown_stub(headword: str) -> str:
-    return (
-        f"# {headword}\n\n"
-        "## Meaning\n"
-        "TODO: Explain the grammar point and its context constraints.\n"
-    )
+    # A reference-backed page needs no invented explanation or published TODO.
+    # Add Meaning only when there is real learner-facing prose to contribute.
+    return f"# {headword}\n"
 
 
 def write_file(path: Path, content: str, force: bool) -> None:
