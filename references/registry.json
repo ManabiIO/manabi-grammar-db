@@ -11584,7 +11584,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1524",
-      "ruleVersion": 8,
+      "ruleVersion": 9,
       "readerLanguage": "en",
       "references": [
         "takoboto:1524"
