@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "default_branch": "main",
+  "automatic_spending": false,
+  "active": {
+    ".github/workflows/ci.yml": {
+      "events": [
+        "workflow_dispatch"
+      ],
+      "native_opt_in": false
+    },
+    ".github/workflows/workflow-security.yml": {
+      "events": [
+        "workflow_dispatch"
+      ],
+      "native_opt_in": false
+    }
+  },
+  "retired": {}
+}
