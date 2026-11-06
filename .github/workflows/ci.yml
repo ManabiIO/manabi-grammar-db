@@ -1,9 +1,6 @@
 name: ci
 
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_dispatch:
     inputs:
       publish:
@@ -17,13 +14,15 @@ permissions:
 
 jobs:
   lint:
+    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
       - uses: jdx/mise-action@c37c93293d6b742fc901e1406b8f764f6fb19dac # v2
-      # Pull requests must exercise publication regressions and the actual
+      # Explicit qualification exercises publication regressions and the actual
       # packaged SQLite client as well as schema validation.
       - run: mise run build-db
 
@@ -31,7 +30,8 @@ jobs:
     permissions:
       contents: write
       deployments: write
-    if: github.event_name == 'workflow_dispatch' && inputs.publish
+    if: github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.publish
+    timeout-minutes: 30
     needs: [lint]
     runs-on: ubuntu-latest
     steps:

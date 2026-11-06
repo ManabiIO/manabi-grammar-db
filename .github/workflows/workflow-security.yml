@@ -1,11 +1,7 @@
 name: workflow-security
 
 on:
-  push:
-    paths:
-      - ".github/workflows/**"
-  schedule:
-    - cron: "0 3 * * 1"
+  workflow_dispatch:
 
 permissions:
   actions: read
@@ -13,6 +9,8 @@ permissions:
 
 jobs:
   workflow-security:
+    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
