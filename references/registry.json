@@ -8023,7 +8023,7 @@
     },
     {
       "ruleID": "grammar.ja.ha.topic",
-      "ruleVersion": 5,
+      "ruleVersion": 6,
       "references": [
         "takoboto:753",
         "wiktionary:ja-ha-topic"
