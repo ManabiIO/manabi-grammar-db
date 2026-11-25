@@ -9840,7 +9840,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.856",
-      "ruleVersion": 8,
+      "ruleVersion": 9,
       "readerLanguage": "en",
       "references": [
         "takoboto:856"
