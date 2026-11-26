@@ -9592,7 +9592,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.765",
-      "ruleVersion": 14,
+      "ruleVersion": 15,
       "readerLanguage": "en",
       "references": [
         "takoboto:765"
