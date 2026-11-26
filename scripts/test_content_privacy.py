@@ -8,7 +8,7 @@ class PublicContentPrivacyTests(unittest.TestCase):
     def test_public_rows_and_schemas_are_content_only(self):
         check_row_schema()
         rows = collect_rows()
-        self.assertEqual(len(rows), 646)
+        self.assertEqual(len(rows), 647)
         for _, _, _, data in rows:
             self.assertTrue(data["info"])
             self.assertFalse({"pattern", "compiledPattern", "authoringPattern", "analysisStatus", "analysisSuppression", "testData"} & data.keys())

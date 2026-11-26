@@ -30,9 +30,10 @@ class LearnerContentTests(unittest.TestCase):
 
     def test_all_public_rows_keep_their_identities_locales_and_real_explanations(self):
         rows = collect_rows()
-        self.assertEqual(len(rows), 646)
+        self.assertEqual(len(rows), 647)
         self.assertTrue(all("en" in data["info"] for _, _, _, data in rows))
         by_rule = {data["ruleID"]: data for _, _, _, data in rows}
         self.assertNotIn("Meaning", by_rule["grammar.ja.source.takoboto.1667"]["info"]["en"])
         self.assertIn("as if", by_rule["grammar.ja.source.takoboto.1316"]["info"]["en"]["Meaning"])
         self.assertIn("Guides", by_rule["grammar.ja.ga.subject"]["info"]["en"])
+        self.assertIn("なけりゃ", by_rule["grammar.ja.nakya.negative-conditional"]["info"]["en"]["Meaning"])

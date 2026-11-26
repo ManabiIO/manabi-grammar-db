@@ -1,0 +1,13 @@
+ruleID: grammar.ja.nakya.negative-conditional
+ruleVersion: 1
+examples: []
+exampleSentences:
+- sentence: 明日は早く起きなきゃ。
+  translations:
+    en: I have to get up early tomorrow.
+- sentence: 時間がなきゃ、明日にしよう。
+  translations:
+    en: If there's no time, let's do it tomorrow.
+- sentence: 説明は読みやすくなきゃ。
+  translations:
+    en: The explanation has to be easy to read.
