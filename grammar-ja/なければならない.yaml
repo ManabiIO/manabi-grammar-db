@@ -1,5 +1,5 @@
 ruleID: grammar.ja.nakerebanaranai.obligation
-ruleVersion: 7
+ruleVersion: 8
 examples: []
 exampleSentences:
 - sentence: 明日までに返さなければならない。
@@ -11,3 +11,9 @@ exampleSentences:
 - sentence: ここで待たなければならない。
   translations:
     en: I must wait here.
+- sentence: 明日までに返さなくてはならなかった。
+  translations:
+    en: I had to return it by tomorrow.
+- sentence: 安全設備がなくてはならない。
+  translations:
+    en: There must be safety equipment.

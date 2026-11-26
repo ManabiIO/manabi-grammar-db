@@ -8088,7 +8088,7 @@
     },
     {
       "ruleID": "grammar.ja.nakerebanaranai.obligation",
-      "ruleVersion": 7,
+      "ruleVersion": 8,
       "readerLanguage": "en",
       "references": [
         "takoboto:1709"
@@ -11328,7 +11328,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1484",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "readerLanguage": "en",
       "references": [
         "takoboto:1484"
