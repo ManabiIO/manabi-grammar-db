@@ -8048,7 +8048,7 @@
     },
     {
       "ruleID": "grammar.ja.tewaikenai.prohibition",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "readerLanguage": "en",
       "references": [
         "takoboto:1661"
@@ -8088,7 +8088,7 @@
     },
     {
       "ruleID": "grammar.ja.nakerebanaranai.obligation",
-      "ruleVersion": 9,
+      "ruleVersion": 10,
       "readerLanguage": "en",
       "references": [
         "takoboto:1709"
@@ -11872,7 +11872,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1589",
-      "ruleVersion": 4,
+      "ruleVersion": 5,
       "readerLanguage": "en",
       "references": [
         "takoboto:1589"
@@ -13000,7 +13000,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1772",
-      "ruleVersion": 5,
+      "ruleVersion": 6,
       "readerLanguage": "en",
       "references": [
         "takoboto:1772"
