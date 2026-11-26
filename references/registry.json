@@ -10240,7 +10240,7 @@
     },
     {
       "ruleID": "grammar.ja.source.takoboto.1100",
-      "ruleVersion": 12,
+      "ruleVersion": 13,
       "readerLanguage": "en",
       "references": [
         "takoboto:1100"
