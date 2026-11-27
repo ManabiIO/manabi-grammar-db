@@ -1,5 +1,5 @@
 ruleID: grammar.ja.bahodo.repeated-verb
-ruleVersion: 5
+ruleVersion: 6
 examples: []
 exampleSentences:
 - sentence: 読めば読むほど面白くなる。
@@ -8,3 +8,9 @@ exampleSentences:
 - sentence: 見れば見るほど好きになる。
   translations:
     en: The more I look, the more I like it.
+- sentence: 静かなら静かなほど落ち着く。
+  translations:
+    en: The quieter it is, the more relaxing it feels.
+- sentence: 便利なら便利なほど助かる。
+  translations:
+    en: The more convenient it is, the more helpful it becomes.

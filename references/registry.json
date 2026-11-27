@@ -8136,7 +8136,7 @@
     },
     {
       "ruleID": "grammar.ja.bahodo.repeated-verb",
-      "ruleVersion": 5,
+      "ruleVersion": 6,
       "readerLanguage": "en",
       "references": [
         "takoboto:977"
